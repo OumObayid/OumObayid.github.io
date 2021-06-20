@@ -1,0 +1,19 @@
+.home-page{
+    background-color: $background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    @include for-phone{
+        background-color:$bg-orange;
+    }
+    @include for-tablet{
+        background-color:$bg-green;
+    }
+    @include for-desktop{
+        background-color:$bg-blue;
+    }
+
+}
