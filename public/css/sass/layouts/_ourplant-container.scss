@@ -1,0 +1,48 @@
+.ourplant-plant {
+    gap: 0px 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 500px 500px 500px 500px 500px;
+    grid-template-areas: "a" "b" "c" "d" "e" "f";
+
+}
+
+.plants2 {
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-end;
+
+}
+
+.ourplant-plant1 {
+    background-image: url(../../public/img/nos_plantes/1.jpg);
+    grid-area: a;
+}
+
+.ourplant-plant2 {
+    background-image: url(../../public/img/nos_plantes/2.jpg);
+    grid-area: b;
+}
+
+.ourplant-plant3 {
+    background-image: url(../../public/img/nos_plantes/3.jpg);
+    grid-area: c;
+}
+
+.ourplant-plant4 {
+    background-image: url(../../public/img/nos_plantes/4.jpg);
+    grid-area: d;
+}
+
+.ourplant-plant5 {
+    background-image: url(../../public/img/nos_plantes/5.jpg);
+    grid-area: e;
+}
+
+.ourplant-plant6 {
+    background-image: url(../../public/img/nos_plantes/6.jpg);
+    grid-area: f;
+}
+
+

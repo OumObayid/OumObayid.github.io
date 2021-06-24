@@ -1,0 +1,31 @@
+
+.best-sales-plant {
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.plants1 {
+    align-items: flex-end;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.best-sales-plant1 {
+    background-image: url(../../public/img/nos_meilleures_ventes/1.jpg);
+}
+
+.best-sales-plant2 {
+    background-image: url(../../public/img/nos_meilleures_ventes/2.jpg);
+}
+
+.best-sales-plant3 {
+    background-image: url(../../public/img/nos_meilleures_ventes/3.jpg);
+}
+
+.best-sales-plant4 {
+    background-image: url(../../public/img/nos_meilleures_ventes/4.jpg);
+}
+
