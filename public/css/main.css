@@ -21,16 +21,6 @@ img {
   border-style: none;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-}
-
 body {
   width: 100%;
   background-color: #ffffff;
@@ -189,6 +179,20 @@ p, li, a {
 
 .plant:hover .overlay {
   width: 100%;
+}
+
+.navbar {
+  color: white;
+}
+
+.colorNavbar1 {
+  transition: background-color  0.2s ease-in;
+}
+
+.colorNavbar2 {
+  height: 60px;
+  background-color: #A1572F;
+  transition: background-color 0.2s ease-in;
 }
 
 .delivery-container {

@@ -1,15 +1,15 @@
 //bases styles
 
-//pour scroller lentement dans la page
-html {
-    scroll-behavior: smooth;
-  }
+// //pour scroller lentement dans la page
+// html {
+//     scroll-behavior: smooth;
+//   }
 
-@media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
-  }
+// @media (prefers-reduced-motion: reduce) {
+//     html {
+//       scroll-behavior: auto;
+//     }
+//   }
 
 body {
     width: 100%;
