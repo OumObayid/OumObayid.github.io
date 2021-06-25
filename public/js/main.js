@@ -1,20 +1,22 @@
 
 $(document).ready(function () {
-    
-    $(window).scroll(function() { // check if scroll event happened
-        if ($(document).scrollTop() > 500) { // check if user scrolled more than 500 from top of the browser window
-          $(".fixed-top").addClass('colorNavbar2'); 
-          $(".fixed-top").removeClass('colorNavbar1');
-          // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-        } else {
-            $(".fixed-top").addClass('colorNavbar1'); 
-          $(".fixed-top").removeClass('colorNavbar2'); // if not, change it back to transparent
-        }
-      });
-
-
-    //initialisation aos
-    AOS.init(); 
+     //initialisation aos
+     AOS.init(); 
+     
+    //change navbar color on scrolling
+    // $(window).scroll(function() { 
+    //     if ($(document).scrollTop() > 450) { 
+    //       $(".fixed-top").addClass('colorNavbar2'); 
+    //       $(".fixed-top").removeClass('colorNavbar1');          
+    //     } else {
+    //         $(".fixed-top").addClass('colorNavbar1'); 
+    //       $(".fixed-top").removeClass('colorNavbar2'); 
+    //     }
+    //   });  
+    $(document).scroll(function () {
+      var $nav = $(".navbar-fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    }); 
 
     // Un défilement animé (« Smooth scroll ») en jQuery sans plugin
     $('a[href^="#"]').click(function () {

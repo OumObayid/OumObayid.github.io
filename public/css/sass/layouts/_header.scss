@@ -1,13 +1,21 @@
-.navbar{
-    color: white;
-}
-.colorNavbar1{       
-    transition: background-color  0.2s ease-in;    
-     
-  }
-  .colorNavbar2{
-    height: 60px ;
-    background-color: #A1572F;    
-    transition: background-color 0.2s ease-in;
-    
-  }
+// .navbar{
+//     color: white;
+// }
+// .colorNavbar1{       
+//     transition: background-color 0.2s ease-in;    
+//     transition: height 0.2s ease-in;   
+//     z-index: 5; 
+//   }
+//   .colorNavbar2{
+//     // height: 60px ;
+//     background-color: #A1572F;    
+//     transition: background-color 0.2s ease-in;
+//     z-index: 5; 
+//   }
+//   .navbar-toggler{
+//       z-index: 6;
+      
+//   }
+.navbar { background-color: rgb(255,255,255); -webkit-transition: background-color 500ms linear; -moz-transition: background-color 500ms linear; -ms-transition: background-color 500ms linear; transition: background-color 500ms linear; }
+
+.scrolled { background-color: rgba(0,0,0,0.75); -webkit-transition: background-color 500ms linear; -moz-transition: background-color 500ms linear; -ms-transition: background-color 500ms linear; transition: background-color 500ms linear; }
