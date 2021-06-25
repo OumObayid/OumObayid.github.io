@@ -1,37 +1,21 @@
-// .navbar{
-//     color: white;
-// }
-// .colorNavbar1{       
-//     transition: background-color 0.2s ease-in;    
-//     transition: height 0.2s ease-in;   
-//     z-index: 5; 
-//   }
-//   .colorNavbar2{
-//     // height: 60px ;
-//     background-color: #A1572F;    
-//     transition: background-color 0.2s ease-in;
-//     z-index: 5; 
-//   }
-//   .navbar-toggler{
-//       z-index: 6;
-      
-//   }
 .navbar { 
     background-color: rgba(255,255,255,0); // media query
-    -webkit-transition: background-color 500ms linear; 
-    -moz-transition: background-color 500ms linear; 
-    -ms-transition: background-color 500ms linear; 
-    transition: background-color 500ms linear; 
+    -webkit-transition:  500ms linear; 
+    -moz-transition:  500ms linear; 
+    -ms-transition:  500ms linear; 
+    // transition: background-color 500ms linear; 
+    transition:  500ms linear; 
+    height: 80px;
     
 }
 
 .scrolled { 
-    // height: 60px;// media query
+    height: 60px;// media query
     background-color: #fc8080; 
-    -webkit-transition: background-color 500ms linear; 
-    -moz-transition: background-color 500ms linear; 
-    -ms-transition: background-color 500ms linear; 
-    transition: background-color 500ms linear; 
-    
+    -webkit-transition:  500ms linear; 
+    -moz-transition:  500ms linear; 
+    -ms-transition:  500ms linear; 
+    // transition: background-color 500ms linear; 
+    transition:  500ms linear; 
     
 }

@@ -15,7 +15,7 @@ $(document).ready(function () {
     //   });  
     $(document).scroll(function () {
       var $nav = $(".fixed-top");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > 550);
+      $nav.toggleClass('scrolled', $(this).scrollTop() > 500);
     }); 
 
     // Un défilement animé (« Smooth scroll ») en jQuery sans plugin
