@@ -191,104 +191,78 @@ p, li, a {
   transition: background-color 500ms linear;
 }
 
-.delivery-container {
-  width: 100%;
-  margin: 60px 0;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  background-color: #fff;
+.parallax-window {
+  min-height: 100vh;
+  background: transparent;
 }
 
-.delivery-block {
-  width: 220px;
-  height: 130px;
-  margin: 20px 45px;
-  justify-content: space-between;
-  align-items: center;
+.content-profile {
+  background: linear-gradient(0deg, rgba(227, 227, 227, 0.2), rgba(21, 66, 25, 0.56));
 }
 
-.delivery-block h4 {
-  text-align: center;
-}
-
-.delivery-icon {
-  color: #ADD981;
-  font-size: 50px;
-}
-
-.best-sales-plant {
-  flex-wrap: wrap;
+.profile-img a {
   position: relative;
 }
 
-.plants1 {
-  align-items: flex-end;
+.profile-img a:before {
+  content: "";
+  border: 40px solid rgba(55, 140, 63, 0.6);
+  box-shadow: 0 0 0 0 black;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  left: 0;
+  animation: pulse 2s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 0.0;
+  z-index: 30;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+
+.profile-img img {
+  position: relative;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+  z-index: 9999;
+  transition: all .3s ease-out;
+}
+
+.profile-img a:hover img {
+  transform: scale(1.06, 1.06);
+}
+
+.profile-img a:hover:before {
+  animation: none;
+}
+
+.content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 15px;
+  color: #FFFFFF;
   width: 100%;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.best-sales-plant1 {
-  background-image: url(../../public/img/nos_meilleures_ventes/1.jpg);
-}
-
-.best-sales-plant2 {
-  background-image: url(../../public/img/nos_meilleures_ventes/2.jpg);
-}
-
-.best-sales-plant3 {
-  background-image: url(../../public/img/nos_meilleures_ventes/3.jpg);
-}
-
-.best-sales-plant4 {
-  background-image: url(../../public/img/nos_meilleures_ventes/4.jpg);
-}
-
-.ourplant-plant {
-  gap: 0px 0px;
-  grid-template-columns: 1fr;
-  grid-template-rows: 500px 500px 500px 500px 500px 500px;
-  grid-template-areas: "a" "b" "c" "d" "e" "f";
-}
-
-.plants2 {
-  background-size: 100% auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: flex-end;
-}
-
-.ourplant-plant1 {
-  background-image: url(../../public/img/nos_plantes/1.jpg);
-  grid-area: a;
-}
-
-.ourplant-plant2 {
-  background-image: url(../../public/img/nos_plantes/2.jpg);
-  grid-area: b;
-}
-
-.ourplant-plant3 {
-  background-image: url(../../public/img/nos_plantes/3.jpg);
-  grid-area: c;
-}
-
-.ourplant-plant4 {
-  background-image: url(../../public/img/nos_plantes/4.jpg);
-  grid-area: d;
-}
-
-.ourplant-plant5 {
-  background-image: url(../../public/img/nos_plantes/5.jpg);
-  grid-area: e;
-}
-
-.ourplant-plant6 {
-  background-image: url(../../public/img/nos_plantes/6.jpg);
-  grid-area: f;
+  max-width: 880px;
 }
 
 .footer {
