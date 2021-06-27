@@ -78,19 +78,24 @@
 }
 
 .content-center {
-	position: absolute;
-    top: 50%;
+    position: absolute;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 0 15px;
-    color: #ffffff;
+    color: #FFFFFF;
     width: 100%;
     max-width: 880px;
 }
 //bulles
 .profile-bubbles {
-	position: relative;	   
+	position: relative;	
+    // background: {
+	// 	image: linear-gradient(to bottom,  #00c9ff 0%, #92fe9d 100%), url(../../../images/bgprofile.jpg);
+	// 	blend-mode: multiply;
+	// 	size: cover;
+	// }
 	overflow: hidden;
 	height: 100vh;
 	overflow: hidden;

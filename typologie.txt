@@ -1,0 +1,43 @@
+OUMAIMA CREATION 20PX
+
+menu 15px majuscule
+
+Oumaima El Obayid 32px
+text et bouton 16px
+_________________
+about:24px
+p 15px
+-------
+basic inform :24px
+text 16px
+_________________
+professional skils: 24px
+text:15px
+________________
+portfolio:24px
+texte interne 24px et 15px
+_____________
+work experience :24px
+p: 15
+titre sous p: 20px
+titre:20px
+p:15
+______________
+educattion = work experience
+__________________
+Reference : 24px
+p:15
+nom et fonction 16
+__________________
+contact: 24px
+label et placeholder: 16px
+informations contact: 15px - 15px
+bouton send : 16px
+_______________________
+footer
+titre 24px
+p 15px 15 px
+____________________
+24 20 16 15
+
+

@@ -1,0 +1,22 @@
+// Global stylesheet where we will import all other stylesheets
+//abstracts
+@import "abstracts/abstract";
+/////////////////////////
+//Bases
+@import "bases/reset",
+"bases/bases",
+"bases/typography";
+/////////////////////////
+//Components
+@import "components/card";
+/////////////////////////
+//Layouts
+@import "layouts/layouts";
+/////////////////////////
+//Pages
+@import "Pages/home";
+/////////////////////////
+//Themes
+@import "themes/admin",
+"themes/theme";
+/////////////////////////

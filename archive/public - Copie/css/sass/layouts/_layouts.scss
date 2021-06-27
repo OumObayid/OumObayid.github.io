@@ -1,0 +1,107 @@
+@import "./header",
+"./profile",
+"./footer",
+"./mediaquery";
+
+// ------------general parameters in common layouts----------------
+//layout flexbox and grid
+.flexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.displaygrid {
+    display: grid;
+}
+
+//generals parametres in section best-sales-container and ourplant-container
+
+.ourplant-container,
+.best-sales-container {
+    margin: 0 35px 50px;
+}
+
+.title2{
+    margin-bottom: 50px;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 5% 0.15em;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease-in;
+    &:hover {
+      background-size: 5% 100%;
+    }
+  }
+
+  // -------------- media query for layouts -------------------
+
+  @include for-phone {   
+  // header -----------------
+      .hamburger{display: block;}// display nav mobile
+      .nav{ display: none; }         
+      .titlescroll{
+           margin: -2.92vw  8vw;
+           h1{
+               margin-top: 60px;
+           }
+      } 
+  }
+  
+  @include for-tablet {
+  // header---------------------------
+      .hamburger{display: none;} //no display nav mobile   
+      .nav{ display: flex; }  
+      .nav2 {display: none;}
+      .titlescroll{ margin: -2.92vw  8vw;} 
+     
+  //section best-sales-container--------------
+     .best-sales-container {
+      margin: 0 100px 50px;
+     }
+      .plants1 { width: 50%;  }
+  // section ourplant-container--------------
+      .ourplant-container {
+          margin: 0 100px 50px;
+      }
+      .ourplant-plant {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 500px 500px 500px;
+          grid-template-areas: "a b" "c d" "e f";
+      }
+  }
+  
+  @include for-desktop {
+  // header---------------------------
+      .hamburger{display: none;} //no display nav mobile  
+      .nav{ display: flex; }   
+      .nav2 {display: none;}         
+      .titlescroll{ margin: -2.92vw  8vw;}
+  
+  // section best-sales-container--------------
+      .best-sales-container {
+          margin: 0 100px 50px;
+      }
+    .best-sales-plant1,
+    .best-sales-plant2,
+    .best-sales-plant3 {
+          width: 33.33%;
+      }
+      .best-sales-plant4 {
+          width: 100%;
+      }
+  // section ourplant-container--------------
+      .ourplant-container {
+          margin: 0 100px 50px;
+      }
+      .ourplant-plant {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-rows: 500px 500px 500px 500px;
+          grid-template-areas: "a a b b" "a a c c" "d e e f" "d e e f";
+      }
+     
+  }

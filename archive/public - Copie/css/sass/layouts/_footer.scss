@@ -1,0 +1,13 @@
+.footer {
+    justify-content: space-between;
+    padding: 10px ;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer >* {
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+    
+}

@@ -5,13 +5,12 @@
     -ms-transition:  500ms linear; 
     // transition: background-color 500ms linear; 
     transition:  500ms linear; 
-    height: 80px;
-    
+    height: 80px;    
 }
 
-.scrolled {  
-    height: 120px;     
-    background-color: $special-color; 
+.scrolled { 
+    // height: 60px;// media query
+    background-color: #01769A; 
     -webkit-transition:  500ms linear; 
     -moz-transition:  500ms linear; 
     -ms-transition:  500ms linear; 
