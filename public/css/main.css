@@ -32,28 +32,20 @@ a {
 }
 
 /*-------------fonts---------------*/
-h1, h2 {
-  font-family: "Abril Fatface", "cursive";
+body {
+  font-family: "Montserrat, Helvetica Neue, Arial, sans-serif";
 }
 
-h3, h4, p, span, a {
-  font-family: "Montserrat", sans-serif;
+h1 {
+  font-size: 36px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 26px;
 }
 
 h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 16px;
-}
-
-p, a {
-  font-size: 15px;
+  font-size: 22px;
 }
 
 .plant {
@@ -500,7 +492,7 @@ p, a {
   background-size: 5% 100%;
 }
 
-@media only screen and (min-width: 20px) {
+@media only screen and (min-width: 768px) {
   .hamburger {
     display: block;
   }

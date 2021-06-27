@@ -2,50 +2,25 @@
 /*-------------fonts---------------*/
 
 //font family
-h1,h2 {font-family:  $fontfamily;}
-h3,h4,p,span,a {font-family: $fontfamily;}
+body{
+    font-family: $fontfamily;
+}
 
 //font color
-.navbar-brand {
 
+
+
+//font-size
+h1{
+    font-size: $extralarge-large-phone;
 }
-h1,li,.nav a{
-
-} //white
-h2,h3,p,.footer a{
-    
-} // black
-
-//font others
-
-
 
 h2 {
-    font-size: $extralarge-phone;
-    // width: 60%;
-    // font-weight: 100;
-    // line-height: 100%;
+    font-size:$large-large-phone;    
 }
 h3 {
-    font-size: $large-phone;
-}
-h4 {
-    font-size: $medium-phone;
+    font-size: $extramedium-large-phone;
 }
 
-p,a{
-    font-size: $lessmedium-phone;
-}
+//font Weight
 
-
-//media query
-@include for-phone {
-    //display nav
-   
-}
-@include for-tablet {
-   
-}
-@include for-desktop {
-  
-}
