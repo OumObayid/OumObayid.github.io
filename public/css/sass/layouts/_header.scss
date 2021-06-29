@@ -1,12 +1,12 @@
 .navbar { 
-    li{
+   ul li{
         color:white;
     }
-    li a{
+   ul li a{
         transition:  500ms linear; 
         color:white;
     }
-    li a:hover{
+   ul li a:hover{
        background-color: rgba(255, 255, 255, 0.349);
        border-radius: 5px;
     //    color: rgb(3, 65, 83);
