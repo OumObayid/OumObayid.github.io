@@ -97,16 +97,16 @@ h3 {
   height: 80px;
 }
 
-.navbar ul li {
+.navbar li {
   color: white;
 }
 
-.navbar ul li a {
+.navbar li a {
   transition: 500ms linear;
   color: white;
 }
 
-.navbar ul li a:hover {
+.navbar li a:hover {
   background-color: rgba(255, 255, 255, 0.349);
   border-radius: 5px;
 }
