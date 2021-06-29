@@ -91,9 +91,24 @@ h3 {
 }
 
 .navbar {
+  color: white;
   background-color: rgba(255, 255, 255, 0);
   transition: 500ms linear;
   height: 80px;
+}
+
+.navbar li {
+  color: white;
+}
+
+.navbar li a {
+  transition: 500ms linear;
+  color: white;
+}
+
+.navbar li a:hover {
+  background-color: rgba(255, 255, 255, 0.349);
+  border-radius: 5px;
 }
 
 .scrolled {
