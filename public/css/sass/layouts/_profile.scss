@@ -5,10 +5,9 @@
     min-height: 100vh;
     background: transparent;
 }
-
+//avatar
 .profile-img a {
-    position: relative;
-    
+    position: relative;    
 }
 
 .profile-img a:before {
@@ -76,7 +75,7 @@
     -webkit-animation: none;
     animation: none;
 }
-
+// content-center
 .content-center {
 	position: absolute;
     top: 50%;
@@ -92,17 +91,18 @@
 .profile-bubbles {
 	position: relative;	   
 	overflow: hidden;
-	height: 100vh;
-	overflow: hidden;
+	height: 100vh;	
+	width: 100%;
+	border:1px solid red;
 }
 
 .bubbles-container {   
-    left: 50%;
-    width: 100%;
+    left: 50%;   
     max-width: 15rem;
-    transform: translateX(-50%);
+    transform: translateX(250%);
 	opacity: 0.75;
 	overflow: visible;
+	border:1px solid red;
 }
 
 .bubbles {

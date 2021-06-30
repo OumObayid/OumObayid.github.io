@@ -5,7 +5,7 @@ $(document).ready(function () {
      //navbar
     $(document).scroll(function () {
       var $nav = $(".navbar");
-    //   $nav.toggleClass('invisible',$(this).scrollTop()> 200 && $(this).scrollTop()<499);
+      $nav.toggleClass('invisible', $(this).scrollTop() > 40 && $(this).scrollTop()<499);
       $nav.toggleClass('scrolled', $(this).scrollTop() > 500);
     }); 
 

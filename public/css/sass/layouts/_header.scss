@@ -9,23 +9,22 @@
        border-radius: 5px;
        color: rgb(3, 65, 83);
     }   
-   
+    position: fixed;
+    top:0;
     background-color: rgba(255,255,255,0); // media query
-    -webkit-transition:  500ms linear; 
-    -moz-transition:  500ms linear; 
-    -ms-transition:  500ms linear;    
-    transition:  500ms linear; 
+    -webkit-transition:  0.3s linear; 
+    -moz-transition:  0.3s linear; 
+    -ms-transition:  0.3s linear;    
+    transition: 0.3s linear; 
     height: 80px;
     
 }
-
+.invisible{
+    top:-50px;   
+}
 .scrolled {  
-    height: 120px;     
-    background-image: $special-color; 
-    -webkit-transition:  500ms linear; 
-    -moz-transition:  500ms linear; 
-    -ms-transition:  500ms linear; 
-    transition:  500ms linear;     
+    // height: 300px;     
+    background-image: $special-color;    
 }
 
 

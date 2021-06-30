@@ -106,8 +106,10 @@ h4, .logo {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
   background-color: rgba(255, 255, 255, 0);
-  transition: 500ms linear;
+  transition: 0.3s linear;
   height: 80px;
 }
 
@@ -122,10 +124,12 @@ h4, .logo {
   color: #034153;
 }
 
+.invisible {
+  top: -50px;
+}
+
 .scrolled {
-  height: 120px;
   background-image: linear-gradient(90deg, #001415 0%, #00323f 35%, #10b1cd 100%);
-  transition: 500ms linear;
 }
 
 .parallax-window {
@@ -202,16 +206,17 @@ h4, .logo {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  overflow: hidden;
+  width: 100%;
+  border: 1px solid red;
 }
 
 .bubbles-container {
   left: 50%;
-  width: 100%;
   max-width: 15rem;
-  transform: translateX(-50%);
+  transform: translateX(250%);
   opacity: 0.75;
   overflow: visible;
+  border: 1px solid red;
 }
 
 .bubbles {
