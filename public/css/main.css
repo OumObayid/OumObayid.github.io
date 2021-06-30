@@ -25,14 +25,13 @@ body {
   background-color: #ffffff;
 }
 
-a {
+body a:hover {
   text-decoration: none;
-  color: white;
 }
 
 /*-------------fonts---------------*/
 body {
-  font-family: "Montserrat, Helvetica Neue, Arial, sans-serif";
+  font-family: Montserrat, "Helvetica Neue", Arial, sans-serif;
 }
 
 h1 {
@@ -45,6 +44,22 @@ h2 {
 
 h3 {
   font-size: 22px;
+}
+
+h4, .logo {
+  font-size: 15px !important;
+}
+
+.navbar a {
+  font-size: 13px;
+}
+
+.nav-link, .logo {
+  font-weight: 400;
+}
+
+.nav-link, .logo {
+  line-height: 26px;
 }
 
 .plant {
@@ -91,29 +106,24 @@ h3 {
 }
 
 .navbar {
-  color: white;
   background-color: rgba(255, 255, 255, 0);
   transition: 500ms linear;
   height: 80px;
 }
 
-.navbar li {
-  color: white;
-}
-
-.navbar li a {
+.navbar a {
   transition: 500ms linear;
-  color: white;
+  color: white !important;
 }
 
-.navbar li a:hover {
+.navbar a:not(.logo):hover {
   background-color: rgba(255, 255, 255, 0.349);
   border-radius: 5px;
 }
 
 .scrolled {
   height: 120px;
-  background-color: #013044;
+  background-image: linear-gradient(90deg, #001415 0%, #00323f 35%, #10b1cd 100%);
   transition: 500ms linear;
 }
 
@@ -195,8 +205,6 @@ h3 {
 }
 
 .bubbles-container {
-  position: absolute;
-  top: 0;
   left: 50%;
   width: 100%;
   max-width: 15rem;

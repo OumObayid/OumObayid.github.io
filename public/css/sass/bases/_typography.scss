@@ -12,15 +12,49 @@ body{
 
 //font-size
 h1{
-    font-size: $extralarge-large-phone;
+    font-size: $extralarge;
 }
 
 h2 {
-    font-size:$large-large-phone;    
+    font-size:$large;    
 }
 h3 {
-    font-size: $extramedium-large-phone;
+    font-size: $extramedium;
+}
+h4 ,.logo{
+    font-size:$medium !important;
+}
+.navbar a{
+    font-size:$extrasmall;
 }
 
 //font Weight
+// {
+//    font-weight: $bigweight;    
+// }
+.nav-link, .logo{
+    font-weight: $smallweight ;       
+ }
+//  {
+//     font-weight: $smallweight;    
+//  }
 
+//line height
+// {
+//     line-height: $weight1;
+// }
+// {
+//     line-height: $weight2;
+// }
+// {
+//     line-height: $weight3;
+// }
+.nav-link, .logo{
+        line-height: $height4;
+}
+// {
+//     line-height: $weight5;
+// }
+// {
+//     line-height: $weight6;
+// }

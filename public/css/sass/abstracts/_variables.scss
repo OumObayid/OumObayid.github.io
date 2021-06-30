@@ -2,9 +2,9 @@
     $primary-color1:#302f2f;
     $primary-color2:#9c9696;
     $secondary-color:#ffffff;
-    $special-color:#013044;
+    $special-color: linear-gradient(90deg, rgba(0,20,21,1) 0%, rgba(0,50,63,1) 35%, rgba(16,177,205,1) 100%);
     //Variables font family
-    $fontfamily:'Montserrat, Helvetica Neue, Arial, sans-serif';
+    $fontfamily: Montserrat,'Helvetica Neue', Arial, sans-serif;
    
     //Variable Padding for section
     $padding-left-right:100px;
@@ -18,13 +18,13 @@
    
     
     //Variables Font size       
-    $extralarge-large-phone: 36px;
-    $large-large-phone: 26px;
-    $extramedium-large-phone:22px;
-    $medium-large-phone: 15px;
-    $lessmedium-large-phone: 14px;
-    $extrasmall-large-phone:13px;
-    $small-large-phone:12px;
+    $extralarge: 36px;
+    $large: 26px;
+    $extramedium:22px;
+    $medium: 15px;
+    $lessmedium: 14px;
+    $extrasmall:13px;
+    $small:12px;
    
     //Variables font weight
     $bigweight: 700;
@@ -32,10 +32,10 @@
     $smallweight:400;
 
     //Variables line height
-    $weight1:39px;
-    $weight2:35px;
-    $weight3:31px;
-    $weight4:26px;
-    $weight5:23px;
-    $weight6:21px
+    $height1:39px;
+    $height2:35px;
+    $height3:31px;
+    $height4:26px;
+    $height5:23px;
+    $height6:21px
     

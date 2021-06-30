@@ -1,20 +1,11 @@
+//initialisation aos
 AOS.init(); 
+
 $(document).ready(function () {
-     //initialisation aos
-    
-     
-    //change navbar color on scrolling
-    // $(window).scroll(function() { 
-    //     if ($(document).scrollTop() > 450) { 
-    //       $(".fixed-top").addClass('colorNavbar2'); 
-    //       $(".fixed-top").removeClass('colorNavbar1');          
-    //     } else {
-    //         $(".fixed-top").addClass('colorNavbar1'); 
-    //       $(".fixed-top").removeClass('colorNavbar2'); 
-    //     }
-    //   });  
+     //navbar
     $(document).scroll(function () {
-      var $nav = $(".fixed-top");
+      var $nav = $(".navbar");
+    //   $nav.toggleClass('invisible',$(this).scrollTop()> 200 && $(this).scrollTop()<499);
       $nav.toggleClass('scrolled', $(this).scrollTop() > 500);
     }); 
 
