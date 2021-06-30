@@ -137,6 +137,10 @@ h4, .logo {
   background: transparent;
 }
 
+.logo {
+  font-size: url(../../../fonts/PragmaticaMedium.otf) !important;
+}
+
 .profile-img a {
   position: relative;
 }
@@ -202,265 +206,142 @@ h4, .logo {
   max-width: 880px;
 }
 
-.profile-bubbles {
+.bubble-ocean {
   position: relative;
-  overflow: hidden;
+  width: 100vw;
   height: 100vh;
-  width: 100%;
-  border: 1px solid red;
 }
 
-.bubbles-container {
-  left: 50%;
-  max-width: 15rem;
-  transform: translateX(250%);
-  opacity: 0.75;
-  overflow: visible;
-  border: 1px solid red;
+.bubble {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  background: #275b7a;
+  background: radial-gradient(circle, #275b7a 0%, white 83%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#275b7a",endColorstr="#ffffff",GradientType=1);
+  bottom: -10px;
+  animation: bubble 15s ease-in-out infinite, sideWays 4s ease-in-out infinite alternate;
 }
 
-.bubbles {
-  width: 100%;
-  height: auto;
-}
-
-.bubbles circle {
-  stroke: white;
-  fill: none;
-}
-
-.bubbles > g > g:nth-of-type(3n) circle {
-  stroke: #87f5fb;
-}
-
-.bubbles > g > g:nth-of-type(4n) circle {
-  stroke: #8be8cb;
-}
-
-.bubbles-large {
-  overflow: visible;
-}
-
-.bubbles-large > g {
-  transform: translateY(2048px);
-  opacity: 0;
-  will-change: transform, opacity;
-}
-
-.bubbles-large g:nth-of-type(1) {
-  animation: up 6.5s infinite;
-}
-
-.bubbles-large g:nth-of-type(1) g {
-  transform: translateX(350px);
-}
-
-.bubbles-large g:nth-of-type(1) circle {
-  animation: wobble 3s infinite ease-in-out;
-}
-
-.bubbles-large g:nth-of-type(2) {
-  animation: up 5.25s 250ms infinite;
-}
-
-.bubbles-large g:nth-of-type(2) g {
-  transform: translateX(450px);
-}
-
-.bubbles-large g:nth-of-type(2) circle {
-  animation: wobble 3s infinite ease-in-out;
-}
-
-.bubbles-large g:nth-of-type(3) {
-  animation: up 6s 750ms infinite;
-}
-
-.bubbles-large g:nth-of-type(3) g {
-  transform: translateX(700px);
-}
-
-.bubbles-large g:nth-of-type(3) circle {
-  animation: wobble 3s infinite ease-in-out;
-}
-
-.bubbles-large g:nth-of-type(4) {
-  animation: up 5.5s 1.5s infinite;
-}
-
-.bubbles-large g:nth-of-type(4) g {
-  transform: translateX(500px);
-}
-
-.bubbles-large g:nth-of-type(4) circle {
-  animation: wobble 3s infinite ease-in-out;
-}
-
-.bubbles-large g:nth-of-type(5) {
-  animation: up 6.5s 4s infinite;
-}
-
-.bubbles-large g:nth-of-type(5) g {
-  transform: translateX(675px);
-}
-
-.bubbles-large g:nth-of-type(5) circle {
-  animation: wobble 3s infinite ease-in-out;
-}
-
-.bubbles-small {
-  overflow: visible;
-}
-
-.bubbles-small > g {
-  transform: translateY(2048px);
-  opacity: 0;
-  will-change: transform, opacity;
-}
-
-.bubbles-small g circle {
-  transform: scale(0);
-}
-
-.bubbles-small g:nth-of-type(1) {
-  animation: up 5.25s infinite;
-}
-
-.bubbles-small g:nth-of-type(1) g {
-  transform: translateX(350px);
-}
-
-.bubbles-small g:nth-of-type(1) circle {
-  animation: wobble 3s infinite ease-in-out;
-}
-
-.bubbles-small g:nth-of-type(2) {
-  animation: up 5.75s infinite;
-}
-
-.bubbles-small g:nth-of-type(2) g {
-  transform: translateX(750px);
-}
-
-.bubbles-small g:nth-of-type(2) circle {
-  animation: wobble 3s infinite ease-in-out;
-}
-
-.bubbles-small g:nth-of-type(3) {
-  animation: up 5.25s 250ms infinite;
-}
-
-.bubbles-small g:nth-of-type(3) g {
-  transform: translateX(350px);
-}
-
-.bubbles-small g:nth-of-type(3) circle {
-  animation: wobble 3s 250ms infinite ease-in-out;
-}
-
-.bubbles-small g:nth-of-type(4) {
-  animation: up 5.75s 325ms infinite;
-}
-
-.bubbles-small g:nth-of-type(4) g {
-  transform: translateX(180px);
-}
-
-.bubbles-small g:nth-of-type(4) circle {
-  animation: wobble 3s 325ms infinite ease-in-out;
-}
-
-.bubbles-small g:nth-of-type(5) {
-  animation: up 6s 125ms infinite;
-}
-
-.bubbles-small g:nth-of-type(5) g {
-  transform: translateX(350px);
-}
-
-.bubbles-small g:nth-of-type(5) circle {
-  animation: wobble 3s 250ms infinite ease-in-out;
-}
-
-.bubbles-small g:nth-of-type(6) {
-  animation: up 5.13s 250ms infinite;
-}
-
-.bubbles-small g:nth-of-type(6) g {
-  transform: translateX(650px);
-}
-
-.bubbles-small g:nth-of-type(6) circle {
-  animation: wobble 3s 125ms infinite ease-in-out;
-}
-
-.bubbles-small g:nth-of-type(7) {
-  animation: up 6.25s 350ms infinite;
-}
-
-.bubbles-small g:nth-of-type(7) g {
-  transform: translateX(480px);
-}
-
-.bubbles-small g:nth-of-type(7) circle {
-  animation: wobble 3s 325ms infinite ease-in-out;
-}
-
-.bubbles-small g:nth-of-type(8) {
-  animation: up 7s 200ms infinite;
-}
-
-.bubbles-small g:nth-of-type(8) g {
-  transform: translateX(330px);
-}
-
-.bubbles-small g:nth-of-type(8) circle {
-  animation: wobble 3s 325ms infinite ease-in-out;
-}
-
-.bubbles-small g:nth-of-type(9) {
-  animation: up 6.25s 233ms infinite;
-}
-
-.bubbles-small g:nth-of-type(9) g {
-  transform: translateX(230px);
-}
-
-.bubbles-small g:nth-of-type(9) circle {
-  animation: wobble 3s 275ms infinite ease-in-out;
-}
-
-.bubbles-small g:nth-of-type(10) {
-  animation: up 6s 900ms infinite;
-}
-
-.bubbles-small g:nth-of-type(10) g {
-  transform: translateX(730px);
-}
-
-.bubbles-small g:nth-of-type(10) circle {
-  animation: wobble 2s 905ms infinite ease-in-out;
-}
-
-@keyframes wobble {
-  33% {
-    transform: translateX(-50px);
-  }
-  66% {
-    transform: translateX(50px);
-  }
-}
-
-@keyframes up {
+@keyframes bubble {
   0% {
-    opacity: 0;
-  }
-  10%, 90% {
-    opacity: 1;
+    transform: translateY(0%);
+    opacity: 0.06;
   }
   100% {
-    opacity: 0;
-    transform: translateY(-1024px);
+    transform: translateY(-120vh);
   }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 3em;
+  }
+}
+
+.bubble--1 {
+  left: 10%;
+  animation-delay: 0.5s;
+  animation-duration: 16s;
+  opacity: 0.2;
+}
+
+.bubble--2 {
+  width: 15px;
+  height: 15px;
+  left: 40%;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  opacity: 0.1;
+}
+
+.bubble--3 {
+  width: 10px;
+  height: 10px;
+  left: 30%;
+  animation-delay: 5s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubble--4 {
+  width: 25px;
+  height: 25px;
+  left: 40%;
+  animation-delay: 8s;
+  animation-duration: 17s;
+  opacity: 0.2;
+}
+
+.bubble--5 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  animation-delay: 10s;
+  animation-duration: 15s;
+  opacity: 0.1;
+}
+
+.bubble--6 {
+  width: 10px;
+  height: 10px;
+  left: 80%;
+  animation-delay: 3s;
+  animation-duration: 30s;
+  opacity: 0.4;
+}
+
+.bubble--7 {
+  width: 15px;
+  height: 15px;
+  left: 90%;
+  animation-delay: -7s;
+  animation-duration: 25s;
+  opacity: 0.3;
+}
+
+.bubble--9 {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  bottom: 30px;
+  animation-delay: -5s;
+  animation-duration: 19s;
+  opacity: 0.2;
+}
+
+.bubble--10 {
+  width: 40px;
+  height: 40px;
+  left: 30%;
+  bottom: 30px;
+  animation-delay: -21s;
+  animation-duration: 16s;
+  opacity: 0.3;
+}
+
+.bubble--11 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  bottom: 30px;
+  animation-delay: -13.75s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubble--11 {
+  width: 25px;
+  height: 25px;
+  left: 90%;
+  bottom: 30px;
+  animation-delay: -10.5s;
+  animation-duration: 19s;
+  opacity: 0.3;
 }
 
 .footer {
