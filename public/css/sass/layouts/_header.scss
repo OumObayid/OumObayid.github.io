@@ -7,7 +7,7 @@
     a:not(.logo):hover{
        background-color: $color-bgLinkNav;
        border-radius: 5px;
-       color:  $color-linkNavHover !important;
+       color:  $color-linkNavHover ;
     }   
     position: fixed;
     top:0;

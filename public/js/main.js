@@ -1,7 +1,12 @@
 //initialisation aos
 AOS.init(); 
 
-$(document).ready(function () {   
+$(document).ready(function () {  
+    //mettre la page au top lors de son rechargement
+    $('html, body').animate({ 
+        scrollTop: '0px' 
+    }); 
+   
      //navbar
     $(document).scroll(function () {
       var $nav = $(".navbar");
