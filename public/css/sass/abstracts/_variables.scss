@@ -1,10 +1,12 @@
     //Variables Colors
-    $primary-color1:#302f2f;
-    $primary-color2:#9c9696;
-    $secondary-color:#ffffff;
-    $special-color: linear-gradient(90deg, rgba(0,20,21,1) 0%, rgba(0,50,63,1) 35%, rgba(16,177,205,1) 100%);
+    $color-title:#302f2f;
+    $color-paragraph:#9c9696;
+    $color-profile:#ffffff;
+    $color-bgNav: linear-gradient(90deg, rgba(0,20,21,1) 0%, rgba(0,50,63,1) 35%, rgba(16,177,205,1) 100%);
+    $color-bgLinkNav: rgba(255, 255, 255, 0.349);
+    $color-linkNavHover:#034153;
     //Variables font family
-    $fontfamily: Montserrat,'Helvetica Neue', Arial, sans-serif;
+    $fontfamily : 'Cinzel Decorative', cursive;
    
     //Variable Padding for section
     $padding-left-right:100px;

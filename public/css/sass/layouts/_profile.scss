@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
 //parallax for image profile
 .parallax-window {
     min-height: 100vh;
@@ -9,7 +8,7 @@
 
 .content-center h1{
 
-	font-family: 'Cinzel Decorative', cursive;
+	font-family:  $fontfamily;
 	
 }
 //avatar

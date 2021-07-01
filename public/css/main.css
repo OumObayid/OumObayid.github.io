@@ -115,13 +115,13 @@ h4, .logo {
 
 .navbar a {
   transition: 500ms linear;
-  color: white !important;
+  color: #ffffff !important;
 }
 
 .navbar a:not(.logo):hover {
   background-color: rgba(255, 255, 255, 0.349);
   border-radius: 5px;
-  color: #034153;
+  color: #034153 !important;
 }
 
 .invisible {
@@ -130,6 +130,7 @@ h4, .logo {
 
 .scrolled {
   background-image: linear-gradient(90deg, #001415 0%, #00323f 35%, #10b1cd 100%);
+  opacity: 0.9;
 }
 
 .parallax-window {
@@ -138,7 +139,7 @@ h4, .logo {
 }
 
 .content-center h1 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: "Cinzel Decorative", cursive;
 }
 
 .profile-img a {
