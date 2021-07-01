@@ -311,6 +311,7 @@ h4, .logo {
   width: 15px;
   height: 15px;
   left: 25%;
+  bottom: 30px;
   animation-delay: -7s;
   animation-duration: 25s;
   opacity: 0.3;
@@ -320,6 +321,7 @@ h4, .logo {
   width: 30px;
   height: 30px;
   left: 38%;
+  bottom: 30px;
   animation-delay: 2s;
   animation-duration: 19s;
   opacity: 0.2;
@@ -329,6 +331,7 @@ h4, .logo {
   width: 20px;
   height: 20px;
   left: 20%;
+  bottom: 30px;
   animation-delay: -21s;
   animation-duration: 16s;
   opacity: 0.3;
@@ -338,6 +341,7 @@ h4, .logo {
   width: 30px;
   height: 30px;
   left: 70%;
+  bottom: 30px;
   animation-delay: -13.75s;
   animation-duration: 15s;
   opacity: 0.3;
@@ -347,6 +351,7 @@ h4, .logo {
   width: 25px;
   height: 25px;
   left: 95%;
+  bottom: 30px;
   animation-delay: 8s;
   animation-duration: 19s;
   opacity: 0.3;
@@ -356,6 +361,7 @@ h4, .logo {
   width: 10px;
   height: 10px;
   left: 15%;
+  bottom: 30px;
   animation-delay: -5s;
   animation-duration: 10s;
   opacity: 0.3;
@@ -365,6 +371,7 @@ h4, .logo {
   width: 9px;
   height: 9px;
   left: 18%;
+  bottom: 30px;
   animation-delay: -9s;
   animation-duration: 10s;
   opacity: 0.4;
@@ -374,6 +381,7 @@ h4, .logo {
   width: 25px;
   height: 25px;
   left: 65%;
+  bottom: 30px;
   animation-delay: -8s;
   animation-duration: 12s;
   opacity: 0.3;
@@ -383,6 +391,7 @@ h4, .logo {
   width: 12px;
   height: 12px;
   left: 80%;
+  bottom: 30px;
   animation-delay: -11s;
   animation-duration: 8s;
   opacity: 0.3;
