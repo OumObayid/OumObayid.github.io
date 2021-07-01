@@ -353,7 +353,6 @@ h4, .logo {
   height: 25px;
   left: 95%;
   bottom: 30px;
-  animation-delay: 8s;
   animation-duration: 19s;
   opacity: 0.3;
 }
@@ -393,7 +392,7 @@ h4, .logo {
   height: 12px;
   left: 80%;
   bottom: 30px;
-  animation-delay: -11s;
+  animation-delay: -1s;
   animation-duration: 8s;
   opacity: 0.3;
 }
