@@ -271,6 +271,7 @@ h4, .logo {
   width: 10px;
   height: 10px;
   left: 30%;
+  bottom: 30px;
   animation-delay: 5s;
   animation-duration: 20s;
   opacity: 0.3;
