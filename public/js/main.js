@@ -1,7 +1,7 @@
 //initialisation aos
 AOS.init(); 
 
-$(document).ready(function () {
+$(document).ready(function () {   
      //navbar
     $(document).scroll(function () {
       var $nav = $(".navbar");
@@ -16,7 +16,7 @@ $(document).ready(function () {
             return;
         }
         $('html, body').animate({
-            scrollTop: $(the_id).offset().top
+            scrollTop: ($(the_id).offset()).top - 70
         }, 'slow');
         return false;
     });

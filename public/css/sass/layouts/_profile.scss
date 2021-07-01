@@ -1,12 +1,16 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
 //parallax for image profile
 .parallax-window {
     min-height: 100vh;
     background: transparent;
 }
-.logo{
-	font-size: url(../../../fonts/PragmaticaMedium.otf) !important;
+
+
+.content-center h1{
+
+	font-family: 'Cinzel Decorative', cursive;
+	
 }
 //avatar
 .profile-img a {
@@ -15,7 +19,7 @@
 
 .profile-img a:before {
     content: "";
-    border: 40px solid rgba(2, 2, 2, 0.6);
+    border: 40px solid rgba(78, 130, 151, 0.3);
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     border-radius: 50%;
     height: 180px;
@@ -97,8 +101,8 @@
 	height: 100vh;
 }
 .bubble {
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 	border-radius: 100%;
 	position: absolute;
 	background: rgb(39,91,122);
@@ -107,7 +111,7 @@
 	background: radial-gradient(circle, rgba(39,91,122,1) 0%, rgba(255,255,255,1) 83%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#275b7a",endColorstr="#ffffff",GradientType=1);
 	bottom: -10px;
-	// opacity: 0.6;
+	opacity: 0.3;
 	animation: bubble 15s ease-in-out infinite,
 	  sideWays 4s ease-in-out infinite alternate;
   }
@@ -126,22 +130,29 @@
 	0% {
 	  margin-left: 0px;
 	}
+	50% {
+		margin-left: 3em;
+	  }
 	100% {
-	  margin-left: 3em;
+	  margin-left: 1em;
 	}
   }
   
   .bubble--1 {
-	left: 10%;
+	width: 15px;
+	height: 15px;
+	left: 15%;
+	// bottom: 30px;
 	animation-delay: 0.5s;
 	animation-duration: 16s;
-	opacity: 0.2;
+	opacity: 0.3;
   }
   
   .bubble--2 {
 	width: 15px;
 	height: 15px;
 	left: 40%;
+	// bottom: 30px;
 	animation-delay: 1s;
 	animation-duration: 10s;
 	opacity: 0.1;
@@ -151,6 +162,7 @@
 	width: 10px;
 	height: 10px;
 	left: 30%;
+	// bottom: 30px;
 	animation-delay: 5s;
 	animation-duration: 20s;
 	opacity: 0.3;
@@ -159,8 +171,9 @@
   .bubble--4 {
 	width: 25px;
 	height: 25px;
-	left: 40%;
-	animation-delay: 8s;
+	left: 45%;
+	// bottom: 30px;
+	animation-delay: 3s;
 	animation-duration: 17s;
 	opacity: 0.2;
   }
@@ -169,16 +182,18 @@
 	width: 30px;
 	height: 30px;
 	left: 60%;
-	animation-delay: 10s;
+	// bottom: 30px;
+	animation-delay: -10s;
 	animation-duration: 15s;
 	opacity: 0.1;
   }
   
   .bubble--6 {
-	width: 10px;
-	height: 10px;
-	left: 80%;
-	animation-delay: 3s;
+	width: 30px;
+	height: 30px;
+	left: 90%;
+	// bottom: 30px;
+	animation-delay: 10s;
 	animation-duration: 30s;
 	opacity: 0.4;
   }
@@ -186,27 +201,28 @@
   .bubble--7 {
 	width: 15px;
 	height: 15px;
-	left: 90%;
+	left: 25%;
+	// bottom: 30px;
 	animation-delay: -7s;
 	animation-duration: 25s;
 	opacity: 0.3;
   }
   
   .bubble--9 {
-	width: 20px;
-	height: 20px;
-	left: 50%;
-	bottom: 30px;
-	animation-delay: -5s;
+	width: 30px;
+	height: 30px;
+	left: 38%;
+	// bottom: 30px;
+	animation-delay: 2s;
 	animation-duration: 19s;
 	opacity: 0.2;
   }
   
   .bubble--10 {
-	width: 40px;
-	height: 40px;
-	left: 30%;
-	bottom: 30px;
+	width: 20px;
+	height: 20px;
+	left: 20%;
+	// bottom: 30px;
 	animation-delay: -21s;
 	animation-duration: 16s;
 	opacity: 0.3;
@@ -215,20 +231,61 @@
   .bubble--11 {
 	width: 30px;
 	height: 30px;
-	left: 60%;
-	bottom: 30px;
+	left: 70%;
+	// bottom: 30px;
 	animation-delay: -13.75s;
-	animation-duration: 20s;
+	animation-duration: 15s;
 	opacity: 0.3;
   }
   
-  .bubble--11 {
+  .bubble--12 {
 	width: 25px;
 	height: 25px;
-	left: 90%;
-	bottom: 30px;
-	animation-delay: -10.5s;
+	left: 95%;
+	// bottom: 30px;
+	animation-delay: 8s;
 	animation-duration: 19s;
 	opacity: 0.3;
   }
+
+  .bubble--13 {
+	width: 10px;
+	height: 10px;
+	left: 15%;
+	// bottom: 30px;
+	animation-delay: -5s;
+	animation-duration: 10s;
+	opacity: 0.3;
+  }
+
+  .bubble--14 {
+	width: 9px;
+	height: 9px;
+	left: 18%;
+	// bottom: 30px;
+	animation-delay: -9s;
+	animation-duration: 10s;
+	opacity: 0.4;
+  }
+
+  .bubble--15 {
+	width: 25px;
+	height: 25px;
+	left: 65%;
+	// bottom: 30px;
+	animation-delay: -8s;
+	animation-duration: 12s;
+	opacity: 0.3;
+  }
+
+  .bubble--16 {
+	width: 12px;
+	height: 12px;
+	left: 80%;
+	// bottom: 30px;
+	animation-delay: -11s;
+	animation-duration: 8s;
+	opacity: 0.3;
+  }
+
   

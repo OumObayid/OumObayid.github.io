@@ -9,14 +9,14 @@
   @include for-tablet {
   // header---------------------------
      .scrolled { 
-      height: 60px;
+      // height: 60px;
      }
   }
   
   @include for-desktop {
   // header---------------------------
      .scrolled { 
-       height: 60px;
+      //  height: 60px;
      }
     
   }
