@@ -142,10 +142,6 @@ h4, .logo {
   background: transparent;
 }
 
-.content-center h1 {
-  font-family: "Cinzel Decorative", cursive;
-}
-
 .profile-img a {
   position: relative;
 }
@@ -179,6 +175,22 @@ h4, .logo {
   }
 }
 
+.content-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 15px;
+  color: #ffffff;
+  width: 100%;
+  max-width: 880px;
+}
+
+.content-center h1 {
+  font-family: "Cinzel Decorative", cursive;
+}
+
 .profile-img img {
   position: relative;
   border-radius: 50%;
@@ -199,16 +211,16 @@ h4, .logo {
   animation: none;
 }
 
-.content-center {
+#social {
   position: absolute;
-  top: 50%;
+  top: 100vh;
   left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   padding: 0 15px;
   color: #ffffff;
   width: 100%;
   max-width: 880px;
+  z-index: 9999;
 }
 
 .bubble-ocean {

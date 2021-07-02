@@ -6,11 +6,6 @@
 }
 
 
-.content-center h1{
-
-	font-family:  $fontfamily;
-	
-}
 //avatar
 .profile-img a {
     position: relative;    
@@ -61,6 +56,21 @@
     }
 }
 
+// content-center
+.content-center {
+	h1{
+		font-family:  $fontfamily;		
+	}
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 15px;
+    color: #ffffff;
+    width: 100%;
+    max-width: 880px;
+}
 .profile-img img {
     position: relative;
     border-radius: 50%;
@@ -81,18 +91,21 @@
     -webkit-animation: none;
     animation: none;
 }
-// content-center
-.content-center {
+
+//social
+#social{
 	position: absolute;
-    top: 50%;
+    top: 100vh;
     left: 50%;
-    transform: translate(-50%, -50%);
+    // transform: translate(-50%, -50%);
     text-align: center;
     padding: 0 15px;
     color: #ffffff;
     width: 100%;
     max-width: 880px;
+	z-index: 9999;
 }
+
 //bulles
 .bubble-ocean{
 	position: relative;
