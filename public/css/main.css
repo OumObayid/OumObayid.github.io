@@ -213,14 +213,51 @@ h4, .logo {
 
 #social {
   position: absolute;
-  top: 100vh;
+  top: 98%;
   left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  padding: 0 15px;
   color: #ffffff;
-  width: 100%;
-  max-width: 880px;
-  z-index: 9999;
+}
+
+#social .fa {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+  border-radius: 50%;
+}
+
+#social .fa:hover {
+  opacity: 0.7;
+}
+
+#social .fa-facebook {
+  background: #3B5998;
+}
+
+#social .fa-twitter {
+  background: #55ACEE;
+}
+
+#social .fa-linkedin {
+  background: #007bb5;
+}
+
+#social .fa-instagram {
+  background: #8a3ab9;
+}
+
+#social .fa-pinterest {
+  background: #cb2027;
+}
+
+#social .fa-github {
+  background: #000000;
 }
 
 .bubble-ocean {

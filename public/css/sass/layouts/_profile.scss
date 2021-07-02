@@ -95,15 +95,55 @@
 //social
 #social{
 	position: absolute;
-    top: 100vh;
+    top: 98%;
     left: 50%;
-    // transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
-    padding: 0 15px;
     color: #ffffff;
-    width: 100%;
-    max-width: 880px;
-	z-index: 9999;
+	
+    .fa {  
+		width: 40px;
+		height: 40px;
+		padding: 10px;
+		font-size: 20px;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 2px;
+		color: white;
+		border-radius: 50%; 
+	  }
+
+	  .fa:hover {
+		  opacity: 0.7;		 
+	  }
+
+	  .fa-facebook {
+		background: #3B5998;
+	  }
+
+	  .fa-twitter {
+		background: #55ACEE;
+	  }
+
+	  .fa-linkedin {
+		background: #007bb5;
+	  }
+	  
+	  .fa-instagram {
+		background: #8a3ab9;
+	  }
+
+	  .fa-pinterest {
+		background: #cb2027;
+	  }
+
+	  .fa-github {
+		background: #000000;
+	  }			
+
+
+	  
+	  
 }
 
 //bulles
