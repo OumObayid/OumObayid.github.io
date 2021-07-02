@@ -121,7 +121,11 @@ h4, .logo {
 .navbar a:not(.logo):hover {
   background-color: rgba(255, 255, 255, 0.349);
   border-radius: 5px;
-  color: #034153;
+}
+
+.active a {
+  background-color: rgba(255, 255, 255, 0.349);
+  border-radius: 5px;
 }
 
 .invisible {
@@ -303,7 +307,7 @@ h4, .logo {
   height: 30px;
   left: 90%;
   bottom: 30px;
-  animation-delay: 10s;
+  animation-delay: 2s;
   animation-duration: 30s;
   opacity: 0.4;
 }
@@ -408,6 +412,36 @@ h4, .logo {
   width: 400px;
   margin: 10px;
   text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  background: #27B5CE;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 50;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.back-to-top img {
+  width: 20px;
+  height: 20px;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #1C5B69;
+  transition: background 0.2s ease-in-out;
 }
 
 .flexrow {
