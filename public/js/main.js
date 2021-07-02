@@ -46,7 +46,7 @@ $(document).ready(function () {
  var navbar = $('.navbar');
 
  $(window).on('scroll', function() {
-   var cur_pos = $(this).scrollTop() + 200;
+   var cur_pos = $(this).scrollTop() + 100;
 
    sections.each(function() {
      var top = $(this).offset().top,
