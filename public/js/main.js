@@ -1,20 +1,6 @@
 //initialisation aos
 AOS.init(); 
-//fonction onscroll() for Navigation active state on scroll
-function onScroll(){
-  var scrollPosition = $(document).scrollTop();
-  $('.navbar-nav a').each(function () {
-    var currentLink = $(this);
-    var refElement = $(currentLink.attr("href"));
-    if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-      $('.navbar-nav li a').removeClass("active");
-      currentLink.addClass("active");
-    }
-    else{
-      currentLink.removeClass("active");
-    }
-  });
-}
+
 //jquery
 $(document).ready(function () {  
     //mettre la page au top lors de son rechargement
@@ -57,25 +43,37 @@ $(document).ready(function () {
     });
 
  // Navigation active state on scroll
-        $(document).on("scroll", onScroll);
-				$('a[href^="#"]').on('click', function (e) {
-					e.preventDefault();
-					$(document).off("scroll");
+ var sections = $('.sectionNav')
+  , nav = $('.navbar')
+  , nav_height = nav.outerHeight();
 
-					$('a').each(function () {
-						$(this).removeClass('active');
-					})
-					$(this).addClass('active');
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+  
+  sections.each(function() {
+    var top = $(this).offset().top - nav_height,
+        bottom = top + $(this).outerHeight() + 5 ;
+    
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('a').removeClass('active');
+      sections.removeClass('active');
+      
+      $(this).addClass('active');
+      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+    }
+  });
+});
 
-					var target = this.hash;
-					$target = $(target);
-					$('html, body').stop().animate({
-						'scrollTop': $target.offset().top
-					}, 500, 'swing', function () {
-						window.location.hash = target;
-						$(document).on("scroll", onScroll);
-					});
-				});
+// nav.find('a').on('click', function () {
+//   var $el = $(this)
+//     , id = $el.attr('href');
+  
+//   $('html, body').animate({
+//     scrollTop: $(id).offset().top 
+//   }, 500);
+  
+//   return false;
+// });
         
        
  
