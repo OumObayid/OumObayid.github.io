@@ -56,9 +56,9 @@ $(document).ready(function () {
  , nav = $('.navbar')
  , nav_height = nav.outerHeight()
  ;
-
+cur_pos = $(this).scrollTop(); //global
 $(window).on('scroll', function () {    
-      cur_pos = $(this).scrollTop(); //global
+      
       sections.each(function() {
         var top = $(this).offset().top - nav_height ,
             bottom = top + $(this).outerHeight()  ;
