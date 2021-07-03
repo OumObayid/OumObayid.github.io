@@ -1,15 +1,9 @@
 //initialisation aos
 AOS.init(); 
 
-     $('.navbar-toggler').removeAttr("aria-expanded");
 //jquery
 $(document).ready(function () {  
-   //close navigation bar on clicking for mobile
-   $('nav ul li a').on('click', function () {
-    //  $('.navbar-toggler').removeAttr("aria-expanded");
-     $('.navbar-toggler').attr("aria-expanded",false);
-});
-
+   
     //mettre la page au top lors de son rechargement
     $('html, body').animate({ 
         scrollTop: '0px' 
@@ -56,9 +50,9 @@ $(document).ready(function () {
  , nav = $('.navbar')
  , nav_height = nav.outerHeight()
  ;
-cur_pos = $(this).scrollTop(); //global
+
 $(window).on('scroll', function () {    
-      
+      cur_pos = $(this).scrollTop(); //global
       sections.each(function() {
         var top = $(this).offset().top - nav_height ,
             bottom = top + $(this).outerHeight()  ;
