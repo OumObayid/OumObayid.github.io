@@ -1,11 +1,13 @@
 //initialisation aos
 AOS.init(); 
 
+     $('.navbar-toggler').removeAttr("aria-expanded");
 //jquery
 $(document).ready(function () {  
    //close navigation bar on clicking for mobile
    $('nav ul li a').on('click', function () {
-     $('.navbar-toggler').removeAttr("aria-expanded");
+    //  $('.navbar-toggler').removeAttr("aria-expanded");
+     $('.navbar-toggler').attr("aria-expanded",false);
 });
 
     //mettre la page au top lors de son rechargement
