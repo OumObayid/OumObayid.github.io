@@ -17,7 +17,7 @@
     transition: 0.3s linear; 
     // height: 80px;    
 }
-a.active{
+a.active:not(.logo){
 
     background-color: $color-bgLinkNav;
        border-radius: 5px;

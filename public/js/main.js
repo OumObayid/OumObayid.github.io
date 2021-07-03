@@ -42,39 +42,44 @@ $(document).ready(function () {
         return false;
     });
 
- // Navigation active state on scroll
- var sections = $('.sectionNav')
-  , nav = $('.navbar')
-  , nav_height = nav.outerHeight();
+ 
+  // Navigation active state on scroll or on click 
+  //change on scroll
+ var sections = $('.section')
+ , nav = $('.navbar')
+ , nav_height = nav.outerHeight()
+ ;
 
-$(window).on('scroll', function () {
-  var cur_pos = $(this).scrollTop();
-  
-  sections.each(function() {
-    var top = $(this).offset().top - nav_height,
-        bottom = top + $(this).outerHeight() + 5 ;
-    
-    if (cur_pos >= top && cur_pos <= bottom) {
-      nav.find('a').removeClass('active');
-      sections.removeClass('active');
-      
-      $(this).addClass('active');
-      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-    }
-  });
-});
-
-// nav.find('a').on('click', function () {
-//   var $el = $(this)
-//     , id = $el.attr('href');
-  
-//   $('html, body').animate({
-//     scrollTop: $(id).offset().top 
-//   }, 500);
-  
-//   return false;
-// });
+$(window).on('scroll', function () {    
+      cur_pos = $(this).scrollTop(); //global
+      sections.each(function() {
+        var top = $(this).offset().top - nav_height ,
+            bottom = top + $(this).outerHeight()  ;
         
+        if (cur_pos >= top && cur_pos <= bottom) {
+          nav.find('a').removeClass('active');     
+          
+          $(this).addClass('active');
+          nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+        }
+      });
+      if (cur_pos >= 0 && cur_pos <= window.innerHeight - nav_height) {
+        nav.find('a').removeClass('active');
+        nav.find('a[href="#header"]').addClass('active');
+      }
+});
+//change on click
+nav.find('a').on('click', function () {
+    var $el = $(this)
+    , id = $el.attr('href')
+    ,deletHeight=0;
+    if(cur_pos <= window.innerHeight && $el.attr('href')=="#apropos" ) deletHeight=80;//80 to change for adaptation
+     $('html, body').animate({
+    scrollTop: $(id).offset().top - nav_height - deletHeight
+    }, 500); 
+     return false;
+});
+    
        
  
 
