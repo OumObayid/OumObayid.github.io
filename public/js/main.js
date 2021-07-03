@@ -3,6 +3,11 @@ AOS.init();
 
 //jquery
 $(document).ready(function () {  
+   //close navigation bar on clicking for mobile
+   $('nav ul li a').on('click', function () {
+     $('.navbar-toggler').removeAttr("aria-expanded");
+});
+
     //mettre la page au top lors de son rechargement
     $('html, body').animate({ 
         scrollTop: '0px' 

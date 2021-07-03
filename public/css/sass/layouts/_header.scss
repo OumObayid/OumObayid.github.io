@@ -26,6 +26,9 @@ a.active:not(.logo){
 .invisible{
     top:-50px;   
 }
+.invisibleMobile{
+    display: none !important; 
+}
 .scrolled {  
     // height: 300px;     
     background-image: $color-bgNav;   

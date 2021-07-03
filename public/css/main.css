@@ -132,6 +132,10 @@ a.active:not(.logo) {
   top: -50px;
 }
 
+.invisibleMobile {
+  display: none !important;
+}
+
 .scrolled {
   background-image: linear-gradient(90deg, #001415 0%, #00323f 35%, #10b1cd 100%);
   opacity: 0.9;
