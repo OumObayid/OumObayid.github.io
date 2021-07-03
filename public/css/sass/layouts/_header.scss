@@ -1,5 +1,8 @@
 
-.navbar {    
+.navbar { 
+    .logo{
+        font-weight: bold;
+    }   
     a{
         transition:  500ms linear; 
         color:$color-profile !important;
