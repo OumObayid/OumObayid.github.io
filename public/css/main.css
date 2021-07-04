@@ -119,7 +119,7 @@ h4, .logo {
 }
 
 .navbar li {
-  padding: 6px 6px;
+  padding: 6px 0;
 }
 
 .navbar li a {
@@ -130,7 +130,6 @@ h4, .logo {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
-  padding: 0 5px;
 }
 
 .navbar li a::after {
@@ -148,7 +147,6 @@ h4, .logo {
 
 .navbar li a:hover {
   color: #f5d796;
-  font-weight: bold;
 }
 
 .navbar li a:hover::after {
