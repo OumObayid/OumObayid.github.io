@@ -168,22 +168,21 @@ $c-secondary-text: #111;
 	font-size: 1rem;	
 	height: 5rem;
 	width: 5rem;
-	padding: 10px;
+	// padding: 10px;
 	margin: 0 .5rem;
   
 	&:hover {
-	  transform: scale(1.3333);
-	  
+	  transform: scale(1.3333);	  
 	  .text {
-		display: inline-block;
+		word-wrap: break-word;
+		word-break: break-all;
 		transform: scale(.75);
 	  }
 	 
 	}
 	.text {
 		padding: 5px;
-		word-wrap: break-word;
-		word-break: break-all;
+		
 	  transition: transform .5s ease-out;
 	  transform: scale(1);
 	}
