@@ -5,7 +5,7 @@
         color: $color-profile;
     }   
     li {
-        padding: 6px 0;    
+        padding: 6px 6px;    
         a{
           position: relative;
           display: block;
@@ -14,6 +14,7 @@
           text-decoration: none;
           text-transform: uppercase;
           transition: 0.5s;
+          padding: 0 5px;
     
           &::after {
             position: absolute;
@@ -30,6 +31,7 @@
     
           &:hover {
             color: #f5d796;
+            font-weight: bold;
           }
     
           &:hover::after {
