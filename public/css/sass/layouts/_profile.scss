@@ -135,10 +135,8 @@ $c-secondary-text: #111;
 
 
 .twoButtons {
-	color: $c-primary-text;
-	padding: 1em;
-	margin: 200px;
-	
+	color: white;
+	padding: 1em;	
 	text-align: right;
 	width: 61.8%;
 	white-space: nowrap;
@@ -147,21 +145,18 @@ $c-secondary-text: #111;
    .try {
 	vertical-align: middle;
   }
-  
-
-  
+    
   button {
 	appearance: none;
 	border-radius: 50%;
 	border: 0;
-	background-color: $c-primary;
-	color: $c-primary-text;
+	background-color: white;
+	// color: white;
 	cursor: pointer;
 	font-family: inherit;
 	font-weight: 900;
 	letter-spacing: .0816em;
 	position: relative;
-	text-transform: uppercase;
 	transition: background-color .25s ease-out, transform .5s ease-out;
 	&:hover {
 	  background-color: $c-secondary;
@@ -171,8 +166,8 @@ $c-secondary-text: #111;
   
   .try {
 	font-size: .618rem;
-	height: 3rem;
-	width: 3rem;
+	height: 5rem;
+	width: 5rem;
 	margin: 0 .5rem;
   
 	&:hover {
