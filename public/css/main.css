@@ -240,6 +240,11 @@ a.active:not(.logo) {
   backface-visibility: hidden;
 }
 
+.content-profile-center h3 {
+  color: #725704;
+  font-weight: bold;
+}
+
 /* Animate Background Image */
 @keyframes animTitle {
   100% {
