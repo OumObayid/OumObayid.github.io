@@ -270,6 +270,52 @@ a.active:not(.logo) {
   animation: none;
 }
 
+button {
+  appearance: none;
+  border-radius: 50%;
+  border: 0;
+  background-color: #1f7a7a;
+  color: #EEE;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 900;
+  letter-spacing: .0816em;
+  position: relative;
+  text-transform: uppercase;
+  transition: background-color .25s ease-out, transform .5s ease-out;
+}
+
+button:hover {
+  background-color: #ebc247;
+  color: #111;
+}
+
+.try {
+  vertical-align: middle;
+  font-size: .618rem;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 .5rem;
+}
+
+.try:hover {
+  transform: scale(1.3333);
+}
+
+.try:hover .text {
+  display: inline-block;
+  transform: scale(0.75);
+}
+
+.try:hover ~ .buy {
+  transform: scale(0.75);
+}
+
+.try .text {
+  transition: transform .5s ease-out;
+  transform: scale(1);
+}
+
 #social {
   position: absolute;
   top: 98%;

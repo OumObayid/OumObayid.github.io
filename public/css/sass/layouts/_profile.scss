@@ -89,9 +89,7 @@
 		-webkit-backface-visibility: hidden;
 		backface-visibility: hidden;
   
-	}
-		
-		
+	}			
 	position: absolute;
     top: 50%;
     left: 50%;
@@ -127,6 +125,56 @@
 .profile-img a:hover:before {
     -webkit-animation: none;
     animation: none;
+}
+//buttons
+$h-root: 180; // try changing this :) [0-360]
+$c-primary: hsl($h-root, 60%, 30%);
+$c-primary-text: #EEE;
+$c-secondary: hsl($h-root + -135, 80%, 60%);
+$c-secondary-text: #111;
+
+
+button {
+  appearance: none;
+  border-radius: 50%;
+  border: 0;
+  background-color: $c-primary;
+  color: $c-primary-text;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 900;
+  letter-spacing: .0816em;
+  position: relative;
+  text-transform: uppercase;
+  transition: background-color .25s ease-out, transform .5s ease-out;
+  &:hover {
+    background-color: $c-secondary;
+    color: $c-secondary-text;
+  }
+}
+
+.try {
+	vertical-align: middle;
+  font-size: .618rem;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 .5rem;
+
+  &:hover {
+    transform: scale(1.3333);
+    
+    .text {
+      display: inline-block;
+      transform: scale(.75);
+    }
+    ~ .buy {
+      transform: scale(.75);
+    }
+  }
+  .text {
+    transition: transform .5s ease-out;
+    transform: scale(1);
+  }
 }
 
 //social
