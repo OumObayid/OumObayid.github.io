@@ -68,7 +68,7 @@
 		padding: .25em 0 .325em;
 		display: block;
 		margin: 0 auto;
-		color:$color-profile !important;
+		color:$color-profile1;
   
   /* Clip Background Image */
   
@@ -91,7 +91,7 @@
   
 	}	
 	h3{
-		color: #725704;
+		// color: #eeb404;
 		font-weight: bold;
 	}		
 	position: absolute;
@@ -131,64 +131,49 @@
     animation: none;
 }
 //buttons
-$c-primary: rgb(31, 122, 122);
-$c-primary-text: #EEE;
-$c-secondary: #ebc247;
-$c-secondary-text: #111;
-
-
-
-.twoButtons {
-	color: white;
-	padding: 1em;	
-	text-align: right;
+.twoButtons {	
+	padding: 2em;	
+	text-align: center;
 	width: 61.8%;
-	white-space: nowrap;
-  
-  }
-  
-    
-  button {
-	appearance: none;
-	border-radius: 50%;
-	border: 0;	
-	box-shadow: inset -35px -15px 40px rgba(0,0,0,.5);
-	// color: white;
-	cursor: pointer;
-	font-family: inherit;
-	font-weight: 900;
-	letter-spacing: .0816em;
+	padding: 0 auto;
 	position: relative;
-	transition: background-color .25s ease-out, transform .5s ease-out;
-	&:hover {
-	  background-color: $c-secondary;
-	  color: $c-secondary-text;
+	display: flex;
+	justify-content:space-evenly;
+	a{
+		width: 120px;
+		height: 120px;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		&:hover{
+
+		}
+		span,img{
+			position: relative;		
+			width: 120px;
+		    height: 120px;
+		}
+		span{
+			text-align: center;
+			padding: 0;
+			top:60px;
+			color: $color-profile2;
+			font-weight: bold;
+			
+		}
+		img{
+			top: -10px;
+			opacity: 0.5;
+		}
+     
 	}
-  }
+  }    
+ 
+	
+ 
   
-  .try {
-	font-size: 1rem;	
-	height: 5rem;
-	width: 5rem;
-	// padding: 10px;
-	margin: 0 .5rem;
-  
-	&:hover {
-	  transform: scale(1.3333);	  
-	  .text {
-		word-wrap: break-word;
-		word-break: break-all;
-		transform: scale(.75);
-	  }
-	 
-	}
-	.text {
-		padding: 5px;
-		
-	  transition: transform .5s ease-out;
-	  transform: scale(1);
-	}
-  }
   
 //social
 #social{
@@ -197,7 +182,7 @@ $c-secondary-text: #111;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #ffffff;	
+    color: white;	
     .fa {  
 		width: 40px;
 		height: 40px;
