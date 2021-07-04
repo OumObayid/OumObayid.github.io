@@ -221,14 +221,14 @@ a.active:not(.logo) {
   max-width: 880px;
 }
 
-.content-profile-center span {
+.content-profile-center span.name {
   font-size: 2em;
   font-family: "cute-animal", sans-serif;
   letter-spacing: 0;
   padding: .25em 0 .325em;
   display: block;
   margin: 0 auto;
-  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  color: #ffffff !important;
   /* Clip Background Image */
   background: url(../../../../public/images/animated-text-fill.png) repeat-y;
   -webkit-background-clip: text;
@@ -270,6 +270,19 @@ a.active:not(.logo) {
   animation: none;
 }
 
+.twoButtons {
+  color: #EEE;
+  padding: 1em;
+  margin: 200px;
+  text-align: right;
+  width: 61.8%;
+  white-space: nowrap;
+}
+
+.try {
+  vertical-align: middle;
+}
+
 button {
   appearance: none;
   border-radius: 50%;
@@ -291,7 +304,6 @@ button:hover {
 }
 
 .try {
-  vertical-align: middle;
   font-size: .618rem;
   height: 3rem;
   width: 3rem;
@@ -304,10 +316,6 @@ button:hover {
 
 .try:hover .text {
   display: inline-block;
-  transform: scale(0.75);
-}
-
-.try:hover ~ .buy {
   transform: scale(0.75);
 }
 
