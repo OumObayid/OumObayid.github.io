@@ -115,21 +115,48 @@ h4, .logo {
 
 .navbar .logo {
   font-weight: bold;
+  color: #ffffff;
 }
 
-.navbar a {
-  transition: 500ms linear;
-  color: #ffffff !important;
+.navbar li {
+  padding: 6px 0;
 }
 
-.navbar a:not(.logo):hover {
-  background-color: rgba(255, 255, 255, 0.349);
-  border-radius: 5px;
+.navbar li a {
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  font-family: Lato, sans-serif;
+  color: #ecf0f1;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.navbar li a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #f0cc04;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.navbar li a:hover {
+  color: #f5d796;
+}
+
+.navbar li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 a.active:not(.logo) {
-  background-color: rgba(255, 255, 255, 0.349);
-  border-radius: 5px;
+  color: #f1d695 !important;
 }
 
 .invisible {
@@ -138,7 +165,6 @@ a.active:not(.logo) {
 
 .scrolled {
   background-image: linear-gradient(90deg, #001415 0%, #00323f 35%, #10b1cd 100%);
-  opacity: 0.9;
 }
 
 .parallax-window {
@@ -179,6 +205,11 @@ a.active:not(.logo) {
   }
 }
 
+@font-face {
+  font-family: "cute-animal";
+  src: url("../../../../public/fonts/cute-animal.ttf");
+}
+
 .content-center {
   position: absolute;
   top: 50%;
@@ -192,18 +223,19 @@ a.active:not(.logo) {
 }
 
 .content-center span {
-  font-family: "Cinzel Decorative", cursive;
-  font: 700 4em/1 "Oswald", sans-serif;
+  font-size: 2em;
+  font-family: "cute-animal", sans-serif;
   letter-spacing: 0;
   padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
   /* Clip Background Image */
-  background: url(../../../images/animated-text-fill.png) repeat-y;
+  background: url(../../../../public/images/animated-text-fill.png) repeat-y;
   -webkit-background-clip: text;
-  -webkit-background-clip: text;
-  /* Animate Background Image */
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: aitf 80s linear infinite;
+  animation: aitf 80s linear infinite;
   /* Activate hardware acceleration for smoother animations */
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;

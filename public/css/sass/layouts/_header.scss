@@ -2,15 +2,43 @@
 .navbar { 
     .logo{
         font-weight: bold;
+        color: $color-profile;
     }   
-    a{
-        transition:  500ms linear; 
-        color:$color-profile !important;
-    }
-    a:not(.logo):hover{
-       background-color: $color-bgLinkNav;
-       border-radius: 5px;       
-    }   
+    li {
+        padding: 6px 0;    
+        a{
+          position: relative;
+          display: block;
+          padding: 4px 0;
+          font-family: Lato, sans-serif;
+          color: #ecf0f1;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: 0.5s;
+    
+          &::after {
+            position: absolute;
+            content: "";
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #f0cc04;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.5s;
+          }
+    
+          &:hover {
+            color: #f5d796;
+          }
+    
+          &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
+        }
+      }  
     position: fixed;
     top:0;
     background-color: rgba(255,255,255,0); // media query
@@ -20,20 +48,16 @@
     transition: 0.3s linear; 
     // height: 80px;    
 }
-a.active:not(.logo){
-
-    background-color: $color-bgLinkNav;
-       border-radius: 5px;
-      
+a.active:not(.logo) {
+    color: #f1d695 !important;
+   
 }
 .invisible{
     top:-50px;   
 }
 
-.scrolled {  
-    // height: 300px;     
-    background-image: $color-bgNav;   
-    opacity: 0.9; 
+.scrolled {      
+    background-image: $color-bgNav;     
 }
 
 
