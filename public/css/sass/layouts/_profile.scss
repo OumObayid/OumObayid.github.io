@@ -142,15 +142,13 @@ $c-secondary-text: #111;
 	white-space: nowrap;
   
   }
-   .try {
-	vertical-align: middle;
-  }
+  
     
   button {
 	appearance: none;
 	border-radius: 50%;
-	border: 0;
-	background-color: white;
+	border: 0;	
+	box-shadow: inset -35px -15px 40px rgba(0,0,0,.5);
 	// color: white;
 	cursor: pointer;
 	font-family: inherit;

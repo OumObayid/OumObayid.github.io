@@ -278,15 +278,11 @@ a.active:not(.logo) {
   white-space: nowrap;
 }
 
-.try {
-  vertical-align: middle;
-}
-
 button {
   appearance: none;
   border-radius: 50%;
   border: 0;
-  background-color: white;
+  box-shadow: inset -35px -15px 40px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   font-family: inherit;
   font-weight: 900;
