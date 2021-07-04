@@ -18,4 +18,9 @@ img {
     border-style: none;
   }
 
+  *:focus,*:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+
  

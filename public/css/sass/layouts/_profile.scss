@@ -130,54 +130,53 @@
     -webkit-animation: none;
     animation: none;
 }
+
+
 //buttons
 .twoButtons {	
-	padding: 2em;	
-	text-align: center;
-	width: 61.8%;
-	padding: 0 auto;
+	// *{border: 1px solid red;}
 	position: relative;
 	display: flex;
-	justify-content:space-evenly;
-	a{
-		width: 120px;
-		height: 120px;
-		padding: 0;
+	justify-content:center;
+	margin-top: 30px;
+	div{
+		
+		width: 85px;
+		height: 85px;	
+		margin: 25px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		vertical-align: middle;
-			text-align: center;
+		transition: all 3s ease-in;
 		&:hover{
-			& img{
-				width: 130px;
-				height: 130px;
-			}
-			& span{
-				color: $color-profile2;
-				font-size: 1.2rem ;
-				top:70px;
+			transform: translateY(-100%);
+			& a{
+				color: $color-profile2;				
+				opacity: 1;
 			}
 		}
-		span,img{
+		a,img{
+			text-align: center;
 			position: relative;		
-			width: 120px;
-		    height: 120px;
+			width: 80px;
+		    height: 80px;
 			transition: all .3s ease-in;
 		}
-		span{
+		a{
 			display: flex;
 			justify-content: center;
-			
-			padding-left:  5px;
-			top:60px;
-			color: $color-profile1;
-			font-weight: bold;			
+			top:80px;
+			color: $color-profile2;
+			opacity: .5;
+			font-weight: bold;	
+			line-height: 20px;
+			z-index: 1;		
 		}
 		img{
-			top: -10px;
-			opacity: 0.3;
+			top: 15px;
+			opacity: 0.6;
+			z-index: -1;
 		}
      
 	}
@@ -187,59 +186,109 @@
  
   
   
-//social
-#social{
-	position: absolute;
-    top: 98%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;	
-    .fa {  
-		width: 40px;
-		height: 40px;
-		padding: 10px;
-		font-size: 20px;
-		text-align: center;
-		text-decoration: none;
-		margin: 5px 2px;
-		color: white;
-		border-radius: 50%; 
-	  }
+//social	
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-	  .fa:hover {
-		  opacity: 0.7;		 
-	  }
-
-	  .fa-facebook {
-		background: #3B5998;
-	  }
-
-	  .fa-twitter {
-		background: #55ACEE;
-	  }
-
-	  .fa-linkedin {
-		background: #007bb5;
-	  }
-	  
-	  .fa-instagram {
-		background: #8a3ab9;
-	  }
-
-	  .fa-pinterest {
-		background: #cb2027;
-	  }
-
-	  .fa-github {
-		background: #000000;
-	  }			
-
-
+	.wrapper {
+		font-family: "Poppins", sans-serif;
+	  display: flex;
+	  justify-content: center;
+	 
 	  
 	  
-}
-
+	}
+	
+	.wrapper .icon {
+	  position: relative;
+	  background-color: #ffffff;
+	  border-radius: 50%;
+	  padding: 15px;
+	  margin: 10px;
+	  width: 50px;
+	  height: 50px;
+	  font-size: 18px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  flex-direction: column;
+	  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	  cursor: pointer;
+	  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+	
+	.wrapper .tooltip {
+	  position: absolute;
+	  top: 0;
+	  font-size: 14px;
+	  background-color: #ffffff;
+	  color: #ffffff;
+	  padding: 5px 8px;
+	  border-radius: 5px;
+	  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+	  opacity: 0;
+	  pointer-events: none;
+	  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+	
+	.wrapper .tooltip::before {
+	  position: absolute;
+	  content: "";
+	  height: 8px;
+	  width: 8px;
+	  background-color: #ffffff;
+	  bottom: -3px;
+	  left: 50%;
+	  transform: translate(-50%) rotate(45deg);
+	  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	}
+	
+	.wrapper .icon:hover .tooltip {
+	  top: -45px;
+	  opacity: 1;
+	  visibility: visible;
+	  pointer-events: auto;
+	}
+	
+	.wrapper .icon:hover span,
+	.wrapper .icon:hover .tooltip {
+	  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+	}
+	
+	.wrapper .facebook:hover,
+	.wrapper .facebook:hover .tooltip,
+	.wrapper .facebook:hover .tooltip::before {
+	  background-color: #3b5999;
+	  color: #ffffff;
+	}
+	
+	.wrapper .twitter:hover,
+	.wrapper .twitter:hover .tooltip,
+	.wrapper .twitter:hover .tooltip::before {
+	  background-color: #46c1f6;
+	  color: #ffffff;
+	}
+	
+	.wrapper .instagram:hover,
+	.wrapper .instagram:hover .tooltip,
+	.wrapper .instagram:hover .tooltip::before {
+	  background-color: #e1306c;
+	  color: #ffffff;
+	}
+	
+	.wrapper .github:hover,
+	.wrapper .github:hover .tooltip,
+	.wrapper .github:hover .tooltip::before {
+	  background-color: #333333;
+	  color: #ffffff;
+	}
+	
+	.wrapper .youtube:hover,
+	.wrapper .youtube:hover .tooltip,
+	.wrapper .youtube:hover .tooltip::before {
+	  background-color: #de463b;
+	  color: #ffffff;
+	}
+	
 //bulles
 .bubble-ocean{
 	position: relative;
@@ -247,8 +296,9 @@
 	height: 100vh;
 }
 .bubble {
-	width: 20px;
-	height: 20px;
+	// border: 1px solid red;
+	// width: 20px;
+	// height: 20px;
 	border-radius: 100%;
 	position: absolute;
 	background: rgb(39,91,122);
@@ -285,8 +335,8 @@
   }
   
   .bubble--1 {
-	width: 15px;
-	height: 15px;
+	width: 9px;
+	height: 9px;
 	left: 15%;
 	bottom: 30px;
 	animation-delay: 0.5s;
@@ -325,8 +375,8 @@
   }
   
   .bubble--5 {
-	width: 30px;
-	height: 30px;
+	width: 10px;
+	height: 10px;
 	left: 60%;
 	bottom: 30px;
 	animation-delay: -10s;
@@ -335,8 +385,8 @@
   }
   
   .bubble--6 {
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 	left: 90%;
 	bottom: 30px;
 	animation-delay: 2s;
@@ -385,8 +435,8 @@
   }
   
   .bubble--12 {
-	width: 25px;
-	height: 25px;
+	width: 7px;
+	height: 5px;
 	left: 95%;
 	bottom: 30px;	
 	animation-duration: 19s;
@@ -414,8 +464,8 @@
   }
 
   .bubble--15 {
-	width: 25px;
-	height: 25px;
+	width: 17px;
+	height: 17px;
 	left: 65%;
 	bottom: 30px;
 	animation-delay: -8s;
