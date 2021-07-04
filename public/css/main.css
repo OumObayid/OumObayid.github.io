@@ -167,7 +167,7 @@ a.active:not(.logo) {
 }
 
 .parallax-window {
-  min-height: 100vh;
+  max-height: 100vh;
   background: transparent;
 }
 
@@ -209,7 +209,7 @@ a.active:not(.logo) {
   src: url("../../../../public/fonts/cute-animal.ttf");
 }
 
-.content-center {
+.content-profile-center {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -221,7 +221,7 @@ a.active:not(.logo) {
   max-width: 880px;
 }
 
-.content-center span {
+.content-profile-center span {
   font-size: 2em;
   font-family: "cute-animal", sans-serif;
   letter-spacing: 0;
@@ -234,18 +234,18 @@ a.active:not(.logo) {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: aitf 80s linear infinite;
+  animation: animTitle 80s linear infinite;
   /* Activate hardware acceleration for smoother animations */
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
 }
 
 /* Animate Background Image */
-@keyframes aitf {
-  0% {
+@keyframes animTitle {
+  100% {
     background-position: 0% 50%;
   }
-  100% {
+  0% {
     background-position: 100% 50%;
   }
 }
