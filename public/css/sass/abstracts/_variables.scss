@@ -1,12 +1,37 @@
-    //Variables Colors
+    
+    /*
+    |-------------------------------|
+    |-------theme parametres--------|
+    |-------------------------------|
+    */
+    
+    $orangeTheme : true;
+
+    @if ($orangeTheme) {
+        $color-profile2:rgb(228, 128, 34);
+        $color-bgNav: linear-gradient(90deg, #001415 0%, rgba(0,50,63,1) 35%, rgba(16,177,205,1) 100%);
+        $animated-text-fill-img:"animated-text-fill-orange.png";
+    } 
+    @else {
+        $color-profile2:rgb(235, 182, 65);
+        $color-bgNav: linear-gradient(90deg, #001415 0%, rgb(63, 54, 0) 35%, rgba(235, 182, 65,1) 100%);
+        $animated-text-fill-img:"animated-text-fill-yellow.png";
+    }
+    
+
+
+
+    /*
+    |-------------------------------|
+    |------- Variables Colors-------|
+    |-------------------------------|
+    */
     $color-titles:#302f2f;
     $color-paragraph:#9c9696;
     $color-profile1:white;
-    $color-profile2:rgb(228, 128, 34);
-    $color-bgNav: linear-gradient(90deg, #001415 0%, rgba(0,50,63,1) 35%, rgba(16,177,205,1) 100%);
+   
     
-    @mixin color-bgLogo{
-        
+    @mixin color-bgLogo{        
         background: -webkit-linear-gradient(0deg, $color-profile2 0%,  $color-profile1 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -15,7 +40,20 @@
         -moz-text-fill-color: transparent;
     }
     
-    //Variables font family
+    /*
+    |-------------------------------|
+    |----variables images sources---|
+    |-------------------------------|
+    */    
+    $img-animated-text-fill:"../../../../public/images/"+$animated-text-fill-img;
+
+
+   /*
+    |-------------------------------|
+    |-----variables font family-----|
+    |-------------------------------|
+    */
+   
     @font-face {
         font-family: "Ludicrous-Stencil";
         font-weight: 400;
@@ -24,21 +62,32 @@
         font-style: normal;
     }
     
-
-    $fontfamily : 'Cinzel Decorative', cursive;
+    /*
+    |-------------------------------|
+    |-variable padding for section--|
+    |-------------------------------|
+    */
    
-    //Variable Padding for section
     $padding-left-right:100px;
     $padding-top:70px;
     $padding-bottom:0px;
     
-    //Variables Break-points   
+   /*
+    |-------------------------------|
+    |----ariables Break-points -----|
+    |-------------------------------|
+    */
+  
     $large-phone:768px;
     $tablet:992px;
     $desktop:1200px;
    
-    
-    //Variables Font size       
+    /*
+    |-------------------------------|
+    |-----variables Font size ------|
+    |-------------------------------|
+    */
+     
     $extralarge: 45px;
     $large: 26px;
     $extramedium:22px;
@@ -47,12 +96,22 @@
     $extrasmall:13px;
     $small:12px;
    
-    //Variables font weight
+    /*
+    |-------------------------------|
+    |-----variables Font weight-----|
+    |-------------------------------|
+    */
+
     $bigweight: 700;
     $mediumweight:500;
     $smallweight:400;
 
-    //Variables line height
+     /*
+    |-------------------------------|
+    |-----variables line height-----|
+    |-------------------------------|
+    */
+  
     $height1:39px;
     $height2:35px;
     $height3:31px;

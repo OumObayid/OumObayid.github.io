@@ -72,7 +72,7 @@
   
   /* Clip Background Image */
   
-		background: url(../../../../public/images/animated-text-fill.png) repeat-y;
+		background: url($img-animated-text-fill) repeat-y;
 		-webkit-background-clip: text;
 		background-clip: text;
   
