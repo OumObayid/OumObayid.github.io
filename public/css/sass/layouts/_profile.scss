@@ -1,8 +1,10 @@
 
 //parallax for image profile
 .parallax-window {
-    max-height: 100vh;
-    background: transparent;
+    max-height: 100vh;    
+	background-color: $color-profile2;
+	opacity: 0.2;
+
 }
 
 //avatar
@@ -75,12 +77,14 @@
 		background: url($img-animated-text-fill) repeat-y;
 		-webkit-background-clip: text;
 		background-clip: text;
+		
   
 //   /* Animate Background Image */
   
 		-webkit-text-fill-color: transparent;
 		-webkit-animation: animTitle 80s linear infinite;
 		 animation: animTitle 80s linear infinite;
+		
   
   /* Activate hardware acceleration for smoother animations */
   

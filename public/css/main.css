@@ -183,11 +183,11 @@ h4, .logo {
   font-weight: bold;
   font-size: 30px !important;
   line-height: 50px;
-  background: -webkit-linear-gradient(0deg, #b30000 0%, white 100%);
+  background: -webkit-linear-gradient(0deg, #99aa03 0%, white 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  background: -moz-linear-gradient(0deg, #b30000 0%, white 100%);
+  background: -moz-linear-gradient(0deg, #99aa03 0%, white 100%);
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
@@ -214,14 +214,14 @@ h4, .logo {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #b30000;
+  background-color: #99aa03;
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.5s;
 }
 
 .navbar li a:hover {
-  color: #b30000;
+  color: #99aa03;
 }
 
 .navbar li a:hover::after {
@@ -230,7 +230,7 @@ h4, .logo {
 }
 
 a.active:not(.logo) {
-  color: #b30000;
+  color: #99aa03;
 }
 
 .invisible {
@@ -238,12 +238,13 @@ a.active:not(.logo) {
 }
 
 .scrolled {
-  background-image: linear-gradient(90deg, #1a0000 0%, #680000 35%, #b30000 100%);
+  background-image: linear-gradient(90deg, #151f00 0%, #425e01 35%, #99aa03 100%);
 }
 
 .parallax-window {
   max-height: 100vh;
-  background: transparent;
+  background-color: #99aa03;
+  opacity: 0.2;
 }
 
 .profile-img a {
@@ -305,7 +306,7 @@ a.active:not(.logo) {
   margin: 0 auto;
   color: white;
   /* Clip Background Image */
-  background: url("../../../../public/images/animated-text-fill-grenade.png") repeat-y;
+  background: url("../../../../public/images/animated-text-fill-green.png") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -374,7 +375,7 @@ a.active:not(.logo) {
 }
 
 .twoButtons div:hover a {
-  color: #b30000;
+  color: #99aa03;
   opacity: 1;
 }
 
@@ -390,7 +391,7 @@ a.active:not(.logo) {
   display: flex;
   justify-content: center;
   top: 80px;
-  color: #b30000;
+  color: #99aa03;
   opacity: .6;
   font-weight: bold;
   line-height: 20px;
@@ -716,7 +717,7 @@ a.active:not(.logo) {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b30000;
+  background: #99aa03;
   border-radius: 10px;
 }
 
@@ -741,7 +742,7 @@ html::-webkit-scrollbar {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #b30000;
+  background: #99aa03;
   color: white;
   transition: all 0.5s ease-in-out;
   z-index: 50;
@@ -773,6 +774,6 @@ html::-webkit-scrollbar {
 }
 
 .title {
-  color: #b30000;
+  color: #99aa03;
 }
 /*# sourceMappingURL=main.css.map */
