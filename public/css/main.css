@@ -121,8 +121,8 @@ h4, .logo {
 }
 
 @font-face {
-  font-family: "Cedarville Cursive";
-  src: url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+  font-family: "Ludicrous-Stencil";
+  src: url('"../../../../public/fonts/Ludicrous-Stencil.ttf"');
 }
 
 .navbar {
@@ -134,15 +134,15 @@ h4, .logo {
 }
 
 .navbar .logo {
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: "Ludicrous-Stencil",sans-serif;
   font-weight: bold;
   color: #e48022;
   font-size: 30px !important;
   line-height: 50px;
-  background: -webkit-linear-gradient(0deg, #e48022 0%, #ffb876 30%, white 100%);
+  background: -webkit-linear-gradient(0deg, #e48022 0%, white 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background: -moz-linear-gradient(0deg, #e48022 0%, #ffb876 30%, white 100%);
+  background: -moz-linear-gradient(0deg, #e48022 0%, white 100%);
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }

@@ -7,10 +7,10 @@
     
     @mixin color-bgLogo{
         
-        background: -webkit-linear-gradient(0deg, $color-profile2 0%, rgba(255,184,118,1) 30%, $color-profile1 100%);
+        background: -webkit-linear-gradient(0deg, $color-profile2 0%,  $color-profile1 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background: -moz-linear-gradient(0deg, $color-profile2 0%, rgba(255,184,118,1) 30%, $color-profile1 100%);
+        background: -moz-linear-gradient(0deg, $color-profile2 0%,  $color-profile1 100%);
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;
     }
