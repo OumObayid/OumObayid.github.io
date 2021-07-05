@@ -1,8 +1,16 @@
 
+@font-face {
+	font-family: "Ludicrous-Stencil";
+	src: url("../../../../public/fonts/Ludicrous-Stencil.ttf") ;
+   }
 .navbar { 
     .logo{
+      font-family: "Ludicrous-Stencil",sans-serif;
         font-weight: bold;
-        color: $color-profile1;
+        color: $color-profile2;
+        font-size:30px !important;
+        line-height: 50px;
+       @include color-bgLogo;
     }   
     li {
         padding: 6px 0;  

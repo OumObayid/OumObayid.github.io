@@ -134,11 +134,13 @@
 
 //buttons
 .twoButtons {	
-	// *{border: 1px solid red;}
+	font-family: "Ludicrous-Stencil",sans-serif;
 	position: relative;
 	display: flex;
 	justify-content:center;
-	margin-top: 30px;
+	font-size: 20px;
+	// line-height: 40px;
+	// margin-top: 30px;
 	div{
 		
 		width: 85px;
@@ -168,7 +170,7 @@
 			justify-content: center;
 			top:80px;
 			color: $color-profile2;
-			opacity: .5;
+			opacity: .6;
 			font-weight: bold;	
 			line-height: 20px;
 			z-index: 1;		

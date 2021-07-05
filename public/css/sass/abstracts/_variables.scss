@@ -2,11 +2,17 @@
     $color-titles:#302f2f;
     $color-paragraph:#9c9696;
     $color-profile1:white;
-    // $color-profile2:#ebc247;
-    $color-profile2:#EE5100;
-    $color-profile3:#e49670;
+    $color-profile2:rgb(228, 128, 34);
     $color-bgNav: linear-gradient(90deg, #001415 0%, rgba(0,50,63,1) 35%, rgba(16,177,205,1) 100%);
-    
+    @mixin color-bgLogo{
+        
+        background: -webkit-linear-gradient(0deg, $color-profile2 0%, rgba(255,184,118,1) 30%, $color-profile1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background: -moz-linear-gradient(0deg, $color-profile2 0%, rgba(255,184,118,1) 30%, $color-profile1 100%);
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    }
     
     //Variables font family
     $fontfamily : 'Cinzel Decorative', cursive;
