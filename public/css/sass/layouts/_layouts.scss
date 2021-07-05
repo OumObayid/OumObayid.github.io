@@ -15,9 +15,9 @@
     border-radius: 50px;
     right: 15px;
     bottom: 15px;
-    background: #27B5CE;
-    color: #fff;
-    transition: display 0.5s ease-in-out;
+    background: $color-profile2;
+    color: $color-profile1;
+    transition: all 0.5s ease-in-out;
     z-index: 50;
     text-align: center;
     padding-top: 10px;
@@ -30,9 +30,7 @@
   }
   
   .back-to-top:hover {
-    color: #fff;
-    background: #1C5B69;
-    transition: background 0.2s ease-in-out;
+    opacity: 0.7;
   }
   
 
@@ -52,6 +50,9 @@
     display: grid;
 }
 
+.title{
+    color: $color-profile2;
+}
 //generals parametres in section best-sales-container and ourplant-container
 
 .ourplant-container,

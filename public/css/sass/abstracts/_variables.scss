@@ -6,8 +6,8 @@
     */
     // pour changer le theme mettre true à celui choisi et false aux reste
     $orangeTheme : false;
-    $yellowTheme : false;
-    $blueThem : true;
+    $yellowTheme : true;
+    $blueTheme : false;
     //color by default
     $color-profile2:rgb(19, 128, 161);
     $color-bgNav: linear-gradient(90deg, #001415 0%, rgb(0, 43, 63) 35%, rgba(19, 128, 161,1) 100%);
@@ -22,7 +22,7 @@
         $color-profile2:rgb(235, 182, 65);
         $color-bgNav: linear-gradient(90deg, #001415 0%, rgb(63, 54, 0) 35%, rgba(235, 182, 65,1) 100%);
         $animated-text-fill-img:"animated-text-fill-yellow.png";
-    } @else if $blueThem {
+    } @else if $blueTheme {
         $color-profile2:rgb(19, 128, 161);
         $color-bgNav: linear-gradient(90deg, #001415 0%, rgb(0, 43, 63) 35%, rgba(19, 128, 161,1) 100%);
         $animated-text-fill-img:"animated-text-fill-blue.png";
@@ -43,6 +43,7 @@
     @mixin color-bgLogo{        
         background: -webkit-linear-gradient(0deg, $color-profile2 0%,  $color-profile1 100%);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         background: -moz-linear-gradient(0deg, $color-profile2 0%,  $color-profile1 100%);
         -moz-background-clip: text;
