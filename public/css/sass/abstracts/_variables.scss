@@ -4,21 +4,30 @@
     |-------theme parametres--------|
     |-------------------------------|
     */
-    
-    $orangeTheme : true;
+    // pour changer le theme mettre true à celui choisi et false aux reste
+    $orangeTheme : false;
+    $yellowTheme : false;
+    $blueThem : true;
+    //color by default
+    $color-profile2:rgb(19, 128, 161);
+    $color-bgNav: linear-gradient(90deg, #001415 0%, rgb(0, 43, 63) 35%, rgba(19, 128, 161,1) 100%);
+    $animated-text-fill-img:"animated-text-fill-blue.png";    
 
     @if ($orangeTheme) {
         $color-profile2:rgb(228, 128, 34);
-        $color-bgNav: linear-gradient(90deg, #001415 0%, rgba(0,50,63,1) 35%, rgba(16,177,205,1) 100%);
+        $color-bgNav: linear-gradient(90deg, #001415 0%, rgba(63, 54, 0,1) 35%, rgba(228, 128, 34,1) 100%);
         $animated-text-fill-img:"animated-text-fill-orange.png";
     } 
-    @else {
+    @else if  $yellowTheme {
         $color-profile2:rgb(235, 182, 65);
         $color-bgNav: linear-gradient(90deg, #001415 0%, rgb(63, 54, 0) 35%, rgba(235, 182, 65,1) 100%);
         $animated-text-fill-img:"animated-text-fill-yellow.png";
-    }
+    } @else if $blueThem {
+        $color-profile2:rgb(19, 128, 161);
+        $color-bgNav: linear-gradient(90deg, #001415 0%, rgb(0, 43, 63) 35%, rgba(19, 128, 161,1) 100%);
+        $animated-text-fill-img:"animated-text-fill-blue.png";
+    } 
     
-
 
 
     /*
@@ -30,7 +39,7 @@
     $color-paragraph:#9c9696;
     $color-profile1:white;
    
-    
+    //for logo background
     @mixin color-bgLogo{        
         background: -webkit-linear-gradient(0deg, $color-profile2 0%,  $color-profile1 100%);
         -webkit-background-clip: text;

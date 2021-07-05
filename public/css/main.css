@@ -181,13 +181,12 @@ h4, .logo {
 .navbar .logo {
   font-family: "Ludicrous-Stencil",sans-serif;
   font-weight: bold;
-  color: #ebb641;
   font-size: 30px !important;
   line-height: 50px;
-  background: -webkit-linear-gradient(0deg, #ebb641 0%, white 100%);
+  background: -webkit-linear-gradient(0deg, #1380a1 0%, white 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background: -moz-linear-gradient(0deg, #ebb641 0%, white 100%);
+  background: -moz-linear-gradient(0deg, #1380a1 0%, white 100%);
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
@@ -214,14 +213,14 @@ h4, .logo {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #ebb641;
+  background-color: #1380a1;
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.5s;
 }
 
 .navbar li a:hover {
-  color: #ebb641;
+  color: #1380a1;
 }
 
 .navbar li a:hover::after {
@@ -230,7 +229,7 @@ h4, .logo {
 }
 
 a.active:not(.logo) {
-  color: #ebb641;
+  color: #1380a1;
 }
 
 .invisible {
@@ -238,7 +237,7 @@ a.active:not(.logo) {
 }
 
 .scrolled {
-  background-image: linear-gradient(90deg, #001415 0%, #3f3600 35%, #ebb641 100%);
+  background-image: linear-gradient(90deg, #001415 0%, #002b3f 35%, #1380a1 100%);
 }
 
 .parallax-window {
@@ -305,7 +304,7 @@ a.active:not(.logo) {
   margin: 0 auto;
   color: white;
   /* Clip Background Image */
-  background: url("../../../../public/images/animated-text-fill-yellow.png") repeat-y;
+  background: url("../../../../public/images/animated-text-fill-blue.png") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -374,7 +373,7 @@ a.active:not(.logo) {
 }
 
 .twoButtons div:hover a {
-  color: #ebb641;
+  color: #1380a1;
   opacity: 1;
 }
 
@@ -390,7 +389,7 @@ a.active:not(.logo) {
   display: flex;
   justify-content: center;
   top: 80px;
-  color: #ebb641;
+  color: #1380a1;
   opacity: .6;
   font-weight: bold;
   line-height: 20px;

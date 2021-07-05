@@ -1,4 +1,4 @@
-
+//à décommenter si vous avez un logo à remplacer
 @font-face {
 	font-family: "Ludicrous-Stencil";
 	src: url('"../../../../public/fonts/Ludicrous-Stencil.ttf"') ;
@@ -7,10 +7,10 @@
     .logo{
       font-family: "Ludicrous-Stencil",sans-serif;
         font-weight: bold;
-        color: $color-profile2;
         font-size:30px !important;
         line-height: 50px;
-       @include color-bgLogo;
+       @include color-bgLogo;  
+
     }   
     li {
         padding: 6px 0;  
