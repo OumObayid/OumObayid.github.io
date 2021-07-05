@@ -167,7 +167,7 @@ h4, .logo {
 
 @font-face {
   font-family: "Ludicrous-Stencil";
-  src: url('"../../../../public/fonts/Ludicrous-Stencil.ttf"');
+  src: url("../../../../public/fonts/Ludicrous-Stencil.ttf");
 }
 
 .navbar {
@@ -688,17 +688,16 @@ a.active:not(.logo) {
   opacity: 0.3;
 }
 
-.footer {
-  justify-content: space-between;
-  padding: 10px;
-  width: 100%;
-  flex-wrap: wrap;
+@media only screen and (min-width: 992px) {
+  .scrolled {
+    height: 60px;
+  }
 }
 
-.footer > * {
-  width: 400px;
-  margin: 10px;
-  text-align: center;
+@media only screen and (min-width: 1200px) {
+  .scrolled {
+    height: 60px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -726,7 +725,7 @@ a.active:not(.logo) {
 }
 
 .back-to-top:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .flexrow {
@@ -743,103 +742,7 @@ a.active:not(.logo) {
   display: grid;
 }
 
-.ourplant-container,
-.best-sales-container {
-  margin: 0 35px 50px;
-}
-
-.title2 {
-  margin-bottom: 50px;
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 5% 0.15em;
-  background-position: 0 100%;
-  transition: background-size 0.25s ease-in;
-}
-
-.title2:hover {
-  background-size: 5% 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-  .nav {
-    display: none;
-  }
-  .titlescroll {
-    margin: -2.92vw  8vw;
-  }
-  .titlescroll h1 {
-    margin-top: 60px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .hamburger {
-    display: none;
-  }
-  .nav {
-    display: flex;
-  }
-  .nav2 {
-    display: none;
-  }
-  .titlescroll {
-    margin: -2.92vw  8vw;
-  }
-  .best-sales-container {
-    margin: 0 100px 50px;
-  }
-  .plants1 {
-    width: 50%;
-  }
-  .ourplant-container {
-    margin: 0 100px 50px;
-  }
-  .ourplant-plant {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 500px 500px 500px;
-    grid-template-areas: "a b" "c d" "e f";
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .hamburger {
-    display: none;
-  }
-  .nav {
-    display: flex;
-  }
-  .nav2 {
-    display: none;
-  }
-  .titlescroll {
-    margin: -2.92vw  8vw;
-  }
-  .best-sales-container {
-    margin: 0 100px 50px;
-  }
-  .best-sales-plant1,
-  .best-sales-plant2,
-  .best-sales-plant3 {
-    width: 33.33%;
-  }
-  .best-sales-plant4 {
-    width: 100%;
-  }
-  .ourplant-container {
-    margin: 0 100px 50px;
-  }
-  .ourplant-plant {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 500px 500px 500px 500px;
-    grid-template-areas: "a a b b" "a a c c" "d e e f" "d e e f";
-  }
-}
-
-#best-sales {
-  transition: all 1s ease;
+.title {
+  color: #ebb641;
 }
 /*# sourceMappingURL=main.css.map */
