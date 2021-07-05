@@ -1,11 +1,11 @@
 
 @font-face {
-	font-family: "Ludicrous-Stencil";
-	src: url("../../../../public/fonts/Ludicrous-Stencil.ttf") ;
+	font-family: "Cedarville Cursive";
+	src: url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap') ;
    }
 .navbar { 
     .logo{
-      font-family: "Ludicrous-Stencil",sans-serif;
+      font-family: 'Cedarville Cursive', cursive;
         font-weight: bold;
         color: $color-profile2;
         font-size:30px !important;

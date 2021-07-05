@@ -4,6 +4,7 @@
     $color-profile1:white;
     $color-profile2:rgb(228, 128, 34);
     $color-bgNav: linear-gradient(90deg, #001415 0%, rgba(0,50,63,1) 35%, rgba(16,177,205,1) 100%);
+    
     @mixin color-bgLogo{
         
         background: -webkit-linear-gradient(0deg, $color-profile2 0%, rgba(255,184,118,1) 30%, $color-profile1 100%);
@@ -15,6 +16,15 @@
     }
     
     //Variables font family
+    @font-face {
+        font-family: "Ludicrous-Stencil";
+        font-weight: 400;
+        src: url("../../../../public/fonts/Ludicrous-Stencil.ttf") ;
+        font-display: swap;
+        font-style: normal;
+    }
+    
+
     $fontfamily : 'Cinzel Decorative', cursive;
    
     //Variable Padding for section
