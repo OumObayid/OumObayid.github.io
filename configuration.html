@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+      <link rel="stylesheet" href="public/css/main.css">
+      <script src="./public/js/config.js"></script>
 </head>
 <body>
     
@@ -17,12 +19,8 @@
             <option value="Green">Green</option>
             <option value="Grenade">Grenade</option>
         </select>
-        <p id="demo"></p>
+        <button onclick="changecolor()">valider</button>
         
-    <script type="text/javascript">
-        var get = getComputedStyle(document.documentElement).getPropertyValue('--blueTheme')
-        alert(get);
-     
-    </script>
+      
 </body>
 </html>
