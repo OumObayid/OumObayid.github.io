@@ -176,7 +176,7 @@ h4, .logo {
 }
 
 .navbar a.logo::after {
-  content: url(../../../../public/images/logoBlue.png);
+  content: url(../../../../public/images/logoGreen.png);
 }
 
 .navbar li {
@@ -201,14 +201,14 @@ h4, .logo {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #007ba0;
+  background-color: #859403;
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.5s;
 }
 
 .navbar li a:hover {
-  color: #007ba0;
+  color: #859403;
 }
 
 .navbar li a:hover::after {
@@ -217,7 +217,7 @@ h4, .logo {
 }
 
 a.active:not(.logo) {
-  color: #007ba0;
+  color: #859403;
 }
 
 .invisible {
@@ -225,11 +225,13 @@ a.active:not(.logo) {
 }
 
 .scrolled {
-  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #03bcf5 50%);
+  background-image: linear-gradient(90deg, #151f00 10%, #555c1c 30%, #b2c502 50%);
 }
 
 .parallax-window {
   max-height: 100vh;
+  background-color: #b2c502;
+  opacity: 0.2;
 }
 
 .profile-img a {
@@ -291,7 +293,7 @@ a.active:not(.logo) {
   margin: 0 auto;
   color: white;
   /* Clip Background Image */
-  background: url("../../../../public/images/animated-text-fill-blue.png") repeat-y;
+  background: url("../../../../public/images/animated-text-fill-green.png") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -360,7 +362,7 @@ a.active:not(.logo) {
 }
 
 .twoButtons div:hover a {
-  color: #007ba0;
+  color: #859403;
   opacity: 1;
 }
 
@@ -376,7 +378,7 @@ a.active:not(.logo) {
   display: flex;
   justify-content: center;
   top: 80px;
-  color: #007ba0;
+  color: #859403;
   opacity: .6;
   font-weight: bold;
   line-height: 20px;
@@ -674,6 +676,10 @@ a.active:not(.logo) {
   opacity: 0.3;
 }
 
+.cardbg {
+  background-color: #859403 !important;
+}
+
 @media only screen and (min-width: 992px) {
   .scrolled {
     height: 60px;
@@ -693,7 +699,7 @@ a.active:not(.logo) {
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #007ba0 #ffffff;
+  scrollbar-color: #859403 #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
@@ -706,7 +712,7 @@ a.active:not(.logo) {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #007ba0;
+  background-color: #859403;
   border-radius: 10px;
   border: 3px solid #ffffff;
   transition: all .3s  ease-in;
@@ -714,7 +720,7 @@ a.active:not(.logo) {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #03bcf5;
+  background: #b2c502;
 }
 
 /*--------------------------------------------------------------
@@ -728,7 +734,7 @@ a.active:not(.logo) {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #007ba0;
+  background: #859403;
   color: white;
   transition: all 0.5s ease-in-out;
   z-index: 50;
@@ -742,7 +748,7 @@ a.active:not(.logo) {
 }
 
 .back-to-top:hover {
-  background: #03bcf5;
+  background: #b2c502;
 }
 
 .flexrow {
@@ -760,6 +766,6 @@ a.active:not(.logo) {
 }
 
 .title {
-  color: #007ba0;
+  color: #859403;
 }
 /*# sourceMappingURL=main.css.map */
