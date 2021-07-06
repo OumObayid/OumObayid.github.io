@@ -1,10 +1,11 @@
 //à décommenter si vous avez un logo à remplacer
-@font-face {
-	font-family: "Ludicrous-Stencil";
-	src: url('../../../../public/fonts/Ludicrous-Stencil.ttf') ;
-   }
+// @font-face {
+// 	font-family: "Ludicrous-Stencil";
+// 	src: url('../../../../public/fonts/Ludicrous-Stencil.ttf') ;
+//    }
 .navbar { 
     .logo{
+      ////on peut mettre du texte à la place du logo
       // font-family: "Ludicrous-Stencil",sans-serif;
       //   font-weight: bold;
       //   font-size:30px !important;
@@ -12,8 +13,6 @@
       // //  @include color-bgLogo; 
       // color:$color-profile2; 
       content:$logoImg;
-      
-
     }   
     li {
         padding: 6px 0;  
