@@ -4,14 +4,15 @@
 // 	src: url('../../../../public/fonts/Ludicrous-Stencil.ttf') ;
 //    }
 .navbar { 
-    .logo{
-      ////on peut mettre du texte à la place du logo
+    a.logo::after{
+      //on peut mettre du texte à la place du logo
       // font-family: "Ludicrous-Stencil",sans-serif;
       //   font-weight: bold;
       //   font-size:30px !important;
       //   line-height: 50px;
       // //  @include color-bgLogo; 
-      // color:$color-profile2; 
+      // color:$color-profile3; 
+      // content:"OUMCREATION";
       content:$logoImg;
     }   
     li {

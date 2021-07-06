@@ -1,9 +1,11 @@
 
 //parallax for image profile
 .parallax-window {
-    max-height: 100vh;    
+    max-height: 100vh;   
+	@if not($blueTheme) {
 	background-color: $color-profile3;
-	opacity: 0.2;
+	// opacity: 0.2;
+    }
 
 }
 
