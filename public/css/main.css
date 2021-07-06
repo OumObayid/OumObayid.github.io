@@ -83,6 +83,8 @@ img {
 body {
   width: 100%;
   background-color: #ffffff;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body a:hover {
@@ -179,17 +181,7 @@ h4, .logo {
 }
 
 .navbar .logo {
-  font-family: "Ludicrous-Stencil",sans-serif;
-  font-weight: bold;
-  font-size: 30px !important;
-  line-height: 50px;
-  background: -webkit-linear-gradient(0deg, #99aa03 0%, white 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background: -moz-linear-gradient(0deg, #99aa03 0%, white 100%);
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  content: url(../../../../public/images/logoOrange.png);
 }
 
 .navbar li {
@@ -214,14 +206,14 @@ h4, .logo {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #99aa03;
+  background-color: #bd8a0a;
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.5s;
 }
 
 .navbar li a:hover {
-  color: #99aa03;
+  color: #bd8a0a;
 }
 
 .navbar li a:hover::after {
@@ -230,7 +222,7 @@ h4, .logo {
 }
 
 a.active:not(.logo) {
-  color: #99aa03;
+  color: #bd8a0a;
 }
 
 .invisible {
@@ -238,12 +230,12 @@ a.active:not(.logo) {
 }
 
 .scrolled {
-  background-image: linear-gradient(90deg, #151f00 0%, #425e01 35%, #99aa03 100%);
+  background-image: linear-gradient(90deg, #221d00 10%, #504400 30%, #dbb406 50%);
 }
 
 .parallax-window {
   max-height: 100vh;
-  background-color: #99aa03;
+  background-color: #dbb406;
   opacity: 0.2;
 }
 
@@ -306,7 +298,7 @@ a.active:not(.logo) {
   margin: 0 auto;
   color: white;
   /* Clip Background Image */
-  background: url("../../../../public/images/animated-text-fill-green.png") repeat-y;
+  background: url("../../../../public/images/animated-text-fill-orange.png") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -375,7 +367,7 @@ a.active:not(.logo) {
 }
 
 .twoButtons div:hover a {
-  color: #99aa03;
+  color: #bd8a0a;
   opacity: 1;
 }
 
@@ -391,7 +383,7 @@ a.active:not(.logo) {
   display: flex;
   justify-content: center;
   top: 80px;
-  color: #99aa03;
+  color: #bd8a0a;
   opacity: .6;
   font-weight: bold;
   line-height: 20px;
@@ -704,31 +696,32 @@ a.active:not(.logo) {
 /*--------------------------------------------------------------
 # scrolbar
 --------------------------------------------------------------*/
-/* width */
-::-webkit-scrollbar {
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #bd8a0a #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
   width: 16px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
+*::-webkit-scrollbar-track {
+  background: #ffffff;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #99aa03;
+*::-webkit-scrollbar-thumb {
+  background-color: #bd8a0a;
   border-radius: 10px;
-}
-
-html::-webkit-scrollbar {
-  width: 16px;
-  height: 5px;
+  border: 3px solid #ffffff;
+  transition: all .3s  ease-in;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  opacity: .5;
+  background: #dbb406;
 }
 
 /*--------------------------------------------------------------
@@ -742,7 +735,7 @@ html::-webkit-scrollbar {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #99aa03;
+  background: #bd8a0a;
   color: white;
   transition: all 0.5s ease-in-out;
   z-index: 50;
@@ -756,7 +749,7 @@ html::-webkit-scrollbar {
 }
 
 .back-to-top:hover {
-  opacity: 0.5;
+  background: #dbb406;
 }
 
 .flexrow {
@@ -774,6 +767,6 @@ html::-webkit-scrollbar {
 }
 
 .title {
-  color: #99aa03;
+  color: #bd8a0a;
 }
 /*# sourceMappingURL=main.css.map */

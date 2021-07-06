@@ -5,11 +5,14 @@
    }
 .navbar { 
     .logo{
-      font-family: "Ludicrous-Stencil",sans-serif;
-        font-weight: bold;
-        font-size:30px !important;
-        line-height: 50px;
-       @include color-bgLogo;  
+      // font-family: "Ludicrous-Stencil",sans-serif;
+      //   font-weight: bold;
+      //   font-size:30px !important;
+      //   line-height: 50px;
+      // //  @include color-bgLogo; 
+      // color:$color-profile2; 
+      content:$logoImg;
+      
 
     }   
     li {

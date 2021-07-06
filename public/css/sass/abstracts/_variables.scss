@@ -7,40 +7,39 @@
     // pour changer le theme mettre true à celui choisi et false aux reste
     
     
-        $blueTheme : false;
-        $orangeTheme :false ;
-        $yellowTheme :false ;    
-        $greenTheme : true;
-        $grenadeTheme :false ;
+        $blueTheme : false ;
+        $orangeTheme :true  ; 
+        $greenTheme :false  ;
+        
    
       
     //color by default 
-    $color-profile2:rgb(19, 128, 161);
-    $color-bgNav: linear-gradient(90deg, #001415 0%, rgb(0, 43, 63) 35%, $color-profile2 100%);
+    $color-profile2:#1380a1;
+    $color-profile3: rgb(3, 188, 245);
+    $color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-profile3 50%);
     $animated-text-fill-img:"animated-text-fill-blue.png";    
+    $logoImg:url(../../../../public/images/logoBlue.png);
 
     @if ($orangeTheme) {
-        $color-profile2:rgb(228, 128, 34);
-        $color-bgNav: linear-gradient(90deg, #001415 0%, rgba(63, 54, 0,1) 35%, $color-profile2 100%);
+        $color-profile2:#bd8a0a;
+        $color-profile3: #dbb406;
+        $color-bgNav: linear-gradient(90deg, rgb(34, 29, 0) 10%, rgb(80, 68, 0) 30%, $color-profile3 50%);
         $animated-text-fill-img:"animated-text-fill-orange.png";
-    } 
-    @else if  $yellowTheme {
-        $color-profile2:rgb(187, 153, 4);
-        $color-bgNav: linear-gradient(90deg, rgb(46, 37, 0) 0%, rgb(109, 89, 1) 35%, $color-profile2 100%);
-        $animated-text-fill-img:"animated-text-fill-yellow.png";
-    } @else if $blueTheme {
-        $color-profile2:rgb(0, 123, 160);
-        $color-bgNav: linear-gradient(90deg, rgb(0, 20, 21) 0%, rgb(1, 70, 102) 35%, $color-profile2 100%);
+        $logoImg:url(../../../../public/images/logoOrange.png);
+   } @else if $blueTheme {
+        $color-profile2:#007ba0;
+        $color-profile3: rgb(3, 188, 245);
+        $color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-profile3 50%);
         $animated-text-fill-img:"animated-text-fill-blue.png";
+        $logoImg:url(../../../../public/images/logoBlue.png);
     } @else if $greenTheme{
-        $color-profile2:rgb(153, 170, 3);
-        $color-bgNav: linear-gradient(90deg, rgb(21, 31, 0) 0%, rgb(66, 94, 1) 35%, $color-profile2 100%);
+        $color-profile2:#859403;
+        $color-profile3:rgb(178, 197, 2);        
+        $color-bgNav: linear-gradient(90deg, rgb(21, 31, 0) 10%, rgb(85, 92, 28) 30%, $color-profile3 50%);
         $animated-text-fill-img:"animated-text-fill-green.png";
-    } @else if $grenadeTheme{
-        $color-profile2:rgb(179, 0, 0);
-        $color-bgNav: linear-gradient(90deg, rgb(26, 0, 0) 0%, rgb(104, 0, 0) 35%, $color-profile2 100%);
-        $animated-text-fill-img:"animated-text-fill-grenade.png";
-    }
+        $logoImg:url(../../../../public/images/logoGreen.png);
+
+    } 
     
     
 
@@ -56,11 +55,11 @@
    
     //for logo background
     @mixin color-bgLogo{        
-        background: -webkit-linear-gradient(0deg, $color-profile2 0%,  $color-profile1 100%);
+        background: -webkit-linear-gradient(0deg,$color-profile2 0%, $color-profile3 80%,  $color-profile1 100%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        background: -moz-linear-gradient(0deg, $color-profile2 0%,  $color-profile1 100%);
+        background: -moz-linear-gradient(0deg,$color-profile2 0%, $color-profile3 80%,  $color-profile1 100%);
         -moz-background-clip: text;
         -moz-text-fill-color: transparent;
     }
