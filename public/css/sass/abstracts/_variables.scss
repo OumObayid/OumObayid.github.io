@@ -5,11 +5,19 @@
     |-------------------------------|
     */
     // pour changer le theme mettre true à celui choisi et false aux reste
+    
+
     $orangeTheme :false ;
-    $yellowTheme :false ;
-    $blueTheme : false;
-    $greenTheme :true ;
+    $yellowTheme :false ;    
+    $greenTheme :false ;
     $grenadeTheme :false ;
+    :export{
+        orangeTheme : $orangeTheme  ;
+        yellowTheme : $yellowTheme ;    
+        greenTheme : $greenTheme  ;
+        grenadeTheme : $grenadeTheme ;
+    }
+    
     //color by default 
     $color-profile2:rgb(19, 128, 161);
     $color-bgNav: linear-gradient(90deg, #001415 0%, rgb(0, 43, 63) 35%, $color-profile2 100%);

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <label for="theme">Choose a theme:</label>
+        <select name="theme" id="theme">
+            <option value="">--Please choose a theme--</option>
+            <option value="Blue">Blue</option>
+            <option value="Orange">Orange</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="Grenade">Grenade</option>
+        </select>
+        <p id="demo"></p>
+        
+    <script type="text/javascript">
+        var get = getComputedStyle(document.documentElement).getPropertyValue('--blueTheme')
+        alert(get);
+     
+    </script>
+</body>
+</html>
