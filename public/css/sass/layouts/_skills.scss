@@ -18,23 +18,23 @@ $li-padding: 5px;
 
 $animation-delay: .7s;
 
-.flexskill{
-    flex-wrap: wrap;
-}
 
+
+.container-skills{
+width: 100%;
+flex-wrap: wrap;
+}
 
 .skills-bar-container{
   font-size: 20px;
-//   width: 40%;
-//   min-width: 300px;
   list-style:none;
-//   margin: 30px ;
+  margin-top: 30px;
   
   li{
     position: relative;
     width: 100%;
     padding: $li-padding;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     
     .progressbar-title{
         color:$color-titles;

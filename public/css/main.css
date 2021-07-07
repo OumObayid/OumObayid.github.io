@@ -681,20 +681,22 @@ a.active:not(.logo) {
   opacity: 0.3;
 }
 
-.flexskill {
+.container-skills {
+  width: 100%;
   flex-wrap: wrap;
 }
 
 .skills-bar-container {
   font-size: 20px;
   list-style: none;
+  margin-top: 30px;
 }
 
 .skills-bar-container li {
   position: relative;
   width: 100%;
   padding: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .skills-bar-container li .progressbar-title {
