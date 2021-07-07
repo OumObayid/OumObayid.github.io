@@ -176,7 +176,7 @@ h4, .logo {
 }
 
 .navbar a.logo::after {
-  content: url(../../../../public/images/logoGreen.png);
+  content: url(../../../../public/images/logoBlue.png);
 }
 
 .navbar li {
@@ -201,14 +201,14 @@ h4, .logo {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #859403;
+  background-color: #007ba0;
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.5s;
 }
 
 .navbar li a:hover {
-  color: #859403;
+  color: #007ba0;
 }
 
 .navbar li a:hover::after {
@@ -217,7 +217,7 @@ h4, .logo {
 }
 
 a.active:not(.logo) {
-  color: #859403;
+  color: #007ba0;
 }
 
 .invisible {
@@ -225,13 +225,11 @@ a.active:not(.logo) {
 }
 
 .scrolled {
-  background-image: linear-gradient(90deg, #151f00 10%, #555c1c 30%, #b2c502 50%);
+  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #03bcf5 50%);
 }
 
 .parallax-window {
   max-height: 100vh;
-  background-color: #b2c502;
-  opacity: 0.2;
 }
 
 .profile-img a {
@@ -293,7 +291,7 @@ a.active:not(.logo) {
   margin: 0 auto;
   color: white;
   /* Clip Background Image */
-  background: url("../../../../public/images/animated-text-fill-green.png") repeat-y;
+  background: url("../../../../public/images/animated-text-fill-blue.png") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -362,7 +360,7 @@ a.active:not(.logo) {
 }
 
 .twoButtons div:hover a {
-  color: #859403;
+  color: #007ba0;
   opacity: 1;
 }
 
@@ -378,7 +376,7 @@ a.active:not(.logo) {
   display: flex;
   justify-content: center;
   top: 80px;
-  color: #859403;
+  color: #007ba0;
   opacity: .6;
   font-weight: bold;
   line-height: 20px;
@@ -677,7 +675,7 @@ a.active:not(.logo) {
 }
 
 .cardbg {
-  background-color: #859403 !important;
+  background-color: #007ba0 !important;
 }
 
 @media only screen and (min-width: 992px) {
@@ -699,7 +697,7 @@ a.active:not(.logo) {
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #859403 #ffffff;
+  scrollbar-color: #007ba0 #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
@@ -712,7 +710,7 @@ a.active:not(.logo) {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #859403;
+  background-color: #007ba0;
   border-radius: 10px;
   border: 3px solid #ffffff;
   transition: all .3s  ease-in;
@@ -720,7 +718,7 @@ a.active:not(.logo) {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b2c502;
+  background: #03bcf5;
 }
 
 /*--------------------------------------------------------------
@@ -734,7 +732,7 @@ a.active:not(.logo) {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #859403;
+  background: #007ba0;
   color: white;
   transition: all 0.5s ease-in-out;
   z-index: 50;
@@ -748,7 +746,7 @@ a.active:not(.logo) {
 }
 
 .back-to-top:hover {
-  background: #b2c502;
+  background: #03bcf5;
 }
 
 .flexrow {
@@ -766,6 +764,6 @@ a.active:not(.logo) {
 }
 
 .title {
-  color: #859403;
+  color: #007ba0;
 }
 /*# sourceMappingURL=main.css.map */
