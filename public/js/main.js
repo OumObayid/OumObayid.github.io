@@ -70,7 +70,19 @@ $(document).ready(function () {
           }
         });
 
-     //Skills progress bar animated    
+//change navbar on click
+    nav.find('a').on('click', function () {
+        var $el = $(this)
+        , id = $el.attr('href')
+        ,deletHeight=0;
+        if(cur_pos <= window.innerHeight && $el.attr('href')=="#apropos" ) deletHeight=80;//80 to change for adaptation
+        $('html, body').animate({
+        scrollTop: $(id).offset().top - nav_height - deletHeight
+        }, 500); 
+        return false;
+    });
+    
+    //Skills progress bar animated    
      $('.progress-bar').each(function() {
       $(this).find('.progress-content').animate({
         width:$(this).attr('data-percentage')
@@ -86,22 +98,6 @@ $(document).ready(function () {
          }
       });  
     });
-
-
-
-//change navbar on click
-    nav.find('a').on('click', function () {
-        var $el = $(this)
-        , id = $el.attr('href')
-        ,deletHeight=0;
-        if(cur_pos <= window.innerHeight && $el.attr('href')=="#apropos" ) deletHeight=80;//80 to change for adaptation
-        $('html, body').animate({
-        scrollTop: $(id).offset().top - nav_height - deletHeight
-        }, 500); 
-        return false;
-    });
-    
-    
 
 
 
