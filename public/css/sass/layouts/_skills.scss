@@ -18,15 +18,17 @@ $li-padding: 5px;
 
 $animation-delay: .7s;
 
-
+.flexskill{
+    flex-wrap: wrap;
+}
 
 
 .skills-bar-container{
   font-size: 20px;
-  width: 40%;
-  min-width: 300px;
+//   width: 40%;
+//   min-width: 300px;
   list-style:none;
-  margin: 30px 50px;
+//   margin: 30px ;
   
   li{
     position: relative;

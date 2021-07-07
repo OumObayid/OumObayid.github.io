@@ -681,12 +681,13 @@ a.active:not(.logo) {
   opacity: 0.3;
 }
 
+.flexskill {
+  flex-wrap: wrap;
+}
+
 .skills-bar-container {
   font-size: 20px;
-  width: 40%;
-  min-width: 300px;
   list-style: none;
-  margin: 30px 50px;
 }
 
 .skills-bar-container li {
