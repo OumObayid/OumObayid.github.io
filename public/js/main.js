@@ -68,7 +68,33 @@ $(document).ready(function () {
             nav.find('a').removeClass('active');
             nav.find('a[href="#header"]').addClass('active');
           }
+        });
+          $(window).scroll(function() {
+     //Skills progress bar animated    
+     var top = $('#competences').height()-$(window).scrollTop();
+    
+    // console.log(top);
+	if(top < -300){
+    $()
+    var lang = {
+      "html": "100%",
+      "css": "90%",
+      "css": "90%",
+      "javascript": "90%",
+      "php": "55%",
+      "react-js": "65%"
+    };
+
+    var multiply = 4;
+    $.each( lang, function( language, pourcent) {
+      var delay = 700;      
+      setTimeout(function() {
+        $('#'+language+'-pourcent').html(pourcent);
+      },delay*multiply);      
+      multiply++;
     });
+  }
+  
 //change navbar on click
     nav.find('a').on('click', function () {
         var $el = $(this)
@@ -81,40 +107,9 @@ $(document).ready(function () {
         return false;
     });
     
-    //Skills progress bar animated    
-    // var lang = {
-    //   "html": "100%",
-    //   "css": "90%",
-    //   "css": "90%",
-    //   "javascript": "90%",
-    //   "php": "55%",
-    //   "react-js": "65%"
-    // };
-    // var multiply = 4;
-    // $.each( lang, function( language, pourcent) {
-    //   var delay = 700;      
-    //   setTimeout(function() {
-    //     $('#'+language+'-pourcent').html(pourcent);
-    //   },delay*multiply);      
-    //   multiply++;
-    // });
+    
 
-//Skills progress bar animated   
-   $('.progress-bar').each(function() {
-     $(this).find('.progress-content').animate({
-        width:jQuery(this).attr('data-percentage')
-      },2000);
-      
-     $(this).find('.progress-number-mark').animate(
-        {left:jQuery(this).attr('data-percentage')},
-        {
-         duration: 2000,
-         step: function(now, fx) {
-           var data = Math.round(now);
-          $(this).find('.percent').html(data + '%');
-         }
-      });  
-    });
+
 
 
 //Jquery fin
