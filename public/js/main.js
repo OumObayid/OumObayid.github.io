@@ -68,21 +68,21 @@ $(document).ready(function () {
             nav.find('a').removeClass('active');
             nav.find('a[href="#header"]').addClass('active');
           }
-
+        });
 
      //Skills progress bar animated    
-     jQuery('.progress-bar').each(function() {
-      jQuery(this).find('.progress-content').animate({
-        width:jQuery(this).attr('data-percentage')
+     $('.progress-bar').each(function() {
+      $(this).find('.progress-content').animate({
+        width:$(this).attr('data-percentage')
       },2000);
       
-      jQuery(this).find('.progress-number-mark').animate(
-        {left:jQuery(this).attr('data-percentage')},
+      $(this).find('.progress-number-mark').animate(
+        {left:$(this).attr('data-percentage')},
         {
          duration: 2000,
          step: function(now, fx) {
            var data = Math.round(now);
-           jQuery(this).find('.percent').html(data + '%');
+           $(this).find('.percent').html(data + '%');
          }
       });  
     });
