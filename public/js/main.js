@@ -82,21 +82,27 @@ $(document).ready(function () {
         return false;
     });
     
-    //Skills progress bar animated    
-     $('.progress-bar').each(function() {
-      $(this).find('.progress-content').animate({
-        width:$(this).attr('data-percentage')
-      },2000);
+    //Skills progangularress bar animated    
+    var lang = {
+      "html": "98%",
+      "css": "95%",
+      "javascript": "75%",
+      "php": "65%",
+      "react-js": "70%"
+    };
+    
+    var multiply = 4;
+    
+    $.each( lang, function( language, pourcent) {
+    
+      var delay = 700;
       
-      $(this).find('.progress-number-mark').animate(
-        {left:$(this).attr('data-percentage')},
-        {
-         duration: 2000,
-         step: function(now, fx) {
-           var data = Math.round(now);
-           $(this).find('.percent').html(data + '%');
-         }
-      });  
+      setTimeout(function() {
+        $('#'+language+'-pourcent').html(pourcent);
+      },delay*multiply);
+      
+      multiply++;
+    
     });
 
 
