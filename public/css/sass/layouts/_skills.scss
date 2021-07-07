@@ -23,13 +23,9 @@ $animation-delay: .7s;
 
 .skills-bar-container{
     
-  position: relative;
+//   position: relative;
   width: 40%;
   min-width: 300px;
-  top: 170px;
-  left:300px;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   list-style:none;
   
   li{

@@ -683,12 +683,8 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container {
-  position: relative;
   width: 40%;
   min-width: 300px;
-  top: 170px;
-  left: 300px;
-  transform: translate(-50%, -50%);
   list-style: none;
 }
 

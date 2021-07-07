@@ -45,7 +45,7 @@ $(document).ready(function () {
 
  
   // Navigation active state on scroll or on click 
-  //change on scroll
+  //change navbar on scroll
     var sections = $('.section')
     , nav = $('.navbar')
     , nav_height = nav.outerHeight()
@@ -69,7 +69,7 @@ $(document).ready(function () {
             nav.find('a[href="#header"]').addClass('active');
           }
     });
-//change on click
+//change navbar on click
     nav.find('a').on('click', function () {
         var $el = $(this)
         , id = $el.attr('href')
@@ -81,27 +81,22 @@ $(document).ready(function () {
         return false;
     });
     
-//Skills progress bar animated    
+    //Skills progress bar animated    
     var lang = {
       "html": "100%",
+      "css": "90%",
       "css": "90%",
       "javascript": "90%",
       "php": "55%",
       "react-js": "65%"
     };
-
     var multiply = 4;
-
     $.each( lang, function( language, pourcent) {
-
-      var delay = 700;
-      
+      var delay = 700;      
       setTimeout(function() {
         $('#'+language+'-pourcent').html(pourcent);
-      },delay*multiply);
-      
+      },delay*multiply);      
       multiply++;
-
     });
 
 
