@@ -60,7 +60,6 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  box-sizing: border-box;
 }
 
 body {
@@ -78,6 +77,14 @@ img {
 *:focus, *:active {
   outline: none !important;
   -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -674,18 +681,12 @@ a.active:not(.logo) {
   opacity: 0.3;
 }
 
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .skills-bar-container {
+  font-size: 20px;
   width: 40%;
   min-width: 300px;
   list-style: none;
+  margin: 30px 50px;
 }
 
 .skills-bar-container li {
