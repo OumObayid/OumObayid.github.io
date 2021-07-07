@@ -1,11 +1,20 @@
+//percent of kills
+$percentHtml: 98%;
+$percentCss: 95%;
+$percentJavascript: 75%;
+$percentPhp: 65%;
+$percentReact: 70%;
 
-$li-padding: 5px;
 
+//color of kills
 $red: #c0392b;
 $blue: #1199ff;
 $purple: #9b59b6;
 $orange: #ffa500;
 $green: #27ae60;
+
+
+$li-padding: 5px;
 
 $animation-delay: .7s;
 
@@ -113,20 +122,27 @@ $animation-delay: .7s;
 .progressorange{background-color:$orange;}
 .progressgreen{background-color:$green;}
 
-@-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-@-webkit-keyframes progress-react{0%{width: 0%;} 100%{ width: 65%;}}
+$percentHtml: 98%;
+$percentCss: 95%;
+$percentJavascript: 75%;
+$percentPhp: 65%;
+$percentReact: 70%;
 
-@-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-@-moz-keyframes progress-react{0%{width: 0%;} 100%{ width: 65%;}}
+@-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: $percentHtml;}}
+@-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: $percentCss;}}
+@-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: $percentJavascript;}}
+@-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: $percentPhp;}}
+@-webkit-keyframes progress-react{0%{width: 0%;} 100%{ width: $percentReact;}}
 
-@keyframes progress-html{0%{width: 0%;} 100%{ width: 100%;}}
-@keyframes progress-css{0%{width: 0%;} 100%{ width: 90%;}}
-@keyframes progress-javascript{0%{width: 0%;} 100%{ width: 70%;}}
-@keyframes progress-php{0%{width: 0%;} 100%{ width: 55%;}}
-@keyframes progress-react{0%{width: 0%;} 100%{ width: 65%;}}
+
+@-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: $percentHtml;}}
+@-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: $percentCss;}}
+@-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: $percentJavascript;}}
+@-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: $percentPhp;}}
+@-moz-keyframes progress-react{0%{width: 0%;} 100%{ width: $percentReact;}}
+
+@keyframes progress-html{0%{width: 0%;} 100%{ width: $percentHtml;}}
+@keyframes progress-css{0%{width: 0%;} 100%{ width: $percentCss;}}
+@keyframes progress-javascript{0%{width: 0%;} 100%{ width: $percentJavascript;}}
+@keyframes progress-php{0%{width: 0%;} 100%{ width: $percentPhp;}}
+@keyframes progress-react{0%{width: 0%;} 100%{ width: $percentReact;}}

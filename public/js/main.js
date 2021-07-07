@@ -84,8 +84,7 @@ $(document).ready(function () {
     
     //Skills progangularress bar animated    
     var lang = {
-      "html": "78%",
-      "html": "15%",
+      "html": "98%",
       "css": "95%",
       "javascript": "75%",
       "php": "65%",
