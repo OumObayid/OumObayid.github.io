@@ -1,7 +1,7 @@
 //initialisation aos
 AOS.init(); 
 
-//jquery
+//jquery code
 $(document).ready(function () {  
    
     //mettre la page au top lors de son rechargement
@@ -46,44 +46,66 @@ $(document).ready(function () {
  
   // Navigation active state on scroll or on click 
   //change on scroll
- var sections = $('.section')
- , nav = $('.navbar')
- , nav_height = nav.outerHeight()
- ;
+    var sections = $('.section')
+    , nav = $('.navbar')
+    , nav_height = nav.outerHeight()
+    ;
 
-$(window).on('scroll', function () {    
-      cur_pos = $(this).scrollTop(); //global
-      sections.each(function() {
-        var top = $(this).offset().top - nav_height ,
-            bottom = top + $(this).outerHeight()  ;
-        
-        if (cur_pos >= top && cur_pos <= bottom) {
-          nav.find('a').removeClass('active');     
-          
-          $(this).addClass('active');
-          nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-        }
-      });
-      if (cur_pos >= 0 && cur_pos <= window.innerHeight - nav_height) {
-        nav.find('a').removeClass('active');
-        nav.find('a[href="#header"]').addClass('active');
-      }
-});
+    $(window).on('scroll', function () {    
+          cur_pos = $(this).scrollTop(); //global
+          sections.each(function() {
+            var top = $(this).offset().top - nav_height ,
+                bottom = top + $(this).outerHeight()  ;
+            
+            if (cur_pos >= top && cur_pos <= bottom) {
+              nav.find('a').removeClass('active');     
+              
+              $(this).addClass('active');
+              nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+            }
+          });
+          if (cur_pos >= 0 && cur_pos <= window.innerHeight - nav_height) {
+            nav.find('a').removeClass('active');
+            nav.find('a[href="#header"]').addClass('active');
+          }
+    });
 //change on click
-nav.find('a').on('click', function () {
-    var $el = $(this)
-    , id = $el.attr('href')
-    ,deletHeight=0;
-    if(cur_pos <= window.innerHeight && $el.attr('href')=="#apropos" ) deletHeight=80;//80 to change for adaptation
-     $('html, body').animate({
-    scrollTop: $(id).offset().top - nav_height - deletHeight
-    }, 500); 
-     return false;
-});
+    nav.find('a').on('click', function () {
+        var $el = $(this)
+        , id = $el.attr('href')
+        ,deletHeight=0;
+        if(cur_pos <= window.innerHeight && $el.attr('href')=="#apropos" ) deletHeight=80;//80 to change for adaptation
+        $('html, body').animate({
+        scrollTop: $(id).offset().top - nav_height - deletHeight
+        }, 500); 
+        return false;
+    });
     
-       
- 
+//Skills progress bar animated    
+    var lang = {
+      "html": "100%",
+      "css": "90%",
+      "javascript": "90%",
+      "php": "55%",
+      "react-js": "65%"
+    };
+
+    var multiply = 4;
+
+    $.each( lang, function( language, pourcent) {
+
+      var delay = 700;
+      
+      setTimeout(function() {
+        $('#'+language+'-pourcent').html(pourcent);
+      },delay*multiply);
+      
+      multiply++;
+
+    });
 
 
 
+
+//Jquery fin
 });
