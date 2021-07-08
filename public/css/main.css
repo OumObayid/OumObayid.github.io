@@ -753,37 +753,37 @@ a.active:not(.logo) {
 
 .skills-bar-container li .bar-container #progress-bootstrap {
   animation-name: progress-bootstrap;
-  animation-delay: 2.1s;
+  animation-delay: 2.8s;
 }
 
 .skills-bar-container li .bar-container #progress-photoshop {
   animation-name: progress-photoshop;
-  animation-delay: 2.1s;
+  animation-delay: 3.5s;
 }
 
 .skills-bar-container li .bar-container #progress-react {
   animation-name: progress-react;
-  animation-delay: 3.5s;
+  animation-delay: 4.2s;
 }
 
 .skills-bar-container li .bar-container #progress-php {
   animation-name: progress-php;
-  animation-delay: 2.8s;
+  animation-delay: 4.9s;
 }
 
 .skills-bar-container li .bar-container #progress-wordpress {
   animation-name: progress-wordpress;
-  animation-delay: 2.8s;
+  animation-delay: 5.6s;
 }
 
 .skills-bar-container li .bar-container #progress-asp {
   animation-name: progress-asp;
-  animation-delay: 2.8s;
+  animation-delay: 6.3s;
 }
 
 .skills-bar-container li .bar-container #progress-sql {
   animation-name: progress-sql;
-  animation-delay: 2.8s;
+  animation-delay: 7s;
 }
 
 @keyframes progress-html {
