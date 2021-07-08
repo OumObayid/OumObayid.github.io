@@ -88,8 +88,9 @@ $(document).ready(function () {
       "css": "95%",
       "javascript": "75%",
       "bootstrap" : "80%",
+      "photoshop"  : "65%",
       "react" : "65%",
-      "php": "65%",
+      "php": "70%",
       "wordpress" : "70%",
       "asp" : "50%",
       "sql": "65%"

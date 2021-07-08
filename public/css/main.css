@@ -751,14 +751,39 @@ a.active:not(.logo) {
   animation-delay: 2.1s;
 }
 
-.skills-bar-container li .bar-container #progress-php {
-  animation-name: progress-php;
-  animation-delay: 2.8s;
+.skills-bar-container li .bar-container #progress-bootstrap {
+  animation-name: progress-bootstrap;
+  animation-delay: 2.1s;
+}
+
+.skills-bar-container li .bar-container #progress-photoshop {
+  animation-name: progress-photoshop;
+  animation-delay: 2.1s;
 }
 
 .skills-bar-container li .bar-container #progress-react {
   animation-name: progress-react;
   animation-delay: 3.5s;
+}
+
+.skills-bar-container li .bar-container #progress-php {
+  animation-name: progress-php;
+  animation-delay: 2.8s;
+}
+
+.skills-bar-container li .bar-container #progress-wordpress {
+  animation-name: progress-wordpress;
+  animation-delay: 2.8s;
+}
+
+.skills-bar-container li .bar-container #progress-asp {
+  animation-name: progress-asp;
+  animation-delay: 2.8s;
+}
+
+.skills-bar-container li .bar-container #progress-sql {
+  animation-name: progress-sql;
+  animation-delay: 2.8s;
 }
 
 @keyframes progress-html {
@@ -788,7 +813,16 @@ a.active:not(.logo) {
   }
 }
 
-@keyframes progress-php {
+@keyframes progress-bootstrap {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes progress-photoshop {
   0% {
     width: 0%;
   }
@@ -802,7 +836,43 @@ a.active:not(.logo) {
     width: 0%;
   }
   100% {
+    width: 65%;
+  }
+}
+
+@keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
     width: 70%;
+  }
+}
+
+@keyframes progress-wordpress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes progress-asp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
+  }
+}
+
+@keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
   }
 }
 

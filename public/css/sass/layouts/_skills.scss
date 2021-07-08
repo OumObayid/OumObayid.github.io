@@ -2,8 +2,13 @@
 $percentHtml: 98%;
 $percentCss: 95%;
 $percentJavascript: 75%;
-$percentPhp: 65%;
-$percentReact: 70%;
+$percentBootstrap: 80%;
+$percentPhotoshop: 65%;
+$percentReact : 65%;
+$percentPhp: 70%;
+$percentWordpress: 70%;
+$percentAsp : 55%;
+$percentSql : 65%;
 
 
 
@@ -87,6 +92,25 @@ flex-wrap: wrap;
         -webkit-animation-delay:$animation-delay*3;
         animation-delay: $animation-delay*3;
       }
+      #progress-bootstrap{
+        -webkit-animation-name: progress-bootstrap;
+        animation-name: progress-bootstrap;
+        -webkit-animation-delay:$animation-delay*3;
+        animation-delay: $animation-delay*3;
+      }
+      #progress-photoshop{
+        -webkit-animation-name: progress-photoshop;
+        animation-name: progress-photoshop;
+        -webkit-animation-delay:$animation-delay*3;
+        animation-delay: $animation-delay*3;
+      }
+      
+      #progress-react{
+        -webkit-animation-name: progress-react;
+        animation-name: progress-react;
+        -webkit-animation-delay: $animation-delay*5;
+        animation-delay: $animation-delay*5;
+      }
 
       #progress-php{
         -webkit-animation-name: progress-php;
@@ -94,14 +118,26 @@ flex-wrap: wrap;
         -webkit-animation-delay: $animation-delay*4;
         animation-delay: $animation-delay*4;
       }
-
-      #progress-react{
-        -webkit-animation-name: progress-react;
-        animation-name: progress-react;
-        -webkit-animation-delay: $animation-delay*5;
-        animation-delay: $animation-delay*5;
+      #progress-wordpress{
+        -webkit-animation-name: progress-wordpress;
+        animation-name: progress-wordpress;
+        -webkit-animation-delay: $animation-delay*4;
+        animation-delay: $animation-delay*4;
       }
-    }// end bar-container
+      #progress-asp{
+        -webkit-animation-name: progress-asp;
+        animation-name: progress-asp;
+        -webkit-animation-delay: $animation-delay*4;
+        animation-delay: $animation-delay*4;
+      }
+      #progress-sql{
+        -webkit-animation-name: progress-sql;
+        animation-name: progress-sql;
+        -webkit-animation-delay: $animation-delay*4;
+        animation-delay: $animation-delay*4;
+      }
+
+    }
   }
 }
 
@@ -109,18 +145,33 @@ flex-wrap: wrap;
 @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: $percentHtml;}}
 @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: $percentCss;}}
 @-webkit-keyframes progress-javascript{0%{width: 0%;} 100%{ width: $percentJavascript;}}
-@-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: $percentPhp;}}
+@-webkit-keyframes progress-bootstrap{0%{width: 0%;} 100%{ width: $percentBootstrap;}}
+@-webkit-keyframes progress-photoshop{0%{width: 0%;} 100%{ width: $percentPhotoshop;}}
 @-webkit-keyframes progress-react{0%{width: 0%;} 100%{ width: $percentReact;}}
-
+@-webkit-keyframes progress-php{0%{width: 0%;} 100%{ width: $percentPhp;}}
+@-webkit-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: $percentWordpress;}}
+@-webkit-keyframes progress-asp{0%{width: 0%;} 100%{ width: $percentAsp;}}
+@-webkit-keyframes progress-sql{0%{width: 0%;} 100%{ width: $percentSql;}}
 
 @-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: $percentHtml;}}
 @-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: $percentCss;}}
 @-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: $percentJavascript;}}
-@-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: $percentPhp;}}
+@-moz-keyframes progress-bootstrap{0%{width: 0%;} 100%{ width: $percentBootstrap;}}
+@-moz-keyframes progress-photoshop{0%{width: 0%;} 100%{ width: $percentPhotoshop;}}
 @-moz-keyframes progress-react{0%{width: 0%;} 100%{ width: $percentReact;}}
+@-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: $percentPhp;}}
+@-moz-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: $percentWordpress;}}
+@-moz-keyframes progress-asp{0%{width: 0%;} 100%{ width: $percentAsp;}}
+@-moz-keyframes progress-sql{0%{width: 0%;} 100%{ width: $percentSql;}}
 
 @keyframes progress-html{0%{width: 0%;} 100%{ width: $percentHtml;}}
 @keyframes progress-css{0%{width: 0%;} 100%{ width: $percentCss;}}
 @keyframes progress-javascript{0%{width: 0%;} 100%{ width: $percentJavascript;}}
-@keyframes progress-php{0%{width: 0%;} 100%{ width: $percentPhp;}}
+@keyframes progress-bootstrap{0%{width: 0%;} 100%{ width: $percentBootstrap;}}
+@keyframes progress-photoshop{0%{width: 0%;} 100%{ width: $percentPhotoshop;}}
 @keyframes progress-react{0%{width: 0%;} 100%{ width: $percentReact;}}
+@keyframes progress-php{0%{width: 0%;} 100%{ width: $percentPhp;}}
+@keyframes progress-wordpress{0%{width: 0%;} 100%{ width: $percentWordpress;}}
+@keyframes progress-asp{0%{width: 0%;} 100%{ width: $percentAsp;}}
+@keyframes progress-sql{0%{width: 0%;} 100%{ width: $percentSql;}}
+
