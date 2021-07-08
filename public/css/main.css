@@ -714,7 +714,8 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container li .bar-container {
-  background: #555;
+  background-color: #007ba0;
+  opacity: .2;
   position: relative;
   width: 100%;
   height: 5px;
