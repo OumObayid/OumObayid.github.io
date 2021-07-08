@@ -6,12 +6,12 @@ $percentPhp: 65%;
 $percentReact: 70%;
 
 
-//color of kills
-$red: #c0392b;
-$blue: #1199ff;
-$purple: #9b59b6;
-$orange: #ffa500;
-$green: #27ae60;
+// //color of kills
+// $red: #c0392b;
+// $blue: #1199ff;
+// $purple: #9b59b6;
+// $orange: #ffa500;
+// $green: #27ae60;
 
 
 $li-padding: 5px;
@@ -59,6 +59,7 @@ flex-wrap: wrap;
       @include border-radius(5px);
       
       .progressbar{
+        background-color: $color-profile2;
         position:absolute;
         width:0%;
         height: 100%;
@@ -109,11 +110,11 @@ flex-wrap: wrap;
   }
 }
 
-.progressred{background-color:$red;}
-.progressblue{background-color:$blue;}
-.progresspurple{background-color:$purple;}
-.progressorange{background-color:$orange;}
-.progressgreen{background-color:$green;}
+// .progressred{background-color:$red;}
+// .progressblue{background-color:$blue;}
+// .progresspurple{background-color:$purple;}
+// .progressorange{background-color:$orange;}
+// .progressgreen{background-color:$green;}
 
 $percentHtml: 98%;
 $percentCss: 95%;

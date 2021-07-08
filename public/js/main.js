@@ -82,7 +82,7 @@ $(document).ready(function () {
         return false;
     });
     
-    //Skills progangularress bar animated    
+    //Skills progress bar animated    
     var lang = {
       "html": "98%",
       "css": "95%",
