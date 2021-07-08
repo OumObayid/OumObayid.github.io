@@ -7,6 +7,6 @@
     // pour changer le theme mettre true à celui choisi et false aux reste
     
     
-    $blueTheme : true ;
-    $orangeTheme :false  ; 
+    $blueTheme : false ;
+    $orangeTheme : true ; 
     $greenTheme :false  ;
