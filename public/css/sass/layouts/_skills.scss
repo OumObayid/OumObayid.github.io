@@ -105,17 +105,6 @@ flex-wrap: wrap;
   }
 }
 
-// .progressred{background-color:$red;}
-// .progressblue{background-color:$blue;}
-// .progresspurple{background-color:$purple;}
-// .progressorange{background-color:$orange;}
-// .progressgreen{background-color:$green;}
-
-$percentHtml: 98%;
-$percentCss: 95%;
-$percentJavascript: 75%;
-$percentPhp: 65%;
-$percentReact: 70%;
 
 @-webkit-keyframes progress-html{0%{width: 0%;} 100%{ width: $percentHtml;}}
 @-webkit-keyframes progress-css{0%{width: 0%;} 100%{ width: $percentCss;}}
