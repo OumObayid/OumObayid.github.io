@@ -96,12 +96,12 @@ $(document).ready(function () {
       "sql": "65%"
     };
     
-    var multiply = 4;
+    var multiply = 1;
     var duration = 2;
     var delay = 700;
     $.each( lang, function( language, pourcent) {  
       setTimeout(function() {
-        $('#'+language+'-pourcent').fadeIn("slow").html(pourcent);
+        $('#'+language+'-pourcent').html(pourcent);
       },duration + delay*multiply);
       
       multiply++;
