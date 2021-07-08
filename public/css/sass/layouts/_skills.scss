@@ -42,10 +42,10 @@ flex-wrap: wrap;
         right: $li-padding;
       }
     }// end progressbar-title
-    
+    // 
     .bar-container{
-      background-color: $color-profile2;
-      opacity: .2;
+      background-color: rgba($color-profile2,0.5);
+      
       position: relative;
       width: 100%;
       height: 5px;
