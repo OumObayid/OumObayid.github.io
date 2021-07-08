@@ -53,67 +53,71 @@ flex-wrap: wrap;
         animation-timing-function: ease-out;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
+        -webkit-animation-name: progress;
+        animation-name: progress;
+        -webkit-animation-delay: $animation-delay;
+        animation-delay: $animation-delay;
       }
       //nommage des animations et delai des animations
-      #progress-html{
+      .progressbar#progress-html{
         -webkit-animation-name: progress-html;
         animation-name: progress-html;
         -webkit-animation-delay: $animation-delay;
         animation-delay: $animation-delay;
       }
 
-      #progress-css{
+      .progressbar#progress-css{
         -webkit-animation-name: progress-css;
         animation-name: progress-css;
         -webkit-animation-delay: $animation-delay*2;
         animation-delay: $animation-delay*2;
       }
 
-      #progress-javascript{
+      .progressbar#progress-javascript{
         -webkit-animation-name: progress-javascript;
         animation-name: progress-javascript;
         -webkit-animation-delay:$animation-delay*3;
         animation-delay: $animation-delay*3;
       }
-      #progress-bootstrap{
+      .progressbar#progress-bootstrap{
         -webkit-animation-name: progress-bootstrap;
         animation-name: progress-bootstrap;
         -webkit-animation-delay:$animation-delay*3;
         animation-delay: $animation-delay*4;
       }
-      #progress-photoshop{
+      .progressbar#progress-photoshop{
         -webkit-animation-name: progress-photoshop;
         animation-name: progress-photoshop;
         -webkit-animation-delay:$animation-delay*3;
         animation-delay: $animation-delay*5;
       }
       
-      #progress-react{
+      .progressbar#progress-react{
         -webkit-animation-name: progress-react;
         animation-name: progress-react;
         -webkit-animation-delay: $animation-delay*5;
         animation-delay: $animation-delay*6;
       }
 
-      #progress-php{
+      .progressbar#progress-php{
         -webkit-animation-name: progress-php;
         animation-name: progress-php;
         -webkit-animation-delay: $animation-delay*4;
         animation-delay: $animation-delay*7;
       }
-      #progress-wordpress{
+      .progressbar#progress-wordpress{
         -webkit-animation-name: progress-wordpress;
         animation-name: progress-wordpress;
         -webkit-animation-delay: $animation-delay*4;
         animation-delay: $animation-delay*8;
       }
-      #progress-asp{
+      .progressbar#progress-asp{
         -webkit-animation-name: progress-asp;
         animation-name: progress-asp;
         -webkit-animation-delay: $animation-delay*4;
         animation-delay: $animation-delay*9;
       }
-      #progress-sql{
+      .progressbar#progress-sql{
         -webkit-animation-name: progress-sql;
         animation-name: progress-sql;
         -webkit-animation-delay: $animation-delay*4;

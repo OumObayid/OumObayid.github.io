@@ -228,6 +228,11 @@ h4, .logo {
   color: #ffffff;
 }
 
+@font-face {
+  font-family: "Ludicrous-Stencil";
+  src: url("../../../../public/fonts/Ludicrous-Stencil.ttf");
+}
+
 .navbar {
   position: fixed;
   font-weight: bold !important;
@@ -237,7 +242,7 @@ h4, .logo {
 }
 
 .navbar a.logo::after {
-  content: url(../../../../public/images/logoOrange.png);
+  content: url(../../../../public/images/logoBlue.png);
 }
 
 .navbar li {
@@ -262,14 +267,14 @@ h4, .logo {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #bd8a0a;
+  background-color: #007ba0;
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.5s;
 }
 
 .navbar li a:hover {
-  color: #bd8a0a;
+  color: #007ba0;
 }
 
 .navbar li a:hover::after {
@@ -278,7 +283,7 @@ h4, .logo {
 }
 
 a.active:not(.logo) {
-  color: #bd8a0a;
+  color: #007ba0;
 }
 
 .invisible {
@@ -286,13 +291,11 @@ a.active:not(.logo) {
 }
 
 .scrolled {
-  background-image: linear-gradient(90deg, #221d00 10%, #504400 30%, #dbb406 50%);
+  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #03bcf5 50%);
 }
 
-.parallax-window {
-  max-height: 100vh;
-  background-color: #dbb406;
-  opacity: 0.2;
+.welcom {
+  height: 100vh;
 }
 
 .profile-img a {
@@ -354,7 +357,7 @@ a.active:not(.logo) {
   margin: 0 auto;
   color: white;
   /* Clip Background Image */
-  background: url("../../../../public/images/animated-text-fill-orange.png") repeat-y;
+  background: url("../../../../public/images/animated-text-fill-blue.png") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -423,7 +426,7 @@ a.active:not(.logo) {
 }
 
 .twoButtons div:hover a {
-  color: #bd8a0a;
+  color: #007ba0;
   opacity: 1;
 }
 
@@ -439,7 +442,7 @@ a.active:not(.logo) {
   display: flex;
   justify-content: center;
   top: 80px;
-  color: #bd8a0a;
+  color: #007ba0;
   opacity: .6;
   font-weight: bold;
   line-height: 20px;
@@ -455,7 +458,6 @@ a.active:not(.logo) {
 .bubble-ocean {
   position: relative;
   width: 100vw;
-  height: 100vh;
 }
 
 .bubble {
@@ -673,7 +675,7 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container li .bar-container {
-  background-color: rgba(189, 138, 10, 0.5);
+  background-color: rgba(0, 123, 160, 0.5);
   position: relative;
   width: 100%;
   height: 5px;
@@ -683,7 +685,7 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container li .bar-container .progressbar {
-  background-color: #bd8a0a;
+  background-color: #007ba0;
   position: absolute;
   width: 0%;
   height: 100%;
@@ -691,54 +693,56 @@ a.active:not(.logo) {
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
+  animation-name: progress;
+  animation-delay: 0.7s;
 }
 
-.skills-bar-container li .bar-container #progress-html {
+.skills-bar-container li .bar-container .progressbar#progress-html {
   animation-name: progress-html;
   animation-delay: 0.7s;
 }
 
-.skills-bar-container li .bar-container #progress-css {
+.skills-bar-container li .bar-container .progressbar#progress-css {
   animation-name: progress-css;
   animation-delay: 1.4s;
 }
 
-.skills-bar-container li .bar-container #progress-javascript {
+.skills-bar-container li .bar-container .progressbar#progress-javascript {
   animation-name: progress-javascript;
   animation-delay: 2.1s;
 }
 
-.skills-bar-container li .bar-container #progress-bootstrap {
+.skills-bar-container li .bar-container .progressbar#progress-bootstrap {
   animation-name: progress-bootstrap;
   animation-delay: 2.8s;
 }
 
-.skills-bar-container li .bar-container #progress-photoshop {
+.skills-bar-container li .bar-container .progressbar#progress-photoshop {
   animation-name: progress-photoshop;
   animation-delay: 3.5s;
 }
 
-.skills-bar-container li .bar-container #progress-react {
+.skills-bar-container li .bar-container .progressbar#progress-react {
   animation-name: progress-react;
   animation-delay: 4.2s;
 }
 
-.skills-bar-container li .bar-container #progress-php {
+.skills-bar-container li .bar-container .progressbar#progress-php {
   animation-name: progress-php;
   animation-delay: 4.9s;
 }
 
-.skills-bar-container li .bar-container #progress-wordpress {
+.skills-bar-container li .bar-container .progressbar#progress-wordpress {
   animation-name: progress-wordpress;
   animation-delay: 5.6s;
 }
 
-.skills-bar-container li .bar-container #progress-asp {
+.skills-bar-container li .bar-container .progressbar#progress-asp {
   animation-name: progress-asp;
   animation-delay: 6.3s;
 }
 
-.skills-bar-container li .bar-container #progress-sql {
+.skills-bar-container li .bar-container .progressbar#progress-sql {
   animation-name: progress-sql;
   animation-delay: 7s;
 }
@@ -834,7 +838,7 @@ a.active:not(.logo) {
 }
 
 .cardbg {
-  background-color: #bd8a0a !important;
+  background-color: #007ba0 !important;
 }
 
 @media only screen and (min-width: 992px) {
@@ -856,7 +860,7 @@ a.active:not(.logo) {
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #bd8a0a #ffffff;
+  scrollbar-color: #007ba0 #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
@@ -869,7 +873,7 @@ a.active:not(.logo) {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #bd8a0a;
+  background-color: #007ba0;
   border-radius: 10px;
   border: 3px solid #ffffff;
   transition: all .3s  ease-in;
@@ -877,7 +881,7 @@ a.active:not(.logo) {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #dbb406;
+  background: #03bcf5;
 }
 
 /*--------------------------------------------------------------
@@ -891,7 +895,7 @@ a.active:not(.logo) {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #bd8a0a;
+  background: #007ba0;
   color: white;
   transition: all 0.5s ease-in-out;
   z-index: 50;
@@ -905,7 +909,7 @@ a.active:not(.logo) {
 }
 
 .back-to-top:hover {
-  background: #dbb406;
+  background: #03bcf5;
 }
 
 .flexrow {
@@ -923,6 +927,6 @@ a.active:not(.logo) {
 }
 
 .title {
-  color: #bd8a0a;
+  color: #007ba0;
 }
 /*# sourceMappingURL=main.css.map */

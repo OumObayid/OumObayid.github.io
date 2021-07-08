@@ -1,7 +1,7 @@
 
 //parallax for image profile
-.parallax-window {
-    max-height: 100vh;   
+.welcom {
+    height: 100vh;   
 	@if not($blueTheme) {
 	background-color: $color-profile3;
 	opacity: 0.2;
@@ -199,7 +199,7 @@
 .bubble-ocean{
 	position: relative;
 	width: 100vw;
-	height: 100vh;
+	// height: 100vh;
 }
 .bubble {
 	// border: 1px solid red;

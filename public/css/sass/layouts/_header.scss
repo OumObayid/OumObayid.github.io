@@ -1,8 +1,8 @@
 //à décommenter si vous avez un logo à remplacer
-// @font-face {
-// 	font-family: "Ludicrous-Stencil";
-// 	src: url('../../../../public/fonts/Ludicrous-Stencil.ttf') ;
-//    }
+@font-face {
+	font-family: "Ludicrous-Stencil";
+	src: url('../../../../public/fonts/Ludicrous-Stencil.ttf') ;
+   }
 .navbar { 
     a.logo::after{
       //on peut mettre du texte à la place du logo
@@ -10,8 +10,8 @@
       //   font-weight: bold;
       //   font-size:30px !important;
       //   line-height: 50px;
-      // //  @include color-bgLogo; 
-      // color:$color-profile3; 
+      //  @include color-bgLogo; 
+      // color:$color-profile2; 
       // content:"OUMCREATION";
       content:$logoImg;
     }   

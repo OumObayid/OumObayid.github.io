@@ -2,12 +2,8 @@
 AOS.init(); 
 
 //jquery code
-$(document).ready(function () {  
+$(document).ready(function () {    
    
-    //mettre la page au top lors de son rechargement
-    $('html, body').animate({ 
-        scrollTop: '0px' 
-    }); 
    
      //navbar
     $(document).scroll(function () {
@@ -83,28 +79,22 @@ $(document).ready(function () {
     });
     
     //Skills progress bar animated 
-    // les pourcentages et le délai  ci-dessous doivent être les mêmes dans le fichiers _skills.scss  
-    var lang = {
-      "html": "98%",
-      "css": "95%",
-      "javascript": "75%",
-      "bootstrap" : "80%",
-      "photoshop"  : "65%",
-      "react" : "65%",
-      "php": "70%",
-      "wordpress" : "70%",
-      "asp" : "50%",
-      "sql": "65%"
-    };
-    
-    var multiply = 4;
-    var delay = 700;
-    $.each( lang, function( language, pourcent) {  
-      setTimeout(function() {
-        $('#'+language+'-pourcent').html(pourcent);
-      },delay*multiply);      
-      multiply++;    
+    var offsetTop = $('#skills').offset().top;
+    $(window).scroll(function() {
+    var height = $(window).height();
+    if($(window).scrollTop()+height > offsetTop) {
+
+      jQuery('.bar-container span').each(function(){
+        jQuery(this).addClass('progressbar')
+      });
+
+    }else{
+      jQuery('.bar-container span').each(function(){
+        jQuery(this).removeClass('progressbar')
+      });
+    }
     });
+  
 
 
 
