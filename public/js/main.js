@@ -82,7 +82,8 @@ $(document).ready(function () {
         return false;
     });
     
-    //Skills progress bar animated    
+    //Skills progress bar animated 
+    // les pourcentages et le délai  ci-dessous doivent être les mêmes dans le fichiers _skills.scss  
     var lang = {
       "html": "98%",
       "css": "95%",
@@ -96,16 +97,13 @@ $(document).ready(function () {
       "sql": "65%"
     };
     
-    var multiply = 1;
-    var duration = 2;
+    var multiply = 4;
     var delay = 700;
     $.each( lang, function( language, pourcent) {  
       setTimeout(function() {
         $('#'+language+'-pourcent').html(pourcent);
-      },duration + delay*multiply);
-      
-      multiply++;
-    
+      },delay*multiply);      
+      multiply++;    
     });
 
 
