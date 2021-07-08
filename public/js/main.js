@@ -97,14 +97,12 @@ $(document).ready(function () {
     };
     
     var multiply = 4;
-    
-    $.each( lang, function( language, pourcent) {
-    
-      var delay = 700;
-      
+    var duration = 2;
+    var delay = 700;
+    $.each( lang, function( language, pourcent) {  
       setTimeout(function() {
-        $('#'+language+'-pourcent').html(pourcent);
-      },delay*multiply);
+        $('#'+language+'-pourcent').fadeIn("slow").html(pourcent);
+      },duration + delay*multiply);
       
       multiply++;
     
