@@ -87,8 +87,12 @@ $(document).ready(function () {
       "html": "98%",
       "css": "95%",
       "javascript": "75%",
+      "bootstrap" : "80%",
+      "react" : "65%",
       "php": "65%",
-      "react-js": "70%"
+      "wordpress" : "70%",
+      "asp" : "50%",
+      "sql": "65%"
     };
     
     var multiply = 4;
