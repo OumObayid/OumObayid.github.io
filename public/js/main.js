@@ -1,10 +1,10 @@
-//initialisation aos
-// AOS.init(); 
-// AOS.init({
-//   duration: 800,
-//   easing: "ease-in-out",
-//   once: true
-// });
+// initialisation aos
+AOS.init(); 
+AOS.init({
+  duration: 800,
+  easing: "ease-in-out",
+  once: true
+});
 
 //jquery code
 $(document).ready(function () {    
@@ -29,17 +29,28 @@ $(document).ready(function () {
     }); 
 
     // Un défilement animé (« Smooth scroll ») en jQuery sans plugin
-    $('a[href^="#"]').click(function () {
-        var the_id = $(this).attr("href");
-        if (the_id === '#') {
-            return;
-        }
+    // $('a[href^="#"]').click(function () {
+    //     var the_id = $(this).attr("href");
+    //     if (the_id === '#') {
+    //         return;
+    //     }
+    //     $('html, body').animate({
+    //         scrollTop: ($(the_id).offset()).top - 70
+    //     }, 'slow');
+    //     return false;
+    // });
+    // Activate smooth scroll on page load with hash links in the url
+  $(document).ready(function() {
+    if (window.location.hash) {
+      var initial_nav = window.location.hash;
+      if ($(initial_nav).length) {
+        var scrollto = $(initial_nav).offset().top - scrolltoOffset;
         $('html, body').animate({
-            scrollTop: ($(the_id).offset()).top - 70
-        }, 'slow');
-        return false;
-    });
-
+          scrollTop: scrollto
+        }, 1500, 'easeInOutExpo');
+      }
+    }
+  });
     // Back to top button
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
