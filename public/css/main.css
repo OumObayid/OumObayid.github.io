@@ -1,10 +1,5 @@
 /*
     |-------------------------------|
-    |-------theme parametres--------|
-    |-------------------------------|
-    */
-/*
-    |-------------------------------|
     |------- Variables Colors-------|
     |-------------------------------|
     */
@@ -265,14 +260,14 @@ h4, .logo {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #007ba0;
+  background-color: #1380a1;
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.5s;
 }
 
 .navbar li a:hover {
-  color: #007ba0;
+  color: #1380a1;
 }
 
 .navbar li a:hover::after {
@@ -281,7 +276,7 @@ h4, .logo {
 }
 
 a.active:not(.logo) {
-  color: #007ba0;
+  color: #1380a1;
 }
 
 .invisible {
@@ -294,6 +289,8 @@ a.active:not(.logo) {
 
 .welcom {
   height: 100vh;
+  background-color: #03bcf5;
+  opacity: 0.2;
 }
 
 .profile-img a {
@@ -424,7 +421,7 @@ a.active:not(.logo) {
 }
 
 .twoButtons div:hover a {
-  color: #007ba0;
+  color: #1380a1;
   opacity: 1;
 }
 
@@ -440,7 +437,7 @@ a.active:not(.logo) {
   display: flex;
   justify-content: center;
   top: 80px;
-  color: #007ba0;
+  color: #1380a1;
   opacity: .6;
   font-weight: bold;
   line-height: 20px;
@@ -673,7 +670,7 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container li .bar-container {
-  background-color: rgba(0, 123, 160, 0.5);
+  background-color: rgba(19, 128, 161, 0.5);
   position: relative;
   width: 100%;
   height: 5px;
@@ -683,7 +680,7 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container li .bar-container .progressbar {
-  background-color: #007ba0;
+  background-color: #1380a1;
   position: absolute;
   width: 0%;
   height: 100%;
@@ -1023,7 +1020,7 @@ a.active:not(.logo) {
 }
 
 .cardbg {
-  background-color: #007ba0 !important;
+  background-color: #1380a1 !important;
 }
 
 @media only screen and (min-width: 992px) {
@@ -1045,7 +1042,7 @@ a.active:not(.logo) {
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: #007ba0 #ffffff;
+  scrollbar-color: #1380a1 #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
@@ -1058,7 +1055,7 @@ a.active:not(.logo) {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #007ba0;
+  background-color: #1380a1;
   border-radius: 10px;
   border: 3px solid #ffffff;
   transition: all .3s  ease-in;
@@ -1080,7 +1077,7 @@ a.active:not(.logo) {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #007ba0;
+  background: #1380a1;
   color: white;
   transition: all 0.5s ease-in-out;
   z-index: 50;
@@ -1112,6 +1109,6 @@ a.active:not(.logo) {
 }
 
 .title {
-  color: #007ba0;
+  color: #1380a1;
 }
 /*# sourceMappingURL=main.css.map */

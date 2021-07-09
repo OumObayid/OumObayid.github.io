@@ -1,9 +1,4 @@
-    
-        
-   //include theme
-   @import "./_themes.js";
-      
-   
+
     //color by default 
     $color-profile2:#1380a1;
     $color-profile3: rgb(3, 188, 245);
@@ -11,26 +6,6 @@
     $animated-text-fill-img:"animated-text-fill-blue.png";    
     $logoImg:url(../images/logoBlue.png);
 
-    @if ($orangeTheme) {
-        $color-profile2:#bd8a0a;
-        $color-profile3: #dbb406;
-        $color-bgNav: linear-gradient(90deg, rgb(34, 29, 0) 10%, rgb(80, 68, 0) 30%, $color-profile3 50%);
-        $animated-text-fill-img:"animated-text-fill-orange.png";
-        $logoImg:url(../images/logoOrange.png);
-   } @else if $blueTheme {
-        $color-profile2:#007ba0;
-        $color-profile3: rgb(3, 188, 245);
-        $color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-profile3 50%);
-        $animated-text-fill-img:"animated-text-fill-blue.png";
-        $logoImg:url(../images/logoBlue.png);
-    } @else if $greenTheme{
-        $color-profile2:#859403;
-        $color-profile3:rgb(178, 197, 2);        
-        $color-bgNav: linear-gradient(90deg, rgb(21, 31, 0) 10%, rgb(85, 92, 28) 30%, $color-profile3 50%);
-        $animated-text-fill-img:"animated-text-fill-green.png";
-        $logoImg:url(../images/logoGreen.png);
-
-    } 
     
     
 
