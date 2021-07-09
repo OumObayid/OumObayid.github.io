@@ -1,15 +1,26 @@
 //initialisation aos
-AOS.init(); 
-AOS.init({
-  duration: 800,
-  easing: "ease-in-out",
-  once: true
-});
+// AOS.init(); 
+// AOS.init({
+//   duration: 800,
+//   easing: "ease-in-out",
+//   once: true
+// });
 
 //jquery code
 $(document).ready(function () {    
     
-   
+    // Init AOS
+  function aos_init() {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true
+    });
+  }
+  $(window).on('load', function() {
+    aos_init();
+  });
+
      //navbar
     $(document).scroll(function () {
       var $nav = $(".navbar");
@@ -122,8 +133,26 @@ $(document).ready(function () {
     $('.venobox').venobox();
   });
   
- // Portfolio details carousel
- $(".portfolio-details-carousel").owlCarousel({
+ // Testimonials carousel (uses the Owl Carousel library)
+ $(".testimonials-carousel").owlCarousel({
+  autoplay: true,
+  dots: true,
+  loop: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    900: {
+      items: 3
+    }
+  }
+});
+
+// Portfolio details carousel
+$(".portfolio-details-carousel").owlCarousel({
   autoplay: true,
   dots: true,
   loop: true,
