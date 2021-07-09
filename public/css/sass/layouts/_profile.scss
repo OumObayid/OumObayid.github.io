@@ -1,6 +1,8 @@
 
-//parallax for image profile
-.welcom {
+
+//parallax for image background profile
+ .welcom {
+	 
     height: 100vh;   
 	@if not($blueTheme) {
 	background-color: $color-profile3;
@@ -62,7 +64,7 @@
 // content-profile-center
 @font-face {
 	font-family: "cute-animal";
-	src: url("../../../../public/fonts/cute-animal.ttf") ;
+	src: url("../fonts/cute-animal.ttf") ;
    }
 .content-profile-center {
 	span.name{

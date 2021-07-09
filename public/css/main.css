@@ -23,7 +23,7 @@
 @font-face {
   font-family: "Ludicrous-Stencil";
   font-weight: 400;
-  src: url("../../../../public/fonts/Ludicrous-Stencil.ttf");
+  src: url("../fonts/Ludicrous-Stencil.ttf");
   font-display: swap;
   font-style: normal;
 }
@@ -230,7 +230,7 @@ h4, .logo {
 
 @font-face {
   font-family: "Ludicrous-Stencil";
-  src: url("../../../../public/fonts/Ludicrous-Stencil.ttf");
+  src: url("../fonts/Ludicrous-Stencil.ttf");
 }
 
 .navbar {
@@ -243,7 +243,7 @@ h4, .logo {
 }
 
 .navbar a.logo {
-  content: url(../../../../public/images/logoBlue.png);
+  content: url(../images/logoBlue.png);
   width: 150px;
 }
 
@@ -331,7 +331,7 @@ a.active:not(.logo) {
 
 @font-face {
   font-family: "cute-animal";
-  src: url("../../../../public/fonts/cute-animal.ttf");
+  src: url("../fonts/cute-animal.ttf");
 }
 
 .content-profile-center {
@@ -355,7 +355,7 @@ a.active:not(.logo) {
   margin: 0 auto;
   color: white;
   /* Clip Background Image */
-  background: url("../../../../public/images/animated-text-fill-blue.png") repeat-y;
+  background: url("../images/animated-text-fill-blue.png") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
