@@ -234,19 +234,17 @@ h4, .logo {
 }
 
 .navbar {
+  /*-----------title logo or image logo----------*/
+  /*-----------end title logo or image logo----------*/
   position: fixed;
-  font-weight: bold !important;
   top: 0;
   background-color: rgba(255, 255, 255, 0);
   transition: 0.3s linear;
 }
 
-.navbar a.logo::after {
+.navbar a.logo {
   content: url(../../../../public/images/logoBlue.png);
-}
-
-.navbar li {
-  padding: 6px 0;
+  width: 150px;
 }
 
 .navbar li a {

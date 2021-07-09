@@ -4,20 +4,22 @@
 	src: url('../../../../public/fonts/Ludicrous-Stencil.ttf') ;
    }
 .navbar { 
-    a.logo::after{
-      //on peut mettre du texte à la place du logo
-      // font-family: "Ludicrous-Stencil",sans-serif;
-      //   font-weight: bold;
-      //   font-size:30px !important;
-      //   line-height: 50px;
-      //  @include color-bgLogo; 
-      // color:$color-profile2; 
-      // content:"OUMCREATION";
-      content:$logoImg;
-    }   
+  /*-----------title logo or image logo----------*/
+  //décommenter l'un des deux
+  a.logo{  
+    content:$logoImg; 
+    width:150px ;
+  }   
+  // a.logo::after{    
+  //   font-family: "Ludicrous-Stencil",sans-serif;
+  //     font-weight: bold;
+  //     font-size:30px !important;      
+  //    @include color-bgLogo; 
+  //   color:$color-profile2; 
+  //   content:"OUMCREATION";    
+  // }   
+  /*-----------end title logo or image logo----------*/
     li {
-        padding: 6px 0;  
-        
         a{
           position: relative;
           display: block;
@@ -51,8 +53,7 @@
           }
         }
       }  
-    position: fixed;
-    font-weight: bold !important;
+    position: fixed;    
     top:0;
     background-color: rgba(255,255,255,0); // media query
     -webkit-transition:  0.3s linear; 
