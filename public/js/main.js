@@ -1,14 +1,9 @@
-// initialisation aos
-AOS.init(); 
-AOS.init({
-  duration: 800,
-  easing: "ease-in-out",
-  once: true
-});
+
 
 //jquery code
-$(document).ready(function () {    
-    
+$(function() {
+  // "use strict";
+  
     // Init AOS
   function aos_init() {
     AOS.init({
@@ -29,27 +24,18 @@ $(document).ready(function () {
     }); 
 
     // Un défilement animé (« Smooth scroll ») en jQuery sans plugin
-    // $('a[href^="#"]').click(function () {
-    //     var the_id = $(this).attr("href");
-    //     if (the_id === '#') {
-    //         return;
-    //     }
-    //     $('html, body').animate({
-    //         scrollTop: ($(the_id).offset()).top - 70
-    //     }, 'slow');
-    //     return false;
-    // });
-    // Activate smooth scroll on page load with hash links in the url
-  $(document).ready(function() {
-    if (window.location.hash) {
-      var initial_nav = window.location.hash;
-      if ($(initial_nav).length) {
-        var scrollto = $(initial_nav).offset().top - scrolltoOffset;
+  
+$(document).ready(function() {
+    $('a[href^="#"]').click(function () {
+        var the_id = $(this).attr("href");
+        if (the_id === '#') {
+            return;
+        }
         $('html, body').animate({
-          scrollTop: scrollto
-        }, 1500, 'easeInOutExpo');
-      }
-    }
+            scrollTop: ($(the_id).offset()).top - 70
+        }, 'slow');
+        return false;
+    });
   });
     // Back to top button
     $(window).scroll(function() {
@@ -94,6 +80,7 @@ $(document).ready(function () {
         });
 
 //change navbar on click
+$(document).ready(function() {
     nav.find('a').on('click', function () {
         var $el = $(this)
         , id = $el.attr('href')
@@ -104,6 +91,7 @@ $(document).ready(function () {
         }, 500); 
         return false;
     });
+  });
     
     //Skills progress bar animated 
     var offsetTop = $('#skills').offset().top;
@@ -175,4 +163,4 @@ $(".portfolio-details-carousel").owlCarousel({
 
 
 //Jquery fin
-});
+})(jQuery);
