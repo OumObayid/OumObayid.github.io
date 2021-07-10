@@ -1,4 +1,7 @@
-
+ // Activate SimpleLightbox plugin for portfolio items
+ new SimpleLightbox({
+  elements: '#portfolio a.portfolio-box'
+});
 
 //jquery code
 $(document).ready(function () {    
@@ -153,10 +156,7 @@ $(".portfolio-details-carousel").owlCarousel({
   items: 1
 });
 
- // Activate SimpleLightbox plugin for portfolio items
- new SimpleLightbox({
-  elements: '#portfolio a.portfolio-box'
-});
+
 
 
 
