@@ -5,21 +5,13 @@
    }
 .navbar { 
   width: 100%;
-  /*-----------title logo or image logo----------*/
-  //décommenter l'un des deux
+  /*-----------image logo----------*/
+  
   a.logo{  
     content:$logoImg; 
     width:150px ;
   }   
-  // a.logo::after{    
-  //   font-family: "Ludicrous-Stencil",sans-serif;
-  //     font-weight: bold;
-  //     font-size:30px !important;      
-  //    @include color-bgLogo; 
-  //   color:$color-profile2; 
-  //   content:"OUMCREATION";    
-  // }   
-  /*-----------end title logo or image logo----------*/
+  
     li {
         a{
           position: relative;
