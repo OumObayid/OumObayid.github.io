@@ -42,17 +42,15 @@ box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.5);
 
 .filter
 {
-  
-    .img{
-     width: 100%;
-    }
+ 
+    
     position:relative;
     overflow:hidden;
     a{
       text-decoration: none;
       color: $color-titles;
       text-align: center;
-     
+      width: 60%;
       
     }   
 
