@@ -899,12 +899,8 @@ a.active:not(.logo) {
   background: rgba(0, 178, 255, 0.5);
   bottom: 0px;
   left: 100%;
-  padding: 20px;
+  padding: 10px;
   transition: all .5s;
-}
-
-.filter .cap2 a {
-  vertical-align: middle;
 }
 
 .filter:hover .cap1, .filter:hover .cap2 {
