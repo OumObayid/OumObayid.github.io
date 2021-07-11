@@ -637,6 +637,10 @@ a.active:not(.logo) {
   opacity: 0.3;
 }
 
+#apropos img {
+  width: 100%;
+}
+
 .container-skills {
   width: 100%;
   flex-wrap: wrap;
