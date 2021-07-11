@@ -86,7 +86,6 @@ body {
   width: 100%;
   background-color: #ffffff;
   overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 body a:hover {
