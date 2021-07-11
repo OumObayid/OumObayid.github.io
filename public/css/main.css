@@ -878,7 +878,6 @@ a.active:not(.logo) {
 }
 
 .filter {
-  border: 1px solid red;
   position: relative;
   overflow: hidden;
 }
@@ -889,7 +888,7 @@ a.active:not(.logo) {
 
 .filter a {
   text-decoration: none;
-  color: #272727;
+  color: #302f2f;
   text-align: center;
 }
 
@@ -897,7 +896,7 @@ a.active:not(.logo) {
   position: absolute;
   width: 100%;
   height: 70%;
-  background: rgba(197, 37, 37, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   left: 0px;
   top: -100%;
   padding: 10px;
