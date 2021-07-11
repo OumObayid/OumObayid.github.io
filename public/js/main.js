@@ -114,6 +114,9 @@ $(document).ready(function () {
  
 //portfolio
 $(".filterbtn").click(function(){
+  $(".filterbtn:not(this)").removeClass('filter-active');
+  $(this).addClass('filter-active');
+ 
   var value = $(this).attr('data-filter');
   
   if(value == "all")
