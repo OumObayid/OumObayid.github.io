@@ -229,6 +229,7 @@ h4, .logo {
 }
 
 .navbar {
+  width: 100%;
   /*-----------title logo or image logo----------*/
   /*-----------end title logo or image logo----------*/
   position: fixed;
@@ -288,6 +289,7 @@ a.active:not(.logo) {
 }
 
 .welcom {
+  width: 100%;
   height: 100vh;
   background-color: #75bfd6;
   opacity: 0.2;
@@ -848,9 +850,10 @@ a.active:not(.logo) {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #ecf5f9;
+  background: white;
   border-radius: 50px;
   padding: 2px 15px;
+  box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.67);
 }
 
 .portfolio #portfolio-menu li {
@@ -861,13 +864,13 @@ a.active:not(.logo) {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #1380a1;
+  color: #75bfd6;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-menu li:hover, .portfolio #portfolio-menu li.filter-active {
-  color: #75bfd6;
+  color: #1380a1;
 }
 
 .portfolio #portfolio-menu li:last-child {
@@ -875,8 +878,13 @@ a.active:not(.logo) {
 }
 
 .filter {
+  border: 1px solid red;
   position: relative;
   overflow: hidden;
+}
+
+.filter .img {
+  width: 100%;
 }
 
 .filter a {
@@ -889,9 +897,9 @@ a.active:not(.logo) {
   position: absolute;
   width: 100%;
   height: 70%;
-  background: rgba(255, 255, 255, 0.8);
-  top: 0px;
-  left: -100%;
+  background: rgba(197, 37, 37, 0.8);
+  left: 0px;
+  top: -100%;
   padding: 10px;
   transition: all .5s;
 }
@@ -901,8 +909,8 @@ a.active:not(.logo) {
   width: 100%;
   height: 30%;
   background: rgba(19, 128, 161, 0.7);
-  bottom: 0px;
-  left: 100%;
+  left: 0px;
+  bottom: -100%;
   padding: 10px;
   transition: all .5s;
 }
@@ -911,8 +919,12 @@ a.active:not(.logo) {
   color: white;
 }
 
-.filter:hover .cap1, .filter:hover .cap2 {
-  left: 0px;
+.filter:hover .cap1 {
+  top: 0px;
+}
+
+.filter:hover .cap2 {
+  bottom: 0px;
 }
 
 .cardbg {
