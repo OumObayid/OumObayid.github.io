@@ -276,6 +276,10 @@ h4, .logo {
   transform-origin: left;
 }
 
+a.active:not(.logo) {
+  color: #1380a1;
+}
+
 .invisible {
   top: -50px;
 }
