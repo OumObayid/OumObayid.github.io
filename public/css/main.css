@@ -1029,6 +1029,28 @@ I will show you how to change a height of a standard Bootstrap navbar.
   .bubble-ocean {
     display: block;
   }
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #1380a1 #ffffff;
+  }
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #1380a1;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    transition: all .3s  ease-in;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #75bfd6;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1038,7 +1060,6 @@ I will show you how to change a height of a standard Bootstrap navbar.
   .bubble-ocean {
     display: block;
   }
-  /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
     scrollbar-width: auto;

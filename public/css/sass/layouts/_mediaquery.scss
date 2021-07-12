@@ -9,6 +9,8 @@
  *::-webkit-scrollbar {
    width: 0;
  }
+ 
+   
 
 
  
@@ -26,9 +28,37 @@
      .scrolled { 
       height: 60px;
      }
+  //profile
      .bubble-ocean{
       display: block;
    }
+    
+//Scrollbar CSS
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: $color-profile2 #ffffff;
+  }
+ 
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+ 
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+ 
+  *::-webkit-scrollbar-thumb {
+    background-color: $color-profile2;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    transition:all .3s  ease-in;
+  }
+  /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+  background: $color-profile3; 
+ }
   }
   
   @include for-desktop {
@@ -36,35 +66,36 @@
      .scrolled { 
        height: 60px;
      }
+  //profile
      .bubble-ocean{
       display: block;
    }
-   //scrollbar
    
-/* ===== Scrollbar CSS ===== */
+//Scrollbar CSS
   /* Firefox */
   * {
-   scrollbar-width: auto;
-   scrollbar-color: $color-profile2 #ffffff;
+    scrollbar-width: auto;
+    scrollbar-color: $color-profile2 #ffffff;
+  }
+ 
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+ 
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+ 
+  *::-webkit-scrollbar-thumb {
+    background-color: $color-profile2;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    transition:all .3s  ease-in;
+  }
+  /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+  background: $color-profile3; 
  }
-
- /* Chrome, Edge, and Safari */
- *::-webkit-scrollbar {
-   width: 16px;
- }
-
- *::-webkit-scrollbar-track {
-   background: #ffffff;
- }
-
- *::-webkit-scrollbar-thumb {
-   background-color: $color-profile2;
-   border-radius: 10px;
-   border: 3px solid #ffffff;
-   transition:all .3s  ease-in;
- }
- /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
- background: $color-profile3; 
-}
+   
   }
