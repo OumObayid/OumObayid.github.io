@@ -33,7 +33,6 @@ flex-wrap: wrap;
     // 
     .bar-container{
       background-color: rgba($color-profile2,0.5);
-      
       position: relative;
       width: 100%;
       height: 5px;
@@ -139,17 +138,6 @@ flex-wrap: wrap;
 @-webkit-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: $percentWordpress;}}
 @-webkit-keyframes progress-asp{0%{width: 0%;} 100%{ width: $percentAsp;}}
 @-webkit-keyframes progress-sql{0%{width: 0%;} 100%{ width: $percentSql;}}
-
-@-moz-keyframes progress-html{0%{width: 0%;} 100%{ width: $percentHtml;}}
-@-moz-keyframes progress-css{0%{width: 0%;} 100%{ width: $percentCss;}}
-@-moz-keyframes progress-javascript{0%{width: 0%;} 100%{ width: $percentJavascript;}}
-@-moz-keyframes progress-bootstrap{0%{width: 0%;} 100%{ width: $percentBootstrap;}}
-@-moz-keyframes progress-photoshop{0%{width: 0%;} 100%{ width: $percentPhotoshop;}}
-@-moz-keyframes progress-react{0%{width: 0%;} 100%{ width: $percentReact;}}
-@-moz-keyframes progress-php{0%{width: 0%;} 100%{ width: $percentPhp;}}
-@-moz-keyframes progress-wordpress{0%{width: 0%;} 100%{ width: $percentWordpress;}}
-@-moz-keyframes progress-asp{0%{width: 0%;} 100%{ width: $percentAsp;}}
-@-moz-keyframes progress-sql{0%{width: 0%;} 100%{ width: $percentSql;}}
 
 @keyframes progress-html{0%{width: 0%;} 100%{ width: $percentHtml;}}
 @keyframes progress-css{0%{width: 0%;} 100%{ width: $percentCss;}}
