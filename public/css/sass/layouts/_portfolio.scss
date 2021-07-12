@@ -5,22 +5,21 @@
     margin-bottom: 30px;
   }
   
-  .portfolio #portfolio-menu {
+  
+    .portfolio #portfolio-menu {
     padding: 0;
     margin: 0 auto 35px auto;
     list-style: none;
     text-align: center;
     background: $color-profile1;
-    border-radius: 50px;
-    padding: 2px 15px;
+    border-radius: 50px;    
     -webkit-box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.5); 
 box-shadow: 0px 3px 7px 1px rgba(0,0,0,0.5);
   }
   
   .portfolio #portfolio-menu li {
     cursor: pointer;
-    display: inline-block;
-    padding: 10px 15px 8px 15px;
+    display: inline-block;    
     font-size: 14px;
     font-weight: 600;
     line-height: 1;

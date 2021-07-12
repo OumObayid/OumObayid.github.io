@@ -15,7 +15,7 @@
      display: none;
   }
 
-  //padding 
+  //margin 
   main{
     margin:10px;
   }
@@ -23,29 +23,39 @@
     margin: 0;
   }
 
+  //portfolio
+.portfolio #portfolio-menu {
+  li{
+    padding: 10px 15px 8px 15px;
+  }
+  padding: 2px 5px;
+}
+
   @include for-phone {   
   // header -----------------     
   
-   //padding 
-   
-  }
-  
-  @include for-tablet {
-     //padding 
+    //margin 
   main{
     margin:0px;
   }
-  // header  
-     .scrolled { 
-      height: 60px;
-     }
-  //bubble in header
-     .bubble-ocean{
-      display: block;
-   }
+   
+//portfolio
+.portfolio #portfolio-menu {
+  li{
+    padding: 10px 15px 8px 15px;
+  }
+  padding: 2px 5px;
+}
+
+  }
   
-    
-//Scrollbar CSS
+  @include for-tablet {
+     //margin 
+  main{
+    margin:0px;
+  }
+  //1. générals 
+  //Scrollbar CSS
   /* Firefox */
   * {
     scrollbar-width: auto;
@@ -71,11 +81,26 @@
  ::-webkit-scrollbar-thumb:hover {
   background: $color-profile3; 
  }
+ // 2. 1header 
+ .scrolled { 
+  height: 60px;
+ }
+//bubble in header
+ .bubble-ocean{
+  display: block;
+}
+ //portfolio
+ .portfolio #portfolio-menu {
+  li{
+    padding: 10px 15px 8px 15px;
+  }
+  padding: 2px 15px;
+}
   }
   
   
   @include for-desktop {
-     //padding 
+     //margin 
   main{
     margin:0px;
   }
@@ -114,5 +139,13 @@
  ::-webkit-scrollbar-thumb:hover {
   background: $color-profile3; 
  }
+
+ //portfolio
+ .portfolio #portfolio-menu {
+  li{
+    padding: 10px 15px 8px 15px;
+  }
+  padding: 2px 15px;
+}
    
   }
