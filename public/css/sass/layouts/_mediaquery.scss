@@ -1,6 +1,8 @@
 
   // -------------- media query for layouts -------------------
-
+  .bubble-ocean{
+     display: none;
+  }
   @include for-phone {   
   // header -----------------     
       
@@ -11,6 +13,9 @@
      .scrolled { 
       height: 60px;
      }
+     .bubble-ocean{
+      display: block;
+   }
   }
   
   @include for-desktop {
@@ -18,5 +23,7 @@
      .scrolled { 
        height: 60px;
      }
-     
+     .bubble-ocean{
+      display: block;
+   }
   }
