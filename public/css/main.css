@@ -276,23 +276,14 @@ h4, .logo {
   transform-origin: left;
 }
 
-a.active:not(.logo) {
-  color: #1380a1;
-}
-
 .invisible {
   top: -50px;
 }
 
-.scrolled {
-  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #75bfd6 50%);
+.collapsehide {
+  display: none;
 }
 
-/* 
-
-I will show you how to change a height of a standard Bootstrap navbar.
-
-*/
 .parallax-wrapper {
   background-image: url("../images/bgprofile.jpg");
   background-size: cover;
