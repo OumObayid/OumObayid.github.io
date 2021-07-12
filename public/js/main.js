@@ -66,7 +66,7 @@ $(document).ready(function () {
     $(window).on('scroll', function () {    
         
           sections.each(function() {
-            var top = ($(this).offset().top) - nav_height ,
+            var top = ($(this).offset().top) ,
                 bottom = top + $(this).outerHeight()  ;
             
             if (cur_pos >= top && cur_pos <= bottom) {
