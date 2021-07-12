@@ -87,7 +87,7 @@ $(document).ready(function () {
         var $el = $(this)
         , id = $el.attr('href')
         ,deletHeight=0;
-        // if(cur_pos <= window.innerHeight && $el.attr('href')=="#apropos" ) deletHeight=80;//80 to change for adaptation
+        if(cur_pos <= window.innerHeight && $el.attr('href')=="#apropos" ) deletHeight=80;//80 to change for adaptation
         $('html, body').animate({
         scrollTop: ($(id).offset().top) - nav_height - deletHeight
         }, 500); 
