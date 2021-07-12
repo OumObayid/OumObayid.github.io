@@ -297,7 +297,6 @@ I will show you how to change a height of a standard Bootstrap navbar.
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
   height: 100vh;
 }
 
