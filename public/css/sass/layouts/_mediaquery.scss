@@ -10,17 +10,21 @@
    width: 0;
  }
  
-   
-
-
- 
-   
+ //header
   .bubble-ocean{
      display: none;
   }
+
+  //padding 
+  main{
+    margin:10px;
+  }
+
   @include for-phone {   
   // header -----------------     
-      
+  
+   //padding 
+   
   }
   
   @include for-tablet {
@@ -60,6 +64,7 @@
   background: $color-profile3; 
  }
   }
+  
   
   @include for-desktop {
   // header---------------------------

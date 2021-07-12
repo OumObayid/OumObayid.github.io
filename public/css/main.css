@@ -1018,6 +1018,10 @@ a.active:not(.logo) {
   display: none;
 }
 
+main {
+  margin: 10px;
+}
+
 @media only screen and (min-width: 992px) {
   .scrolled {
     height: 60px;
