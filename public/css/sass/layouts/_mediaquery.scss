@@ -19,6 +19,9 @@
   main{
     margin:10px;
   }
+  header,footer{
+    margin: 0;
+  }
 
   @include for-phone {   
   // header -----------------     
@@ -28,14 +31,19 @@
   }
   
   @include for-tablet {
-  // header---------------------------
+     //padding 
+  main{
+    margin:0px;
+  }
+  // header  
      .scrolled { 
       height: 60px;
      }
-  //profile
+  //bubble in header
      .bubble-ocean{
       display: block;
    }
+  
     
 //Scrollbar CSS
   /* Firefox */
@@ -67,7 +75,11 @@
   
   
   @include for-desktop {
-  // header---------------------------
+     //padding 
+  main{
+    margin:0px;
+  }
+  // header
      .scrolled { 
        height: 60px;
      }

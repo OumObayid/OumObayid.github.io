@@ -1022,7 +1022,14 @@ main {
   margin: 10px;
 }
 
+header, footer {
+  margin: 0;
+}
+
 @media only screen and (min-width: 992px) {
+  main {
+    margin: 0px;
+  }
   .scrolled {
     height: 60px;
   }
@@ -1054,6 +1061,9 @@ main {
 }
 
 @media only screen and (min-width: 1200px) {
+  main {
+    margin: 0px;
+  }
   .scrolled {
     height: 60px;
   }
