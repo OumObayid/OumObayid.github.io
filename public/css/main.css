@@ -1018,10 +1018,6 @@ I will show you how to change a height of a standard Bootstrap navbar.
   width: 0;
 }
 
-.bubble-ocean {
-  display: none;
-}
-
 @media only screen and (min-width: 992px) {
   .scrolled {
     height: 60px;
