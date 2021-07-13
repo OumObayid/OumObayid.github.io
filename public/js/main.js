@@ -24,7 +24,7 @@ $(document).ready(function () {
     $(document).scroll(function () {
       var $nav = $(".navbar");
       $nav.toggleClass('invisible', $(this).scrollTop() > 40 && $(this).scrollTop()<499);
-      $nav.toggleClass('scrolledBarnav', $(this).scrollTop() > 500);
+      $nav.toggleClass('scrolled', $(this).scrollTop() > 500);
     }); 
 
     // Un défilement animé (« Smooth scroll ») en jQuery sans plugin
