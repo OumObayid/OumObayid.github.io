@@ -49,10 +49,7 @@
       }  
     position: fixed;    
     top:0;
-    background-color: rgba(255,255,255,0); // media query
-    -webkit-transition:  0.3s linear; 
-    -moz-transition:  0.3s linear; 
-    -ms-transition:  0.3s linear;    
+    background-color: rgba(255,255,255,0); // media query    
     transition: 0.3s linear; 
     // height: 80px;    
 }
@@ -64,7 +61,7 @@ a.active:not(.logo) {
 }
 
 .scrolled {      
-    // background-image: $color-bgNav;     
+    background-image: $color-bgNav;     
 }
 .collapsehide{
  display: none;
