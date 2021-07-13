@@ -159,11 +159,19 @@ $('.nav-link').click(function(){
 });
 
 //
-// $('.navbar-toggler').click(function(){
-//   if(!$('.navbar-toggler').hasClass( "collapsed" ) && cur_pos <= window.innerHeight - nav_height)
-//   $('.navbar').removeClass('bgcolorMobilToggle',2000);
-//   else $('.navbar').addClass('bgcolorMobilToggle',2000);
-// })
+$('.navbar-toggler').click(function(){
+  if(!$('.navbar-toggler').hasClass( "collapsed" ) )
+  $('.navbar').removeClass('bgcolorMobilToggle');
+  else if($('.navbar-toggler').hasClass( "collapsed" ))
+  $('.navbar').addClass('bgcolorMobilToggle');
+})
+// $(window).on('scroll', function () {   
+//   if(!$('.navbar-toggler').hasClass( "collapsed" ) )
+//   $('.navbar').removeClass('bgcolorMobilToggle');
+//   else if($('.navbar-toggler').hasClass( "collapsed" ))
+//   $('.navbar').addClass('bgcolorMobilToggle');
+// }
+
 
 //Jquery fin
 });
