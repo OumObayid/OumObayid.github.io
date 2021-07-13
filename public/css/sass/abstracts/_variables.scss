@@ -2,8 +2,8 @@
     @import "./_themes.js";
 
     // color by default 
-    $color-profile2:#1380a1;
-    $color-profile3: #75bfd6;
+    $color-profile2:rgb(1,98,130);
+    $color-profile3: rgb(118, 167, 184);
     $color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-profile3 50%);
     $animated-text-fill-img:"animated-text-fill-blue.webp";    
     $logoImg:url(../images/logoBlue.png);
@@ -11,11 +11,11 @@
     
 
    @if ($blueTheme){
-        $color-profile2:#1380a1;
-        $color-profile3: #75bfd6;
-        $color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-profile3 50%);
-        $animated-text-fill-img:"animated-text-fill-blue.webp";    
-        $logoImg:url(../images/logoBlue.png);
+    $color-profile2:rgb(1,98,130);
+    $color-profile3: rgb(118, 167, 184);
+    $color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-profile3 50%);
+    $animated-text-fill-img:"animated-text-fill-blue.webp";    
+    $logoImg:url(../images/logoBlue.png);
     } @else if ($orangeTheme){
         $color-profile2:#b18502;
         $color-profile3: rgb(216, 163, 6);

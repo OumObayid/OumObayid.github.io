@@ -265,14 +265,14 @@ h4, .logo {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #1380a1;
+  background-color: #016282;
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.5s;
 }
 
 .navbar li a:hover {
-  color: #1380a1;
+  color: #016282;
 }
 
 .navbar li a:hover::after {
@@ -281,7 +281,7 @@ h4, .logo {
 }
 
 a.active:not(.logo) {
-  color: #1380a1;
+  color: #016282;
 }
 
 .invisible {
@@ -289,7 +289,7 @@ a.active:not(.logo) {
 }
 
 .scrolled {
-  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #75bfd6 50%);
+  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #76a7b8 50%);
   box-shadow: 0px 7px 15px -7px #000000;
 }
 
@@ -302,10 +302,10 @@ a.active:not(.logo) {
 }
 
 .bgcolorMobilToggle {
-  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #75bfd6 50%);
+  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #76a7b8 50%);
 }
 
-.navbar {
+.navbar-collapse, .navbar.bgcolorMobilToggle, .navbar {
   transition: all 0.3s linear;
 }
 
@@ -446,7 +446,7 @@ a.active:not(.logo) {
 }
 
 .twoButtons div:hover a {
-  color: #1380a1;
+  color: #016282;
   opacity: 1;
 }
 
@@ -462,7 +462,7 @@ a.active:not(.logo) {
   display: flex;
   justify-content: center;
   top: 80px;
-  color: #1380a1;
+  color: #016282;
   opacity: .6;
   font-weight: bold;
   line-height: 20px;
@@ -699,7 +699,7 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container li .bar-container {
-  background-color: rgba(19, 128, 161, 0.5);
+  background-color: rgba(1, 98, 130, 0.5);
   position: relative;
   width: 100%;
   height: 5px;
@@ -709,7 +709,7 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container li .bar-container .progressbar {
-  background-color: #1380a1;
+  background-color: #016282;
   position: absolute;
   width: 0%;
   height: 100%;
@@ -885,13 +885,13 @@ a.active:not(.logo) {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #75bfd6;
+  color: #76a7b8;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-menu li:hover, .portfolio #portfolio-menu li.filter-active {
-  color: #1380a1;
+  color: #016282;
 }
 
 .portfolio #portfolio-menu li:last-child {
@@ -924,7 +924,7 @@ a.active:not(.logo) {
   position: absolute;
   width: 100%;
   height: 30%;
-  background: rgba(19, 128, 161, 0.7);
+  background: rgba(1, 98, 130, 0.7);
   left: 0;
   bottom: -100%;
   padding: 20px;
@@ -944,7 +944,7 @@ a.active:not(.logo) {
 }
 
 .cardbg {
-  background-color: #1380a1 !important;
+  background-color: #016282 !important;
 }
 
 /*--------------------------------------------------------------
@@ -997,7 +997,7 @@ a.active:not(.logo) {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: rgba(19, 128, 161, 0.2);
+  background: rgba(1, 98, 130, 0.2);
   position: relative;
   margin-top: 35px;
   border-radius: 6px;
@@ -1101,13 +1101,13 @@ header, footer {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #1380a1;
+  box-shadow: inset 0 0 5px #016282;
   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #1380a1;
+  background: #016282;
   border-radius: 10px;
 }
 
@@ -1118,7 +1118,7 @@ html::-webkit-scrollbar {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #75bfd6;
+  background: #76a7b8;
 }
 
 /*--------------------------------------------------------------
@@ -1132,7 +1132,7 @@ html::-webkit-scrollbar {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #1380a1;
+  background: #016282;
   color: white;
   transition: all 0.5s ease-in-out;
   z-index: 50;
@@ -1146,7 +1146,7 @@ html::-webkit-scrollbar {
 }
 
 .back-to-top:hover {
-  background: #75bfd6;
+  background: #76a7b8;
 }
 
 .flexrow {
@@ -1164,6 +1164,6 @@ html::-webkit-scrollbar {
 }
 
 .title {
-  color: #1380a1;
+  color: #016282;
 }
 /*# sourceMappingURL=main.css.map */
