@@ -8,8 +8,8 @@
     $animated-text-fill-img:"animated-text-fill-orange.webp";    
     $logoImg:url(../images/logoBlue.png);
 
-    $blueTheme :true  ;
-    $orangeTheme : false ; 
+    $blueTheme : false ;
+    $orangeTheme :true  ; 
     $greenTheme :false  ;
 
    @if ($blueTheme){
@@ -18,10 +18,10 @@
         $color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-profile3 50%);
         $animated-text-fill-img:"animated-text-fill-orange.webp";    
         $logoImg:url(../images/logoBlue.png);
-    } else {
-        $color-profile2:rgb(216, 163, 3);
-        $color-profile3: rgb(248, 197, 44);
-        $color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-profile3 50%);
+    } @else if ($orangeTheme){
+        $color-profile2:rgb(177, 133, 2);
+        $color-profile3: rgb(216, 163, 6);
+        $color-bgNav: linear-gradient(90deg, rgb(39, 29, 1) 10%, $color-profile2 30%, $color-profile3 50%);
         $animated-text-fill-img:"animated-text-fill-orange.webp";    
         $logoImg:url(../images/logoOrange.png);
     }

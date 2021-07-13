@@ -10,7 +10,7 @@
   
   a.logo{  
     content:$logoImg; 
-    width:120px ;
+    width:140px ;
   }   
   
     li {
@@ -60,12 +60,10 @@ a.active:not(.logo) {
     top:-50px;   
 }
 
-// .scrolled {      
-//     background-image: $color-bgNav;     
-// }
-.collapsehide{
- display: none;
+.scrolled {      
+    background-image: $color-bgNav;     
 }
+
 
 // ____________________
 
