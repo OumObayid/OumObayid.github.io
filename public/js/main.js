@@ -155,7 +155,7 @@ $(".filterbtn").click(function(){
 
 //navigation click for hidding navbar collaps when clicking on any navbar link
 $('.nav-link').click(function(){  
-  $('.navbar').removeClass('bgcolorMobilToggle', 1000);
+   $('.navbar').removeClass('bgcolorMobilToggle', 1000);
   $('.navbar-collapse').collapse('hide');
  
 });
@@ -165,9 +165,9 @@ $('.nav-link').click(function(){
 $('.navbar-toggler').click(function(){
   
   if(!$('.navbar-toggler').hasClass( "collapsed" ) )
-  $('.navbar').removeClass('bgcolorMobilToggle');
+  $('.navbar').removeClass('bgcolorMobilToggle', 1000);
   else if($('.navbar-toggler').hasClass( "collapsed" ))
-  $('.navbar').addClass('bgcolorMobilToggle');
+  $('.navbar').addClass('bgcolorMobilToggle', 1000);
   
 })
 

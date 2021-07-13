@@ -78,6 +78,6 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32
 
 }
 
-.navbar { // Chrome // Mozilla // Opera
+.navbar-collapse,.navbar.bgcolorMobilToggle,.navbar { // Chrome // Mozilla // Opera
   transition: all 0.3s linear; 
 }
