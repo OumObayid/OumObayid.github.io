@@ -155,22 +155,22 @@ $(".filterbtn").click(function(){
 
 //navigation click for hidding navbar collaps when clicking on any navbar link
 $('.nav-link').click(function(){  
-  $('.navbar-collapse').collapse('hide');  
+  $('.navbar').removeClass('bgcolorMobilToggle', 1000);
+  $('.navbar-collapse').collapse('hide');
+ 
 });
 
-//
+// to add background for navbar 
+
 $('.navbar-toggler').click(function(){
+  
   if(!$('.navbar-toggler').hasClass( "collapsed" ) )
   $('.navbar').removeClass('bgcolorMobilToggle');
   else if($('.navbar-toggler').hasClass( "collapsed" ))
   $('.navbar').addClass('bgcolorMobilToggle');
+  
 })
-// $(window).on('scroll', function () {   
-//   if(!$('.navbar-toggler').hasClass( "collapsed" ) )
-//   $('.navbar').removeClass('bgcolorMobilToggle');
-//   else if($('.navbar-toggler').hasClass( "collapsed" ))
-//   $('.navbar').addClass('bgcolorMobilToggle');
-// }
+
 
 
 //Jquery fin
