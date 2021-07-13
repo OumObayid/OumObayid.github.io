@@ -1,6 +1,9 @@
 
 @mixin border-radius($radius){
-    border-radius: $radius;
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
   }
 
 //for logo background if the text logo actived, if not uncomment this
@@ -13,7 +16,7 @@
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }
-     
+
 //mixin for médiaquery
 @mixin for-phone {
     @media only screen and (min-width: $large-phone) {

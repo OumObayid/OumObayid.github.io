@@ -159,11 +159,6 @@ $('.nav-link').click(function(){
 });
 
 
-
-
-
-
-
 //Jquery fin
 });
 

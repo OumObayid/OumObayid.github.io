@@ -238,13 +238,8 @@ h4, .logo {
   transition: 0.3s linear;
 }
 
-.navbar .fa-bars {
-  color: white;
-  font-size: x-large;
-}
-
 .navbar a.logo {
-  content: url(../images/logoBlue.png);
+  content: url(../images/logoOrange.png);
   width: 150px;
 }
 
@@ -266,14 +261,14 @@ h4, .logo {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #1380a1;
+  background-color: #d8a303;
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.5s;
 }
 
 .navbar li a:hover {
-  color: #1380a1;
+  color: #d8a303;
 }
 
 .navbar li a:hover::after {
@@ -282,15 +277,11 @@ h4, .logo {
 }
 
 a.active:not(.logo) {
-  color: #1380a1;
+  color: #d8a303;
 }
 
 .invisible {
   top: -50px;
-}
-
-.scrolled {
-  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #75bfd6 50%);
 }
 
 .collapsehide {
@@ -364,7 +355,7 @@ a.active:not(.logo) {
   margin: 0 auto;
   color: white;
   /* Clip Background Image */
-  background: url("../images/animated-text-fill-blue.png") repeat-y;
+  background: url("../images/animated-text-fill-orange.webp") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -434,7 +425,7 @@ a.active:not(.logo) {
 }
 
 .twoButtons div:hover a {
-  color: #1380a1;
+  color: #d8a303;
   opacity: 1;
 }
 
@@ -450,7 +441,7 @@ a.active:not(.logo) {
   display: flex;
   justify-content: center;
   top: 80px;
-  color: #1380a1;
+  color: #d8a303;
   opacity: .6;
   font-weight: bold;
   line-height: 20px;
@@ -687,7 +678,7 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container li .bar-container {
-  background-color: rgba(19, 128, 161, 0.5);
+  background-color: rgba(216, 163, 3, 0.5);
   position: relative;
   width: 100%;
   height: 5px;
@@ -697,7 +688,7 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container li .bar-container .progressbar {
-  background-color: #1380a1;
+  background-color: #d8a303;
   position: absolute;
   width: 0%;
   height: 100%;
@@ -873,13 +864,13 @@ a.active:not(.logo) {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #75bfd6;
+  color: #f8c52c;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-menu li:hover, .portfolio #portfolio-menu li.filter-active {
-  color: #1380a1;
+  color: #d8a303;
 }
 
 .portfolio #portfolio-menu li:last-child {
@@ -912,7 +903,7 @@ a.active:not(.logo) {
   position: absolute;
   width: 100%;
   height: 30%;
-  background: rgba(19, 128, 161, 0.7);
+  background: rgba(216, 163, 3, 0.7);
   left: 0;
   bottom: -100%;
   padding: 20px;
@@ -932,7 +923,7 @@ a.active:not(.logo) {
 }
 
 .cardbg {
-  background-color: #1380a1 !important;
+  background-color: #d8a303 !important;
 }
 
 /*--------------------------------------------------------------
@@ -985,7 +976,7 @@ a.active:not(.logo) {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: rgba(19, 128, 161, 0.1);
+  background: rgba(216, 163, 3, 0.1);
   position: relative;
   margin-top: 35px;
   border-radius: 6px;
@@ -1095,13 +1086,13 @@ header, footer {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #1380a1;
+  box-shadow: inset 0 0 5px #d8a303;
   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #1380a1;
+  background: #d8a303;
   border-radius: 10px;
 }
 
@@ -1112,7 +1103,7 @@ html::-webkit-scrollbar {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #75bfd6;
+  background: #f8c52c;
 }
 
 /*--------------------------------------------------------------
@@ -1126,7 +1117,7 @@ html::-webkit-scrollbar {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #1380a1;
+  background: #d8a303;
   color: white;
   transition: all 0.5s ease-in-out;
   z-index: 50;
@@ -1140,7 +1131,7 @@ html::-webkit-scrollbar {
 }
 
 .back-to-top:hover {
-  background: #75bfd6;
+  background: #f8c52c;
 }
 
 .flexrow {
@@ -1158,6 +1149,6 @@ html::-webkit-scrollbar {
 }
 
 .title {
-  color: #1380a1;
+  color: #d8a303;
 }
 /*# sourceMappingURL=main.css.map */

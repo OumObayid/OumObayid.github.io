@@ -7,11 +7,7 @@
   width: 100%;
   z-index: 100;
   /*-----------image logo----------*/
-   .fa-bars{
-     color:white;
-     font-size: x-large;
-   }
-
+  
   a.logo{  
     content:$logoImg; 
     width:150px ;
@@ -65,7 +61,7 @@ a.active:not(.logo) {
 }
 
 .scrolled {      
-    background-image: $color-bgNav;     
+    // background-image: $color-bgNav;     
 }
 .collapsehide{
  display: none;
