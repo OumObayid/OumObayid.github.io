@@ -244,7 +244,7 @@ h4, .logo {
 }
 
 .navbar a.logo {
-  content: url(../images/logoOrange.png);
+  content: url(../images/logoBlue.png);
   width: 140px;
 }
 
@@ -252,7 +252,7 @@ h4, .logo {
   position: relative;
   display: block;
   font-family: Lato, sans-serif;
-  color: #ecf0f1;
+  color: #ecf0f1 !important;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
@@ -266,14 +266,14 @@ h4, .logo {
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #b18502;
+  background-color: #1380a1;
   transform: scaleX(0);
   transform-origin: right;
   transition: all 0.5s;
 }
 
 .navbar li a:hover {
-  color: #b18502;
+  color: #1380a1;
 }
 
 .navbar li a:hover::after {
@@ -282,7 +282,7 @@ h4, .logo {
 }
 
 a.active:not(.logo) {
-  color: #b18502;
+  color: #1380a1;
 }
 
 .invisible {
@@ -290,7 +290,20 @@ a.active:not(.logo) {
 }
 
 .scrolled {
-  background-image: linear-gradient(90deg, #271d01 10%, #b18502 30%, #d8a306 50%);
+  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #75bfd6 50%);
+  box-shadow: 0px 7px 15px -7px #000000;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(255, 102, 204, 0);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.bgcolorMobilToggle {
+  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #75bfd6 50%);
 }
 
 .parallax-wrapper {
@@ -360,7 +373,7 @@ a.active:not(.logo) {
   margin: 0 auto;
   color: white;
   /* Clip Background Image */
-  background: url("../images/animated-text-fill-orange.webp") repeat-y;
+  background: url("../images/animated-text-fill-blue.webp") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -430,7 +443,7 @@ a.active:not(.logo) {
 }
 
 .twoButtons div:hover a {
-  color: #b18502;
+  color: #1380a1;
   opacity: 1;
 }
 
@@ -446,7 +459,7 @@ a.active:not(.logo) {
   display: flex;
   justify-content: center;
   top: 80px;
-  color: #b18502;
+  color: #1380a1;
   opacity: .6;
   font-weight: bold;
   line-height: 20px;
@@ -683,7 +696,7 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container li .bar-container {
-  background-color: rgba(177, 133, 2, 0.5);
+  background-color: rgba(19, 128, 161, 0.5);
   position: relative;
   width: 100%;
   height: 5px;
@@ -693,7 +706,7 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container li .bar-container .progressbar {
-  background-color: #b18502;
+  background-color: #1380a1;
   position: absolute;
   width: 0%;
   height: 100%;
@@ -869,13 +882,13 @@ a.active:not(.logo) {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #d8a306;
+  color: #75bfd6;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-menu li:hover, .portfolio #portfolio-menu li.filter-active {
-  color: #b18502;
+  color: #1380a1;
 }
 
 .portfolio #portfolio-menu li:last-child {
@@ -908,7 +921,7 @@ a.active:not(.logo) {
   position: absolute;
   width: 100%;
   height: 30%;
-  background: rgba(177, 133, 2, 0.7);
+  background: rgba(19, 128, 161, 0.7);
   left: 0;
   bottom: -100%;
   padding: 20px;
@@ -928,7 +941,7 @@ a.active:not(.logo) {
 }
 
 .cardbg {
-  background-color: #b18502 !important;
+  background-color: #1380a1 !important;
 }
 
 /*--------------------------------------------------------------
@@ -981,7 +994,7 @@ a.active:not(.logo) {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: rgba(177, 133, 2, 0.2);
+  background: rgba(19, 128, 161, 0.2);
   position: relative;
   margin-top: 35px;
   border-radius: 6px;
@@ -1048,9 +1061,6 @@ header, footer {
   main {
     margin: 0px;
   }
-  .scrolled {
-    height: 60px;
-  }
   .bubble-ocean {
     display: block;
   }
@@ -1065,9 +1075,6 @@ header, footer {
 @media only screen and (min-width: 1200px) {
   main {
     margin: 0px;
-  }
-  .scrolled {
-    height: 60px;
   }
   .bubble-ocean {
     display: block;
@@ -1091,13 +1098,13 @@ header, footer {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #b18502;
+  box-shadow: inset 0 0 5px #1380a1;
   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b18502;
+  background: #1380a1;
   border-radius: 10px;
 }
 
@@ -1108,7 +1115,7 @@ html::-webkit-scrollbar {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #d8a306;
+  background: #75bfd6;
 }
 
 /*--------------------------------------------------------------
@@ -1122,7 +1129,7 @@ html::-webkit-scrollbar {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #b18502;
+  background: #1380a1;
   color: white;
   transition: all 0.5s ease-in-out;
   z-index: 50;
@@ -1136,7 +1143,7 @@ html::-webkit-scrollbar {
 }
 
 .back-to-top:hover {
-  background: #d8a306;
+  background: #75bfd6;
 }
 
 .flexrow {
@@ -1154,6 +1161,6 @@ html::-webkit-scrollbar {
 }
 
 .title {
-  color: #b18502;
+  color: #1380a1;
 }
 /*# sourceMappingURL=main.css.map */

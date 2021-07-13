@@ -4,7 +4,7 @@
 	src: url('../fonts/Ludicrous-Stencil.ttf') ;
    }
 .navbar { 
-  width: 100%; 
+  width: 100%;  
   z-index: 100;
   /*-----------image logo----------*/
   
@@ -18,7 +18,7 @@
           position: relative;
           display: block;
           font-family: Lato, sans-serif;
-          color: #ecf0f1;
+          color: #ecf0f1 !important;
           text-decoration: none;
           text-transform: uppercase;
           transition: 0.5s;
@@ -61,9 +61,18 @@ a.active:not(.logo) {
 }
 
 .scrolled {      
-    background-image: $color-bgNav;     
+    background-image: $color-bgNav;  
+    box-shadow: 0px 7px 15px -7px #000000;   
 }
-
-
+//custom icon navbar to white with svg
+.custom-toggler.navbar-toggler {
+  border-color: rgba(255, 102, 204, 0);
+}
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 // ____________________
 
+.bgcolorMobilToggle{
+  background-image: $color-bgNav;  
+}

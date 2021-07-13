@@ -158,6 +158,12 @@ $('.nav-link').click(function(){
   $('.navbar-collapse').collapse('hide');  
 });
 
+//
+// $('.navbar-toggler').click(function(){
+//   if(!$('.navbar-toggler').hasClass( "collapsed" ) && cur_pos <= window.innerHeight - nav_height)
+//   $('.navbar').removeClass('bgcolorMobilToggle',2000);
+//   else $('.navbar').addClass('bgcolorMobilToggle',2000);
+// })
 
 //Jquery fin
 });
