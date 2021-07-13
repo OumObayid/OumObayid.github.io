@@ -238,6 +238,11 @@ h4, .logo {
   transition: 0.3s linear;
 }
 
+.navbar .fa-bars {
+  color: white;
+  font-size: x-large;
+}
+
 .navbar a.logo {
   content: url(../images/logoBlue.png);
   width: 150px;

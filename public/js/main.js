@@ -154,14 +154,11 @@ $(".filterbtn").click(function(){
 
 
 //navigation click for hidding navbar collaps when clicking on any navbar link
-$('.navbar-toggler').click(function(){  
-  $('.navbar-collapse').show('3000');
+$('.nav-link').click(function(){  
+  $('.navbar-collapse').collapse('hide');  
 });
 
-$('.nav-link').click(function(){  
-  $('.navbar-collapse').hide('3000');
-  $('.navbar-collapse').removeClass('show'); 
-});
+
 
 
 
