@@ -25,9 +25,20 @@
   padding: 2px 5px;
 }
 
+
+
+@include for-small-phone { 
+//header background
+.navbar{
+  background-image: $color-bgNav;    
+}
+}
   @include for-phone {   
   // header -----------------     
-  
+  //header background
+  .navbar{
+    background-image: $color-bgNav;    
+}
     //margin 
   main{
     margin:0px;
@@ -49,7 +60,10 @@
     margin:0px;
   }
   
- // 2. 1header 
+ //header
+ .scrolledBarnav {      
+  background-image: $color-bgNav;     
+  }
  .scrolled { 
   height: 60px;
  }
@@ -72,7 +86,10 @@
   main{
     margin:0px;
   }
-  // header
+  //header
+  .scrolledBarnav {      
+    background-image: $color-bgNav;     
+    }
      .scrolled { 
        height: 60px;
      }

@@ -289,10 +289,6 @@ a.active:not(.logo) {
   top: -50px;
 }
 
-.scrolled {
-  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #75bfd6 50%);
-}
-
 .parallax-wrapper {
   background-image: url("../images/bgprofile.jpg");
   background-size: cover;
@@ -1032,7 +1028,16 @@ header, footer {
   padding: 10px 15px 8px 15px;
 }
 
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #75bfd6 50%);
+  }
+}
+
 @media only screen and (min-width: 768px) {
+  .navbar {
+    background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #75bfd6 50%);
+  }
   main {
     margin: 0px;
   }
@@ -1047,6 +1052,9 @@ header, footer {
 @media only screen and (min-width: 992px) {
   main {
     margin: 0px;
+  }
+  .scrolledBarnav {
+    background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #75bfd6 50%);
   }
   .scrolled {
     height: 60px;
@@ -1065,6 +1073,9 @@ header, footer {
 @media only screen and (min-width: 1200px) {
   main {
     margin: 0px;
+  }
+  .scrolledBarnav {
+    background-image: linear-gradient(90deg, #00151f 10%, #002b3f 30%, #75bfd6 50%);
   }
   .scrolled {
     height: 60px;
