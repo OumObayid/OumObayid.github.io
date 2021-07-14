@@ -52,7 +52,8 @@
     // height: 80px;    
 }
 
-a.active:not(.logo) {
+// :not(.logo)
+.active {
     color: $color-profile2;
 }
 

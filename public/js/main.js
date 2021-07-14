@@ -70,6 +70,7 @@ $(function() {
                 bottom = top + $(this).outerHeight();
             //when the cursor is at a section
             if (cur_pos >= top && cur_pos <= bottom) {
+                alert("header");
                 //make all links inactive
                 nav.find('a').removeClass('active');
                 $(this).addClass('active');

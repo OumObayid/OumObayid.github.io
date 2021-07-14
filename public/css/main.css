@@ -280,7 +280,7 @@ h4, .logo {
   transform-origin: left;
 }
 
-a.active:not(.logo) {
+.active {
   color: #07485e;
 }
 
