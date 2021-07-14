@@ -164,6 +164,8 @@ $('.nav-link').click(function(){
   });  
 });
 
+
+
 // to add background for navbar 
 
 $('.navbar-toggler').click(function(){
