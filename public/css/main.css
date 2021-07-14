@@ -667,6 +667,10 @@ a.active:not(.logo) {
   width: 100%;
 }
 
+#apropos p {
+  line-height: 24px !important;
+}
+
 .container-skills {
   width: 100%;
   flex-wrap: wrap;
