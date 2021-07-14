@@ -8,19 +8,20 @@ flex-wrap: wrap;
 }
 
 .skills-bar-container{
-  border: 3px solid green;   
-
   font-size: 20px;
   list-style:none;
   margin-top: 30px;
-  .blockskills{
-    border: 3px solid red;   
-    width: 60%;
-      li{
+  width: 100%;   
+    
+      li{       
         position: relative;
-        width: 80%;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        height: 50px;
         padding: $li-padding;
         margin-bottom: 20px;
+       
         
         .progressbar-title{
             color:$color-titles;
@@ -129,7 +130,7 @@ flex-wrap: wrap;
 
         }
       }
-  }
+  
 }
 
 

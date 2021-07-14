@@ -60,7 +60,6 @@
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  border: 1px solid red;
 }
 
 body {
@@ -678,39 +677,37 @@ a.active:not(.logo) {
 }
 
 .skills-bar-container {
-  border: 3px solid green;
   font-size: 20px;
   list-style: none;
   margin-top: 30px;
+  width: 100%;
 }
 
-.skills-bar-container .blockskills {
-  border: 3px solid red;
-  width: 60%;
-}
-
-.skills-bar-container .blockskills li {
+.skills-bar-container li {
   position: relative;
-  width: 80%;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
   padding: 5px;
   margin-bottom: 20px;
 }
 
-.skills-bar-container .blockskills li .progressbar-title {
+.skills-bar-container li .progressbar-title {
   color: #302f2f;
   font-size: 15px;
 }
 
-.skills-bar-container .blockskills li .progressbar-title h3 {
+.skills-bar-container li .progressbar-title h3 {
   display: inline-block;
 }
 
-.skills-bar-container .blockskills li .progressbar-title .percent {
+.skills-bar-container li .progressbar-title .percent {
   position: absolute;
   right: 5px;
 }
 
-.skills-bar-container .blockskills li .bar-container {
+.skills-bar-container li .bar-container {
   background-color: rgba(7, 72, 94, 0.5);
   position: relative;
   height: 5px;
@@ -719,7 +716,7 @@ a.active:not(.logo) {
   border-radius: 5px;
 }
 
-.skills-bar-container .blockskills li .bar-container .progressbar {
+.skills-bar-container li .bar-container .progressbar {
   background-color: #07485e;
   position: absolute;
   width: 0%;
@@ -732,52 +729,52 @@ a.active:not(.logo) {
   animation-delay: 0.7s;
 }
 
-.skills-bar-container .blockskills li .bar-container .progressbar#progress-html {
+.skills-bar-container li .bar-container .progressbar#progress-html {
   animation-name: progress-html;
   animation-delay: 0.7s;
 }
 
-.skills-bar-container .blockskills li .bar-container .progressbar#progress-css {
+.skills-bar-container li .bar-container .progressbar#progress-css {
   animation-name: progress-css;
   animation-delay: 1.4s;
 }
 
-.skills-bar-container .blockskills li .bar-container .progressbar#progress-javascript {
+.skills-bar-container li .bar-container .progressbar#progress-javascript {
   animation-name: progress-javascript;
   animation-delay: 2.1s;
 }
 
-.skills-bar-container .blockskills li .bar-container .progressbar#progress-bootstrap {
+.skills-bar-container li .bar-container .progressbar#progress-bootstrap {
   animation-name: progress-bootstrap;
   animation-delay: 2.8s;
 }
 
-.skills-bar-container .blockskills li .bar-container .progressbar#progress-photoshop {
+.skills-bar-container li .bar-container .progressbar#progress-photoshop {
   animation-name: progress-photoshop;
   animation-delay: 3.5s;
 }
 
-.skills-bar-container .blockskills li .bar-container .progressbar#progress-react {
+.skills-bar-container li .bar-container .progressbar#progress-react {
   animation-name: progress-react;
   animation-delay: 4.2s;
 }
 
-.skills-bar-container .blockskills li .bar-container .progressbar#progress-php {
+.skills-bar-container li .bar-container .progressbar#progress-php {
   animation-name: progress-php;
   animation-delay: 4.9s;
 }
 
-.skills-bar-container .blockskills li .bar-container .progressbar#progress-wordpress {
+.skills-bar-container li .bar-container .progressbar#progress-wordpress {
   animation-name: progress-wordpress;
   animation-delay: 5.6s;
 }
 
-.skills-bar-container .blockskills li .bar-container .progressbar#progress-asp {
+.skills-bar-container li .bar-container .progressbar#progress-asp {
   animation-name: progress-asp;
   animation-delay: 6.3s;
 }
 
-.skills-bar-container .blockskills li .bar-container .progressbar#progress-sql {
+.skills-bar-container li .bar-container .progressbar#progress-sql {
   animation-name: progress-sql;
   animation-delay: 7s;
 }
