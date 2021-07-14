@@ -8,7 +8,7 @@ new SimpleLightbox({
 /*============================================================================================*/
 /*=======================================jquery code==========================================*/
 /*============================================================================================*/
-$(document).ready(function() {
+$(function() {
 
     /*=======================================Initiation AOS======================================*/
     function aos_init() {
@@ -40,7 +40,7 @@ $(document).ready(function() {
         }
     });
     /*===============================Setting smoothly scrolling===================================*/
-    $('a[href^="#"]').click(function() {
+    $('a[href^="#"]').on('click', function() {
         var the_id = $(this).attr("href");
         if (the_id === '#') {
             return;
@@ -51,16 +51,56 @@ $(document).ready(function() {
         return false;
     });
 
-    /*============Navbar: ============Setting navbar on Mobile==================================*/
+    /*============Navbar: ============Setting navbar ==================================*/
     //-------------------invisibility of and visibility with background of navbar on scrolling bar
-    $(document).scroll(function() {
+    $(document).on('scroll', function() {
         var $nav = $(".navbar");
         $nav.toggleClass('invisible', $(this).scrollTop() > 40 && $(this).scrollTop() < 499);
         $nav.toggleClass('scrolled', $(this).scrollTop() > 500);
     });
+    //----------------------------------------------Navigation active state on scroll or on click 
+    var sections = $('.section'),
+        nav = $('.navbar'),
+        nav_height = nav.outerHeight(),
+        cur_pos = $(this).scrollTop();
 
+    $(window).on('scroll', function() {
+        sections.each(function() {
+            var top = ($(this).offset().top) - nav_height,
+                bottom = top + $(this).outerHeight();
+            //when the cursor is at a section
+            if (cur_pos >= top && cur_pos <= bottom) {
+                //make all links inactive
+                nav.find('a').removeClass('active');
+                $(this).addClass('active');
+                //make the link of the browsed section active
+                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+            }
+        });
+        //when the cursor is at the header
+        if (cur_pos >= 0 && cur_pos <= window.innerHeight - nav_height) {
+            //make all links inactive
+            nav.find('a').removeClass('active');
+            //make the link of the header section active
+            nav.find('a[href="#header"]').addClass('active');
+        }
+    });
+    //--------------------------------------------scolling to to section when click on the nav link
+    nav.find('a').on('click', function() {
+        var $el = $(this),
+            id = $el.attr('href'),
+            deletHeight = 0;
+        //80 to change for adaptation
+        if (cur_pos <= window.innerHeight && $el.attr('href') == "#about") deletHeight = 80;
+        $('html, body').animate({
+            scrollTop: ($(id).offset().top) - nav_height - deletHeight
+        }, 500);
+        return false;
+    });
+
+    /*============Navbar on Mobile: ============Setting navbar ==================================*/
     //-----------add or remove background to navbar on clicking on button when scrollbar is on top
-    $('.navbar-toggler').click(function() {
+    $('.navbar-toggler').on('click', function() {
         if ($('.navbar-toggler').hasClass("collapsed")) {
             $('.navbar').fadeIn('slow', function() {
                 $('.navbar').addClass('bgcolorMobilToggle');
@@ -72,52 +112,15 @@ $(document).ready(function() {
             });
         }
     });
-    //--------------navigation click on button mobile or on navbar link for hidding navbar collaps 
-    $('.nav-link').click(function() {
+    //-------------------------------------------------------close navbar on clicking on navbar link 
+    $('.nav-link').on('click', function() {
         $('.navbar-toggler').click();
     });
 
-    /*========Navbar:=======Navigation active state on scroll or on click on Desktop===========*/
-    //--------------------------------------------------------------------change navbar on scroll
-    var sections = $('.section'),
-        nav = $('.navbar'),
-        nav_height = nav.outerHeight(),
-        cur_pos = $(this).scrollTop();
-
-    $(window).on('scroll', function() {
-        sections.each(function() {
-            var top = ($(this).offset().top) - nav_height,
-                bottom = top + $(this).outerHeight();
-            //
-            if (cur_pos >= top && cur_pos <= bottom) {
-                nav.find('a').removeClass('active');
-                $(this).addClass('active');
-                nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
-            }
-        });
-        //when we are at the header
-        if (cur_pos >= 0 && cur_pos <= window.innerHeight - nav_height) {
-            nav.find('a').removeClass('active');
-            nav.find('a[href="#header"]').addClass('active');
-        }
-    });
-
-    //----------------------------------------------------------------change navbar on scrolling
-    nav.find('a').on('click', function() {
-        var $el = $(this),
-            id = $el.attr('href'),
-            deletHeight = 0;
-        if (cur_pos <= window.innerHeight && $el.attr('href') == "#apropos") deletHeight = 80; //80 to change for adaptation
-        $('html, body').animate({
-            scrollTop: ($(id).offset().top) - nav_height - deletHeight
-        }, 500);
-        return false;
-    });
-
-
     /*=================================Setting back to top button=================================*/
     //--------------------------------------fadeIn  and fadout button back to top on scrolling bar
-    $(window).scroll(function() {
+
+    $(window).on("scroll", function() {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
         } else {
@@ -125,7 +128,7 @@ $(document).ready(function() {
         }
     });
     //-------------------------------scrolling page to top on clicking on the button back to top
-    $('.back-to-top').click(function() {
+    $('.back-to-top').on("click", function() {
         $('html, body').animate({
             scrollTop: 0
         }, 1500);
@@ -134,7 +137,7 @@ $(document).ready(function() {
 
     /*==================Setting for section Skills: progress bar animated=====================*/
     var offsetTop = $('#skills').offset().top;
-    $(window).scroll(function() {
+    $(window).on(scroll(function() {
         var height = $(window).height();
         if ($(window).scrollTop() + height > offsetTop) {
             jQuery('.bar-container span').each(function() {
@@ -145,10 +148,10 @@ $(document).ready(function() {
                 jQuery(this).removeClass('progressbar')
             });
         }
-    });
+    }));
 
     /*==================Setting for section Portfolio: progress bar animated===================*/
-    $(".filterbtn").click(function() {
+    $(".filterbtn").on("click", function() {
         $(".filterbtn:not(this)").removeClass('filter-active');
         $(this).addClass('filter-active');
         var value = $(this).attr('data-filter');
