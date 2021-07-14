@@ -155,19 +155,29 @@ $(".filterbtn").click(function(){
 
 //navigation click for hidding navbar collaps when clicking on any navbar link
 $('.nav-link').click(function(){  
-   $('.navbar').removeClass('bgcolorMobilToggle', 1000);
-  $('.navbar-collapse').collapse('hide');
- 
+  //  $('.navbar').removeClass('bgcolorMobilToggle', 1000);
+  // $('.navbar-collapse').collapse('hide');
+  $('.navbar').fadeOut('0', function(){   
+    $('.navbar-toggler').click();    
+    $(this).removeClass('bgcolorMobilToggle');  
+    $(this).show();
+  });  
 });
 
 // to add background for navbar 
 
 $('.navbar-toggler').click(function(){
-  
-  if(!$('.navbar-toggler').hasClass( "collapsed" ) )
-  $('.navbar').removeClass('bgcolorMobilToggle', 1000);
-  else if($('.navbar-toggler').hasClass( "collapsed" ))
-  $('.navbar').addClass('bgcolorMobilToggle', 1000);
+  if($('.navbar-toggler').hasClass("collapsed")) { 
+    $('.navbar').fadeIn('slow', function(){
+      $('.navbar').addClass('bgcolorMobilToggle');
+    });
+  }
+  else {
+    $('.navbar').fadeOut('0', function(){
+      $(this).show();
+      $(this).removeClass('bgcolorMobilToggle');      
+    });  
+  } 
   
 })
 
