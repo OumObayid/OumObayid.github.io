@@ -54,7 +54,7 @@
 
 // :not(.logo)
 .active {
-    color: $color-profile2;
+    color: $color-profile2 !important;
 }
 
 .invisible {

@@ -281,7 +281,7 @@ h4, .logo {
 }
 
 .active {
-  color: #07485e;
+  color: #07485e !important;
 }
 
 .invisible {
