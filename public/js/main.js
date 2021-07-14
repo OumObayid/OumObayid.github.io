@@ -99,27 +99,28 @@ $(function() {
     });
 
     /*============Navbar on Mobile: ============Setting navbar ==================================*/
-    //-----------add or remove background to navbar on clicking on button when scrollbar is on top
-    $('.navbar-toggler').on('click', function() {
-        if ($('.navbar-toggler').hasClass("collapsed")) {
-            $('.navbar').fadeIn('slow', function() {
-                $('.navbar').addClass('bgcolorMobilToggle');
-            });
-        } else {
-            $('.navbar').fadeOut('0', function() {
-                $(this).show();
-                $(this).removeClass('bgcolorMobilToggle');
-            });
-        }
-    });
-    //-------------------------------------------------------close navbar on clicking on navbar link 
-    $('.nav-link').on('click', function() {
-        $('.navbar-toggler').click();
-    });
+    if ($(window).width() < 992) {
+        //-----------add or remove background to navbar on clicking on button when scrollbar is on top
+        $('.navbar-toggler').on('click', function() {
+            if ($('.navbar-toggler').hasClass("collapsed")) {
+                $('.navbar').fadeIn('slow', function() {
+                    $('.navbar').addClass('bgcolorMobilToggle');
+                });
+            } else {
+                $('.navbar').fadeOut('0', function() {
+                    $(this).show();
+                    $(this).removeClass('bgcolorMobilToggle');
+                });
+            }
+        });
+        //-------------------------------------------------------close navbar on clicking on navbar link 
+        $('.nav-link').on('click', function() {
+            $('.navbar-toggler').click();
+        });
+    }
 
     /*=================================Setting back to top button=================================*/
     //--------------------------------------fadeIn  and fadout button back to top on scrolling bar
-
     $(window).on("scroll", function() {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
