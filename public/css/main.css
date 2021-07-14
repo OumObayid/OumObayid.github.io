@@ -306,7 +306,8 @@ a.active:not(.logo) {
   transition: all 0.3s linear;
 }
 
-.navbar-collapse, .navbar {
+.navbar-collapse,
+.navbar {
   transition: all 0.3s linear;
 }
 
