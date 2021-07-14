@@ -1045,7 +1045,8 @@ main {
   margin: 10px;
 }
 
-header, footer {
+header,
+footer {
   margin: 0;
 }
 

@@ -1,94 +1,76 @@
-
-  // -------------- media query for layouts -------------------
-  
- 
-
- 
- //header
-  .bubble-ocean{
-     display: none;
-  }
-  
-
-  //margin 
-  main{
-    margin:10px;
-  }
-  header,footer{
-    margin: 0;
-  }
-
-  //portfolio
-.portfolio #portfolio-menu {
-  li{
-    padding: 10px 15px 8px 15px;
-  }
-  padding: 2px 5px;
+// -------------- media query for layouts -------------------
+//header
+.bubble-ocean {
+    display: none;
 }
 
-  @include for-phone {   
-  // header -----------------     
- 
-    //margin 
-  main{
-    margin:0px;
-  }
-   
+//margin 
+main {
+    margin: 10px;
+}
+
+header,
+footer {
+    margin: 0;
+}
+
 //portfolio
 .portfolio #portfolio-menu {
-  li{
-    padding: 10px 15px 8px 15px;
-  }
-  padding: 2px 5px;
+    li {
+        padding: 10px 15px 8px 15px;
+    }
+    padding: 2px 5px;
 }
 
-  }
-  
-  @include for-tablet {
-     //margin 
-  main{
-    margin:0px;
-  }
-  
- // 2. 1header 
- 
-//bubble in header
- .bubble-ocean{
-  display: block;
-}
- //portfolio
- .portfolio #portfolio-menu {
-  li{
-    padding: 10px 15px 8px 15px;
-  }
-  padding: 2px 15px;
-}
-  }
-  
-  
-  @include for-desktop {
-     //margin 
-  main{
-    margin:0px;
-  }
-  // header
-   
-    
-  //profile
-     .bubble-ocean{
-      display: block;
-   }
-   
-
-
- //portfolio
- .portfolio #portfolio-menu {
-  li{
-    padding: 10px 15px 8px 15px;
-  }
-  padding: 2px 15px;
+@include for-phone {
+    // header -----------------     
+    //margin 
+    main {
+        margin: 0px;
+    }
+    //portfolio
+    .portfolio #portfolio-menu {
+        li {
+            padding: 10px 15px 8px 15px;
+        }
+        padding: 2px 5px;
+    }
 }
 
+@include for-tablet {
+    //margin 
+    main {
+        margin: 0px;
+    }
+    // 2. 1header 
+    //bubble in header
+    .bubble-ocean {
+        display: block;
+    }
+    //portfolio
+    .portfolio #portfolio-menu {
+        li {
+            padding: 10px 15px 8px 15px;
+        }
+        padding: 2px 15px;
+    }
+}
 
-   
-  }
+@include for-desktop {
+    //margin 
+    main {
+        margin: 0px;
+    }
+    // header
+    //profile
+    .bubble-ocean {
+        display: block;
+    }
+    //portfolio
+    .portfolio #portfolio-menu {
+        li {
+            padding: 10px 15px 8px 15px;
+        }
+        padding: 2px 15px;
+    }
+}

@@ -1,23 +1,18 @@
-
-@mixin border-radius($radius){
-    -webkit-border-radius: $radius;
-       -moz-border-radius: $radius;
-        -ms-border-radius: $radius;
-            border-radius: $radius;
-  }
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
 
 //for logo background if the text logo actived, if not uncomment this
-@mixin color-bgLogo{        
-    background: -webkit-linear-gradient(0deg,$color-profile2 0%, $color-profile3 60%,  $color-profile1 100%);
+@mixin color-bgLogo {
+    background: -webkit-linear-gradient(0deg, $color-profile2 0%, $color-profile3 60%, $color-profile1 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: -moz-linear-gradient(0deg,$color-profile2 0%, $color-profile3 600%,  $color-profile1 100%);
+    background: -moz-linear-gradient(0deg, $color-profile2 0%, $color-profile3 600%, $color-profile1 100%);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }
 
-//mixin for médiaquery
 @mixin for-phone {
     @media only screen and (min-width: $large-phone) {
         @content;
