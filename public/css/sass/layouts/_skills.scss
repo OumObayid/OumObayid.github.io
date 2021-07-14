@@ -8,122 +8,127 @@ flex-wrap: wrap;
 }
 
 .skills-bar-container{
+  border: 3px solid green;   
+
   font-size: 20px;
   list-style:none;
   margin-top: 30px;
-  
-  li{
-    position: relative;
-    width: 100%;
-    padding: $li-padding;
-    margin-bottom: 20px;
-    
-    .progressbar-title{
-        color:$color-titles;
-       font-size: $medium;
-      h3{
-       
-        display: inline-block;
-      }
-      .percent{
-        position: absolute;
-        right: $li-padding;
-      }
-    }// end progressbar-title
-    // 
-    .bar-container{
-      background-color: rgba($color-profile2,0.5);
-      position: relative;
-      width: 100%;
-      height: 5px;
-      margin-top: 5px;
-      display: block;
-      @include border-radius(5px);
-      
-      .progressbar{
-        background-color: $color-profile2;
-        position:absolute;
-        width:0%;
-        height: 100%;
-        @include border-radius(5px);
-        -webkit-animation-duration: $animation-duration;
-        animation-duration: $animation-duration;
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-animation-name: progress;
-        animation-name: progress;
-        -webkit-animation-delay: $animation-delay;
-        animation-delay: $animation-delay;
-      }
-      //nommage des animations et delai des animations
-      .progressbar#progress-html{
-        -webkit-animation-name: progress-html;
-        animation-name: progress-html;
-        -webkit-animation-delay: $animation-delay;
-        animation-delay: $animation-delay;
-      }
+  .blockskills{
+    border: 3px solid red;   
+    width: 60%;
+      li{
+        position: relative;
+        width: 80%;
+        padding: $li-padding;
+        margin-bottom: 20px;
+        
+        .progressbar-title{
+            color:$color-titles;
+          font-size: $medium;
+          h3{
+          
+            display: inline-block;
+          }
+          .percent{
+            position: absolute;
+            right: $li-padding;
+          }
+        }// end progressbar-title
+        // 
+        .bar-container{
+          background-color: rgba($color-profile2,0.5);
+          position: relative;
+          // width: 100%;
+          height: 5px;
+          margin-top: 5px;
+          display: block;
+          @include border-radius(5px);
+          
+          .progressbar{
+            background-color: $color-profile2;
+            position:absolute;
+            width:0%;
+            height: 100%;
+            @include border-radius(5px);
+            -webkit-animation-duration: $animation-duration;
+            animation-duration: $animation-duration;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+            -webkit-animation-name: progress;
+            animation-name: progress;
+            -webkit-animation-delay: $animation-delay;
+            animation-delay: $animation-delay;
+          }
+          //nommage des animations et delai des animations
+          .progressbar#progress-html{
+            -webkit-animation-name: progress-html;
+            animation-name: progress-html;
+            -webkit-animation-delay: $animation-delay;
+            animation-delay: $animation-delay;
+          }
 
-      .progressbar#progress-css{
-        -webkit-animation-name: progress-css;
-        animation-name: progress-css;
-        -webkit-animation-delay: $animation-delay*2;
-        animation-delay: $animation-delay*2;
-      }
+          .progressbar#progress-css{
+            -webkit-animation-name: progress-css;
+            animation-name: progress-css;
+            -webkit-animation-delay: $animation-delay*2;
+            animation-delay: $animation-delay*2;
+          }
 
-      .progressbar#progress-javascript{
-        -webkit-animation-name: progress-javascript;
-        animation-name: progress-javascript;
-        -webkit-animation-delay:$animation-delay*3;
-        animation-delay: $animation-delay*3;
-      }
-      .progressbar#progress-bootstrap{
-        -webkit-animation-name: progress-bootstrap;
-        animation-name: progress-bootstrap;
-        -webkit-animation-delay:$animation-delay*3;
-        animation-delay: $animation-delay*4;
-      }
-      .progressbar#progress-photoshop{
-        -webkit-animation-name: progress-photoshop;
-        animation-name: progress-photoshop;
-        -webkit-animation-delay:$animation-delay*3;
-        animation-delay: $animation-delay*5;
-      }
-      
-      .progressbar#progress-react{
-        -webkit-animation-name: progress-react;
-        animation-name: progress-react;
-        -webkit-animation-delay: $animation-delay*5;
-        animation-delay: $animation-delay*6;
-      }
+          .progressbar#progress-javascript{
+            -webkit-animation-name: progress-javascript;
+            animation-name: progress-javascript;
+            -webkit-animation-delay:$animation-delay*3;
+            animation-delay: $animation-delay*3;
+          }
+          .progressbar#progress-bootstrap{
+            -webkit-animation-name: progress-bootstrap;
+            animation-name: progress-bootstrap;
+            -webkit-animation-delay:$animation-delay*3;
+            animation-delay: $animation-delay*4;
+          }
+          .progressbar#progress-photoshop{
+            -webkit-animation-name: progress-photoshop;
+            animation-name: progress-photoshop;
+            -webkit-animation-delay:$animation-delay*3;
+            animation-delay: $animation-delay*5;
+          }
+          
+          .progressbar#progress-react{
+            -webkit-animation-name: progress-react;
+            animation-name: progress-react;
+            -webkit-animation-delay: $animation-delay*5;
+            animation-delay: $animation-delay*6;
+          }
 
-      .progressbar#progress-php{
-        -webkit-animation-name: progress-php;
-        animation-name: progress-php;
-        -webkit-animation-delay: $animation-delay*4;
-        animation-delay: $animation-delay*7;
-      }
-      .progressbar#progress-wordpress{
-        -webkit-animation-name: progress-wordpress;
-        animation-name: progress-wordpress;
-        -webkit-animation-delay: $animation-delay*4;
-        animation-delay: $animation-delay*8;
-      }
-      .progressbar#progress-asp{
-        -webkit-animation-name: progress-asp;
-        animation-name: progress-asp;
-        -webkit-animation-delay: $animation-delay*4;
-        animation-delay: $animation-delay*9;
-      }
-      .progressbar#progress-sql{
-        -webkit-animation-name: progress-sql;
-        animation-name: progress-sql;
-        -webkit-animation-delay: $animation-delay*4;
-        animation-delay: $animation-delay*10;
-      }
+          .progressbar#progress-php{
+            -webkit-animation-name: progress-php;
+            animation-name: progress-php;
+            -webkit-animation-delay: $animation-delay*4;
+            animation-delay: $animation-delay*7;
+          }
+          .progressbar#progress-wordpress{
+            -webkit-animation-name: progress-wordpress;
+            animation-name: progress-wordpress;
+            -webkit-animation-delay: $animation-delay*4;
+            animation-delay: $animation-delay*8;
+          }
+          .progressbar#progress-asp{
+            -webkit-animation-name: progress-asp;
+            animation-name: progress-asp;
+            -webkit-animation-delay: $animation-delay*4;
+            animation-delay: $animation-delay*9;
+          }
+          .progressbar#progress-sql{
+            -webkit-animation-name: progress-sql;
+            animation-name: progress-sql;
+            -webkit-animation-delay: $animation-delay*4;
+            animation-delay: $animation-delay*10;
+          }
 
-    }
+        }
+      }
   }
 }
 
