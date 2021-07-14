@@ -62,7 +62,14 @@ $(function() {
     /*
 Using jquery waypoints to change active on scroll
 */
-    $('#aheader').waypoint(function() {
+    //Default active on home
+    $('#header').addClass("active");
+
+    $('#header').waypoint(function() {
+        $(".navbar-collapse ul li").children().removeClass("active");
+        $(".link1").addClass("active");
+    }, { offset: 20 });
+    $('#header').waypoint(function() {
         $(".navbar-collapse ul li").children().removeClass("active");
         $(".link1").addClass("active");
     }, { offset: -20 });
@@ -70,13 +77,25 @@ Using jquery waypoints to change active on scroll
     $('#about').waypoint(function() {
         $(".navbar-collapse ul li").children().removeClass("active");
         $(".link2").addClass("active");
-    }, { offset: -20 });
+    }, { offset: -10 });
+    $('#about').waypoint(function() {
+        $(".navbar-collapse ul li").children().removeClass("active");
+        $(".link2").addClass("active");
+    }, { offset: 170 });
 
     $('#skills').waypoint(function() {
         $(".navbar-collapse ul li").children().removeClass("active");
         $(".link3").addClass("active");
-    }, { offset: 90 });
+    }, { offset: 68 });
+    $('#skills').waypoint(function() {
+        $(".navbar-collapse ul li").children().removeClass("active");
+        $(".link3").addClass("active");
+    }, { offset: 70 });
 
+    $('#portfolio').waypoint(function() {
+        $(".navbar-collapse ul li").children().removeClass("active");
+        $(".link4").addClass("active");
+    }, { offset: -20 });
     $('#portfolio').waypoint(function() {
         $(".navbar-collapse ul li").children().removeClass("active");
         $(".link4").addClass("active");
@@ -86,11 +105,19 @@ Using jquery waypoints to change active on scroll
         $(".navbar-collapse ul li").children().removeClass("active");
         $(".link5").addClass("active");
     }, { offset: 90 });
+    $('#experiences').waypoint(function() {
+        $(".navbar-collapse ul li").children().removeClass("active");
+        $(".link5").addClass("active");
+    }, { offset: -20 });
 
     $('#testimonials').waypoint(function() {
         $(".navbar-collapse ul li").children().removeClass("active");
         $(".link6").addClass("active");
     }, { offset: 90 });
+    $('#testimonials').waypoint(function() {
+        $(".navbar-collapse ul li").children().removeClass("active");
+        $(".link6").addClass("active");
+    }, { offset: -20 });
 
     $('#contact').waypoint(function() {
         $(".navbar-collapse ul li").children().removeClass("active");
@@ -129,18 +156,18 @@ Using jquery waypoints to change active on scroll
     //     }
     // });
     //--------------------------------------------scolling to to section when click on the nav link
-    var nav = $(".navbar");
-    nav.find('a').on('click', function() {
-        var $el = $(this),
-            id = $el.attr('href'),
-            deletHeight = 0;
-        //80 to change for adaptation
-        if (cur_pos <= window.innerHeight && $el.attr('href') == "#about") deletHeight = 80;
-        $('html, body').animate({
-            scrollTop: ($(id).offset().top) - nav_height - deletHeight
-        }, 500);
-        return false;
-    });
+    // var nav = $(".navbar");
+    // nav.find('a').on('click', function() {
+    //     var $el = $(this),
+    //         id = $el.attr('href'),
+    //         deletHeight = 0;
+    //     //80 to change for adaptation
+    //     if (cur_pos <= window.innerHeight && $el.attr('href') == "#about") deletHeight = 80;
+    //     $('html, body').animate({
+    //         scrollTop: ($(id).offset().top) - nav_height - deletHeight
+    //     }, 500);
+    //     return false;
+    // });
 
     /*============Navbar on Mobile: ============Setting navbar ==================================*/
     if ($(window).width() < 992) {

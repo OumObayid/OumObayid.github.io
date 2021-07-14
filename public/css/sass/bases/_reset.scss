@@ -1,34 +1,36 @@
 * {
     margin: 0;
     padding: 0;
-    border:0;
+    border: 0;
     font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
- 
-    // border: 1px solid red;   
+    font: inherit;
+    vertical-align: baseline;
+    // border: 1px solid red;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
+
 img {
     border-style: none;
-  }
+}
 
-  *:focus,*:active {
+*:focus,
+*:active {
     outline: none !important;
     -webkit-tap-highlight-color: transparent;
-  }
-
- 
+}
 
 *,
 *:before,
-*:after{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
