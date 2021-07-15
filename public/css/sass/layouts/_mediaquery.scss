@@ -1,90 +1,19 @@
-// -------------- media query for layouts -------------------
-//header
-.bubble-ocean {
-    display: none;
-}
-
-//margin 
-main {
-    margin: 10px;
-}
-
-header,
-footer {
-    margin: 0;
-}
-
-//portfolio
-.portfolio #portfolio-menu {
-    li {
-        padding: 10px 15px 8px 15px;
-    }
-    padding: 2px 5px;
-}
-
-@include for-phone-tablet {
-    // .logo {
-    //     margin-left: 40%;
-    // }
-    .bgcolorMobilToggle {
-        background-image: $color-bgNav;
-        transition: all 0.3s linear;
-    }
-    .navbar.styleNav {
-        border-radius: 0 0 80% / 100% 0;
-        box-shadow: $box-shadow-navbar-mobile;
-        // opacity: .9;
-        // background: radial-gradient(circle at 0 0, transparent 30%, $color-profile2 50%) top left;
-        // background-size: 100% 100%;
-        // background-repeat: no-repeat;
-        // background: radial-gradient(ellipse closest-side at top left, transparent 50%, $color-profile2 50%);
-        // background: radial-gradient(ellipse 160% 150% at bottom right, transparent 48%, $color-profile2 50%);
-    }
-    .styleNav:after,
-    .styleNav:before {
+    // -------------- media query for layouts -------------------
+    //header
+    .bubble-ocean {
         display: none;
     }
-    .navbar-collapse {
-        // margin-right: 1%;
-        .navbar-nav {
-            width: 100%;
-        }
-        // .nav-item1 .link1 {
-        //     margin-left: 83%;
-        // }
-        // .nav-item2 .link2 {
-        //     margin-left: 78%;
-        // }
-        // .nav-item3 .link3 {
-        //     margin-left: 75%;
-        // }
-        // .nav-item4 .link4 {
-        //     margin-left: 58%;
-        // }
-        // .nav-item5 .link5 {
-        //     margin-left: 45%;
-        // }
-        // .nav-item6 .link6 {
-        //     margin-left: 30%;
-        // }
-        // .nav-item7 .link7 {
-        //     margin-left: 23%;
-        // }
-        .nav-item .link {
-            margin-left: 2%;
-        }
-        .nav-item {
-            letter-spacing: 1px;
-        }
-    }
-}
-
-@include for-phone {
-    // header -----------------     
+    
     //margin 
     main {
-        margin: 0px;
+        margin: 10px;
     }
+    
+    header,
+    footer {
+        margin: 0;
+    }
+    
     //portfolio
     .portfolio #portfolio-menu {
         li {
@@ -92,62 +21,147 @@ footer {
         }
         padding: 2px 5px;
     }
-}
-
-@include for-tablet {
-    //margin 
-    main {
-        margin: 0px;
-    }
-    // 2. 1header 
-    //bubble in header
-    .bubble-ocean {
-        display: block;
-    }
-    //portfolio
-    .portfolio #portfolio-menu {
-        li {
-            padding: 10px 15px 8px 15px;
+    
+    @include for-phone-tablet {
+        // .logo {
+        //     margin-left: 40%;
+        // }
+        .bgcolorMobilToggle {
+            background-image: $color-bgNav;
+            transition: all 0.3s linear;
         }
-        padding: 2px 15px;
-    }
-}
-
-@include for-desktop {
-    //margin 
-    main {
-        margin: 0px;
-    }
-    //navbar
-    .navbar li a::after {
-        position: absolute;
-        content: "";
-        top: 80%;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        background-color: $color-profile1;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: all 0.5s;
-    }
-    &:hover {
-        color: $color-profile2;
-    }
-    &:hover::after {
-        transform: scaleX(1);
-        transform-origin: left;
-    }
-    // header
-    //profile
-    .bubble-ocean {
-        display: block;
-    }
-    //portfolio
-    .portfolio #portfolio-menu {
-        li {
-            padding: 10px 15px 8px 15px;
+        .navbar.styleNav {
+            border-radius: 0 0 80% / 100% 0;
+            box-shadow: $box-shadow-navbar-mobile;
+            opacity: .9;
+            // background: radial-gradient(circle at 0 0, transparent 30%, $color-profile2 50%) top left;
+            // background-size: 100% 100%;
+            // background-repeat: no-repeat;
+            // background: radial-gradient(ellipse closest-side at top left, transparent 50%, $color-profile2 50%);
+            // background: radial-gradient(ellipse 160% 150% at bottom right, transparent 48%, $color-profile2 50%);
         }
-        padding: 2px 15px;
+        .styleNav:after,
+        .styleNav:before {
+            display: none;
+        }
+        .navbar-collapse {
+            // margin-right: 1%;
+            .navbar-nav {
+                width: 100%;
+            }
+            // .nav-item1 .link1 {
+            //     margin-left: 83%;
+            // }
+            // .nav-item2 .link2 {
+            //     margin-left: 78%;
+            // }
+            // .nav-item3 .link3 {
+            //     margin-left: 75%;
+            // }
+            // .nav-item4 .link4 {
+            //     margin-left: 58%;
+            // }
+            // .nav-item5 .link5 {
+            //     margin-left: 45%;
+            // }
+            // .nav-item6 .link6 {
+            //     margin-left: 30%;
+            // }
+            // .nav-item7 .link7 {
+            //     margin-left: 23%;
+            // }
+            .nav-item .link {
+                margin-left: 2%;
+            }
+            .nav-item {
+                letter-spacing: 1px;
+            }
+        }
     }
-}
+    
+    @include for-phone {
+        // header -----------------     
+        //margin 
+        main {
+            margin: 0px;
+        }
+        //portfolio
+        .portfolio #portfolio-menu {
+            li {
+                padding: 10px 15px 8px 15px;
+            }
+            padding: 2px 5px;
+        }
+    }
+    
+    @include for-tablet {
+        //margin 
+        main {
+            margin: 0px;
+        }
+        // 2. 1header 
+        //bubble in header
+        .bubble-ocean {
+            display: block;
+        }
+        //portfolio
+        .portfolio #portfolio-menu {
+            li {
+                padding: 10px 15px 8px 15px;
+            }
+            padding: 2px 15px;
+        }
+    }
+    
+    @include for-desktop {
+        //margin 
+        main {
+            margin: 0px;
+        }
+        //navbar
+        .navbar {
+            li {
+                a {
+                    position: relative;
+                    display: block;
+                    font-family: Lato, sans-serif;
+                    color: $color-profile1;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: 0.5s;
+                    font-weight: 800;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        top: 80%;
+                        left: 0;
+                        width: 100%;
+                        height: 3px;
+                        background-color: $color-profile1;
+                        transform: scaleX(0);
+                        transform-origin: right;
+                        transition: all 0.5s;
+                    }
+                    &:hover {
+                        color: $color-profile2;
+                    }
+                    &:hover::after {
+                        transform: scaleX(1);
+                        transform-origin: left;
+                    }
+                }
+            }
+        }
+        // header
+        //profile
+        .bubble-ocean {
+            display: block;
+        }
+        //portfolio
+        .portfolio #portfolio-menu {
+            li {
+                padding: 10px 15px 8px 15px;
+            }
+            padding: 2px 15px;
+        }
+    }

@@ -1032,6 +1032,7 @@ footer {
   .navbar.styleNav {
     border-radius: 0 0 80% / 100% 0;
     box-shadow: 0 0 65px #07485e inset, 0 0 20px #a1b4c0 inset, 0 0 5px #476281;
+    opacity: .9;
   }
   .styleNav:after,
   .styleNav:before {
@@ -1079,6 +1080,16 @@ footer {
   main {
     margin: 0px;
   }
+  .navbar li a {
+    position: relative;
+    display: block;
+    font-family: Lato, sans-serif;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-weight: 800;
+  }
   .navbar li a::after {
     position: absolute;
     content: "";
@@ -1091,10 +1102,10 @@ footer {
     transform-origin: right;
     transition: all 0.5s;
   }
-  :hover {
+  .navbar li a:hover {
     color: #07485e;
   }
-  :hover::after {
+  .navbar li a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
   }
