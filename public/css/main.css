@@ -245,42 +245,6 @@ h4, .logo {
   width: 140px;
 }
 
-.navbar .navbar-collapse {
-  margin-right: 10%;
-}
-
-.navbar .navbar-collapse .navbar-nav {
-  width: 100%;
-}
-
-.navbar .navbar-collapse .nav-item1 .link1 {
-  margin-left: 90%;
-}
-
-.navbar .navbar-collapse .nav-item2 .link2 {
-  margin-left: 82%;
-}
-
-.navbar .navbar-collapse .nav-item3 .link3 {
-  margin-left: 74%;
-}
-
-.navbar .navbar-collapse .nav-item4 .link4 {
-  margin-left: 55%;
-}
-
-.navbar .navbar-collapse .nav-item5 .link5 {
-  margin-left: 38%;
-}
-
-.navbar .navbar-collapse .nav-item6 .link6 {
-  margin-left: 16%;
-}
-
-.navbar .navbar-collapse .nav-item7 .link7 {
-  margin-left: 0%;
-}
-
 .navbar li a {
   position: relative;
   display: block;
@@ -1095,6 +1059,36 @@ footer {
 
 .portfolio #portfolio-menu li {
   padding: 10px 15px 8px 15px;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-collapse {
+    margin-right: 10%;
+  }
+  .navbar-collapse .navbar-nav {
+    width: 100%;
+  }
+  .navbar-collapse .nav-item1 .link1 {
+    margin-left: 90%;
+  }
+  .navbar-collapse .nav-item2 .link2 {
+    margin-left: 82%;
+  }
+  .navbar-collapse .nav-item3 .link3 {
+    margin-left: 74%;
+  }
+  .navbar-collapse .nav-item4 .link4 {
+    margin-left: 55%;
+  }
+  .navbar-collapse .nav-item5 .link5 {
+    margin-left: 38%;
+  }
+  .navbar-collapse .nav-item6 .link6 {
+    margin-left: 16%;
+  }
+  .navbar-collapse .nav-item7 .link7 {
+    margin-left: 0%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
