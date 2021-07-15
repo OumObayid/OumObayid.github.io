@@ -10,6 +10,10 @@
 // }
 .navbar {
     width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 1s;
     z-index: 100;
     /*-----------image logo----------*/
     a.logo {
@@ -17,7 +21,31 @@
         width: 140px;
     }
     .navbar-collapse {
-        margin-left: 10px;
+        margin-right: 10%;
+        .navbar-nav {
+            width: 100%;
+        }
+        .nav-item1 .link1 {
+            margin-left: 90%;
+        }
+        .nav-item2 .link2 {
+            margin-left: 82%;
+        }
+        .nav-item3 .link3 {
+            margin-left: 74%;
+        }
+        .nav-item4 .link4 {
+            margin-left: 55%;
+        }
+        .nav-item5 .link5 {
+            margin-left: 38%;
+        }
+        .nav-item6 .link6 {
+            margin-left: 16%;
+        }
+        .nav-item7 .link7 {
+            margin-left: 0%;
+        }
     }
     li {
         a {
@@ -50,13 +78,6 @@
             }
         }
     }
-    position: fixed;
-    top:0;
-    background-color: rgba(255,
-    255,
-    255,
-    0);
-    transition: all 1s;
 }
 
 // :not(.logo)

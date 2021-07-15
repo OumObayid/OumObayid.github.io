@@ -232,12 +232,12 @@ h4, .logo {
 
 .navbar {
   width: 100%;
-  z-index: 100;
-  /*-----------image logo----------*/
   position: fixed;
   top: 0;
   background-color: rgba(255, 255, 255, 0);
   transition: all 1s;
+  z-index: 100;
+  /*-----------image logo----------*/
 }
 
 .navbar a.logo {
@@ -246,7 +246,39 @@ h4, .logo {
 }
 
 .navbar .navbar-collapse {
-  margin-left: 10px;
+  margin-right: 10%;
+}
+
+.navbar .navbar-collapse .navbar-nav {
+  width: 100%;
+}
+
+.navbar .navbar-collapse .nav-item1 .link1 {
+  margin-left: 90%;
+}
+
+.navbar .navbar-collapse .nav-item2 .link2 {
+  margin-left: 82%;
+}
+
+.navbar .navbar-collapse .nav-item3 .link3 {
+  margin-left: 74%;
+}
+
+.navbar .navbar-collapse .nav-item4 .link4 {
+  margin-left: 55%;
+}
+
+.navbar .navbar-collapse .nav-item5 .link5 {
+  margin-left: 38%;
+}
+
+.navbar .navbar-collapse .nav-item6 .link6 {
+  margin-left: 16%;
+}
+
+.navbar .navbar-collapse .nav-item7 .link7 {
+  margin-left: 0%;
 }
 
 .navbar li a {
