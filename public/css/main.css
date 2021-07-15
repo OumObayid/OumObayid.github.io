@@ -307,6 +307,9 @@ h4, .logo {
 .navbar.styleNav {
   border-radius: 0 0 90% 0;
   box-shadow: 0 0 65px #07485e inset, 0 0 20px #a1b4c0 inset, 0 0 5px #476281;
+  background: radial-gradient(circle at 0 0, transparent 50%, #07485e 50%) top left;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .styleNav:after,
@@ -1063,31 +1066,31 @@ footer {
 
 @media only screen and (max-width: 992px) {
   .navbar-collapse {
-    margin-right: 10%;
+    margin-right: 1%;
   }
   .navbar-collapse .navbar-nav {
     width: 100%;
   }
   .navbar-collapse .nav-item1 .link1 {
-    margin-left: 90%;
+    margin-left: 83%;
   }
   .navbar-collapse .nav-item2 .link2 {
-    margin-left: 82%;
+    margin-left: 78%;
   }
   .navbar-collapse .nav-item3 .link3 {
-    margin-left: 76%;
+    margin-left: 73%;
   }
   .navbar-collapse .nav-item4 .link4 {
     margin-left: 57%;
   }
   .navbar-collapse .nav-item5 .link5 {
-    margin-left: 38%;
+    margin-left: 43%;
   }
   .navbar-collapse .nav-item6 .link6 {
-    margin-left: 16%;
+    margin-left: 22%;
   }
   .navbar-collapse .nav-item7 .link7 {
-    margin-left: 0%;
+    margin-left: 4%;
   }
   .navbar-collapse .nav-item {
     letter-spacing: 1px;

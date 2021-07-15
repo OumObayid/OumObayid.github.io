@@ -63,112 +63,68 @@ $(function() {
 Using jquery waypoints to change active on scroll
 */
     //Default active on home
-    $('#header').addClass("active");
+    if ($(window).width() > 992) {
+        $('#header').addClass("active");
 
-    $('#header').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link1").addClass("active");
-    }, { offset: 20 });
-    $('#header').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link1").addClass("active");
-    }, { offset: -20 });
+        $('#header').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link1").addClass("active");
+        }, { offset: 20 });
+        $('#header').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link1").addClass("active");
+        }, { offset: -20 });
 
-    $('#about').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link2").addClass("active");
-    }, { offset: -10 });
-    $('#about').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link2").addClass("active");
-    }, { offset: 170 });
+        $('#about').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link2").addClass("active");
+        }, { offset: -10 });
+        $('#about').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link2").addClass("active");
+        }, { offset: 170 });
 
-    $('#skills').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link3").addClass("active");
-    }, { offset: 68 });
-    $('#skills').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link3").addClass("active");
-    }, { offset: 70 });
+        $('#skills').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link3").addClass("active");
+        }, { offset: 68 });
+        $('#skills').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link3").addClass("active");
+        }, { offset: 70 });
 
-    $('#portfolio').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link4").addClass("active");
-    }, { offset: -20 });
-    $('#portfolio').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link4").addClass("active");
-    }, { offset: 90 });
+        $('#portfolio').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link4").addClass("active");
+        }, { offset: -20 });
+        $('#portfolio').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link4").addClass("active");
+        }, { offset: 90 });
 
-    $('#experiences').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link5").addClass("active");
-    }, { offset: 90 });
-    $('#experiences').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link5").addClass("active");
-    }, { offset: -20 });
+        $('#experiences').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link5").addClass("active");
+        }, { offset: 90 });
+        $('#experiences').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link5").addClass("active");
+        }, { offset: -20 });
 
-    $('#testimonials').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link6").addClass("active");
-    }, { offset: 90 });
-    $('#testimonials').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link6").addClass("active");
-    }, { offset: -20 });
+        $('#testimonials').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link6").addClass("active");
+        }, { offset: 90 });
+        $('#testimonials').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link6").addClass("active");
+        }, { offset: -20 });
 
-    $('#contact').waypoint(function() {
-        $(".navbar-collapse ul li").children().removeClass("active");
-        $(".link7").addClass("active");
-    }, { offset: 90 });
-
-
-
-
-
-    // var sections = $('.section'),
-    //     nav = $('.navbar'),
-    //     nav_height = nav.outerHeight(),
-    //     cur_pos = $(this).scrollTop();
-
-    // $(window).on('scroll', function() {
-    //     sections.each(function() {
-    //         var top = ($(this).offset().top) - nav_height,
-    //             bottom = top + $(this).outerHeight();
-    //         //when the cursor is at a section
-    //         if (cur_pos >= top && cur_pos <= bottom) {
-    //             //make all links inactive
-    //             //  nav.find('.section').removeClass('active');
-    //             nav.find('a').removeClass('active');
-    //             $(this).addClass('active');
-    //             //make the link of the browsed section active
-    //             nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
-    //         }
-    //     });
-    //     //when the cursor is at the header
-    //     if (cur_pos >= 0 && cur_pos <= window.innerHeight - nav_height) {
-    //         //make all links inactive
-    //         nav.find('a').removeClass('active');
-    //         //make the link of the header section active
-    //         nav.find('a[href="#header"]').addClass('active');
-    //     }
-    // });
-    //--------------------------------------------scolling to to section when click on the nav link
-    // var nav = $(".navbar");
-    // nav.find('a').on('click', function() {
-    //     var $el = $(this),
-    //         id = $el.attr('href'),
-    //         deletHeight = 0;
-    //     //80 to change for adaptation
-    //     if (cur_pos <= window.innerHeight && $el.attr('href') == "#about") deletHeight = 80;
-    //     $('html, body').animate({
-    //         scrollTop: ($(id).offset().top) - nav_height - deletHeight
-    //     }, 500);
-    //     return false;
-    // });
-
+        $('#contact').waypoint(function() {
+            $(".navbar-collapse ul li").children().removeClass("active");
+            $(".link7").addClass("active");
+        }, { offset: 90 });
+    }
     /*============Navbar on Mobile: ============Setting navbar ==================================*/
     if ($(window).width() < 992) {
         //-----------add or remove background to navbar on clicking on button when scrollbar is on top
@@ -186,14 +142,13 @@ Using jquery waypoints to change active on scroll
                     $(this).removeClass('bgcolorMobilToggle');
                 });
                 $('.navbar').removeClass('styleNav');
+
             }
         });
         //-------------------------------------------------------close navbar on clicking on navbar link 
         $('.nav-link').on('click', function() {
             $('.navbar-toggler').click();
         });
-        //-------------------------------------------------------
-
     }
 
     /*=================================Setting back to top button=================================*/

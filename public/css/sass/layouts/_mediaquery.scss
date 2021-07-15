@@ -24,30 +24,30 @@ footer {
 
 @include for-phone-tablet {
     .navbar-collapse {
-        margin-right: 10%;
+        margin-right: 1%;
         .navbar-nav {
             width: 100%;
         }
         .nav-item1 .link1 {
-            margin-left: 90%;
+            margin-left: 83%;
         }
         .nav-item2 .link2 {
-            margin-left: 82%;
+            margin-left: 78%;
         }
         .nav-item3 .link3 {
-            margin-left: 76%;
+            margin-left: 73%;
         }
         .nav-item4 .link4 {
             margin-left: 57%;
         }
         .nav-item5 .link5 {
-            margin-left: 38%;
+            margin-left: 43%;
         }
         .nav-item6 .link6 {
-            margin-left: 16%;
+            margin-left: 22%;
         }
         .nav-item7 .link7 {
-            margin-left: 0%;
+            margin-left: 4%;
         }
         .nav-item {
             letter-spacing: 1px;
