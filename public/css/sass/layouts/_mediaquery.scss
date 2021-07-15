@@ -32,13 +32,12 @@
         }
         .navbar.styleNav {
             border-radius: 0 0 80% / 100% 0;
-            box-shadow: $box-shadow-navbar-mobile;
-            opacity: .9;
+            // box-shadow: $box-shadow-navbar-mobile;
+            // opacity: .9;
             // background: radial-gradient(circle at 0 0, transparent 30%, $color-profile2 50%) top left;
             // background-size: 100% 100%;
             // background-repeat: no-repeat;
-            // background: radial-gradient(ellipse closest-side at top left, transparent 50%, $color-profile2 50%);
-            // background: radial-gradient(ellipse 160% 150% at bottom right, transparent 48%, $color-profile2 50%);
+            background: radial-gradient(ellipse 100% 200% at top left, transparent 49%, $color-profile2 50%);
         }
         .styleNav:after,
         .styleNav:before {
@@ -49,27 +48,27 @@
             .navbar-nav {
                 width: 100%;
             }
-            // .nav-item1 .link1 {
-            //     margin-left: 83%;
-            // }
-            // .nav-item2 .link2 {
-            //     margin-left: 78%;
-            // }
-            // .nav-item3 .link3 {
-            //     margin-left: 75%;
-            // }
-            // .nav-item4 .link4 {
-            //     margin-left: 58%;
-            // }
-            // .nav-item5 .link5 {
-            //     margin-left: 45%;
-            // }
-            // .nav-item6 .link6 {
-            //     margin-left: 30%;
-            // }
-            // .nav-item7 .link7 {
-            //     margin-left: 23%;
-            // }
+            .nav-item1 .link1 {
+                margin-left: 83%;
+            }
+            .nav-item2 .link2 {
+                margin-left: 78%;
+            }
+            .nav-item3 .link3 {
+                margin-left: 75%;
+            }
+            .nav-item4 .link4 {
+                margin-left: 58%;
+            }
+            .nav-item5 .link5 {
+                margin-left: 45%;
+            }
+            .nav-item6 .link6 {
+                margin-left: 30%;
+            }
+            .nav-item7 .link7 {
+                margin-left: 23%;
+            }
             .nav-item .link {
                 margin-left: 2%;
             }
