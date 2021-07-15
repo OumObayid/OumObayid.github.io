@@ -177,17 +177,23 @@ Using jquery waypoints to change active on scroll
                 $('.navbar').fadeIn('slow', function() {
                     $('.navbar').addClass('bgcolorMobilToggle');
                 });
+
+                //------------------------------------------------------- 
+                $('.navbar').addClass('styleNav');
             } else {
                 $('.navbar').fadeOut('0', function() {
                     $(this).show();
                     $(this).removeClass('bgcolorMobilToggle');
                 });
+                $('.navbar').removeClass('styleNav');
             }
         });
         //-------------------------------------------------------close navbar on clicking on navbar link 
         $('.nav-link').on('click', function() {
             $('.navbar-toggler').click();
         });
+        //-------------------------------------------------------
+
     }
 
     /*=================================Setting back to top button=================================*/

@@ -308,9 +308,21 @@ h4, .logo {
   transition: all 0.3s linear;
 }
 
-.navbar-collapse,
-.navbar {
-  transition: all 0.3s linear;
+.styleNav {
+  border-radius: 0 0 80% 0;
+  box-shadow: 3px 7px 14px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 7px 14px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 7px 14px -6px rgba(0, 0, 0, 0.75);
+}
+
+.styleNav {
+  border-radius: 0 0 80% 0;
+  box-shadow: 0 0 65px #07485e inset, 0 0 20px #8caabe inset, 0 0 5px #476281;
+}
+
+.styleNav:after,
+.styleNav:before {
+  display: none;
 }
 
 .parallax-wrapper {

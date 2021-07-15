@@ -22,6 +22,8 @@ footer {
     padding: 2px 5px;
 }
 
+@include for-phone-tablet {}
+
 @include for-phone {
     // header -----------------     
     //margin 

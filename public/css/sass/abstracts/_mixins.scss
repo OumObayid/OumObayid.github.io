@@ -13,6 +13,12 @@
     -moz-text-fill-color: transparent;
 }
 
+@mixin for-phone-tablet {
+    @media only screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
 @mixin for-phone {
     @media only screen and (min-width: $large-phone) {
         @content;
