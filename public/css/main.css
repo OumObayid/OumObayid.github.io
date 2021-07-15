@@ -240,7 +240,7 @@ h4, .logo {
 }
 
 .navbar a.logo {
-  content: url(../images/logoOrange.png);
+  content: url(../images/logoBlue.png);
   width: 140px;
 }
 
@@ -269,7 +269,7 @@ h4, .logo {
 }
 
 .navbar li a:hover {
-  color: #b18502;
+  color: #07485e;
 }
 
 .navbar li a:hover::after {
@@ -278,7 +278,7 @@ h4, .logo {
 }
 
 .active {
-  color: #b18502 !important;
+  color: #07485e !important;
 }
 
 .invisible {
@@ -286,7 +286,7 @@ h4, .logo {
 }
 
 .scrolled {
-  background-image: linear-gradient(90deg, #6d5002 10%, #b18502 35%, #d8a306 50%);
+  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 35%, #02769B 50%);
   box-shadow: 0px 7px 15px -7px #000000;
 }
 
@@ -299,13 +299,13 @@ h4, .logo {
 }
 
 .bgcolorMobilToggle {
-  background-image: linear-gradient(90deg, #6d5002 10%, #b18502 35%, #d8a306 50%);
+  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 35%, #02769B 50%);
   transition: all 0.3s linear;
 }
 
 .navbar.styleNav {
   border-radius: 0 0 90% 0;
-  box-shadow: 0 0 65px #b18502 inset, 0 0 20px #c7b57a inset, 0 0 5px #5a562d;
+  box-shadow: 0 0 65px #07485e inset, 0 0 20px #a1b4c0 inset, 0 0 5px #476281;
 }
 
 .navbar.styleNav .navbar-collapse {
@@ -384,7 +384,7 @@ h4, .logo {
   margin: 0 auto;
   color: white;
   /* Clip Background Image */
-  background: url("../images/animated-text-fill-orange.webp") repeat-y;
+  background: url("../images/animated-text-fill-blue.webp") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -454,7 +454,7 @@ h4, .logo {
 }
 
 .twoButtons div:hover a {
-  color: #b18502;
+  color: #07485e;
   opacity: 1;
 }
 
@@ -470,7 +470,7 @@ h4, .logo {
   display: flex;
   justify-content: center;
   top: 80px;
-  color: #b18502;
+  color: #07485e;
   opacity: .6;
   font-weight: bold;
   line-height: 20px;
@@ -715,7 +715,7 @@ h4, .logo {
 }
 
 .skills-bar-container li .bar-container {
-  background-color: rgba(177, 133, 2, 0.5);
+  background-color: rgba(7, 72, 94, 0.5);
   position: relative;
   height: 5px;
   margin-top: 5px;
@@ -724,7 +724,7 @@ h4, .logo {
 }
 
 .skills-bar-container li .bar-container .progressbar {
-  background-color: #b18502;
+  background-color: #07485e;
   position: absolute;
   width: 0%;
   height: 100%;
@@ -900,13 +900,13 @@ h4, .logo {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #d8a306;
+  color: #02769B;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-menu li:hover, .portfolio #portfolio-menu li.filter-active {
-  color: #b18502;
+  color: #07485e;
 }
 
 .portfolio #portfolio-menu li:last-child {
@@ -939,7 +939,7 @@ h4, .logo {
   position: absolute;
   width: 100%;
   height: 30%;
-  background: rgba(177, 133, 2, 0.7);
+  background: rgba(7, 72, 94, 0.7);
   left: 0;
   bottom: -100%;
   padding: 20px;
@@ -959,7 +959,7 @@ h4, .logo {
 }
 
 .cardbg {
-  background-color: #b18502 !important;
+  background-color: #07485e !important;
 }
 
 /*--------------------------------------------------------------
@@ -1012,7 +1012,7 @@ h4, .logo {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: rgba(177, 133, 2, 0.2);
+  background: rgba(7, 72, 94, 0.2);
   position: relative;
   margin-top: 35px;
   border-radius: 6px;
@@ -1117,13 +1117,13 @@ footer {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #b18502;
+  box-shadow: inset 0 0 5px #07485e;
   border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b18502;
+  background: #07485e;
   border-radius: 10px;
 }
 
@@ -1134,7 +1134,7 @@ html::-webkit-scrollbar {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #d8a306;
+  background: #02769B;
 }
 
 /*--------------------------------------------------------------
@@ -1148,7 +1148,7 @@ html::-webkit-scrollbar {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #b18502;
+  background: #07485e;
   color: white;
   transition: all 0.5s ease-in-out;
   z-index: 50;
@@ -1162,7 +1162,7 @@ html::-webkit-scrollbar {
 }
 
 .back-to-top:hover {
-  background: #d8a306;
+  background: #02769B;
 }
 
 .flexrow {
@@ -1180,6 +1180,6 @@ html::-webkit-scrollbar {
 }
 
 .title {
-  color: #b18502;
+  color: #07485e;
 }
 /*# sourceMappingURL=main.css.map */
