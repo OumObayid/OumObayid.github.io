@@ -1,135 +1,135 @@
-
-    @import "./_themes.js";
-
-    // color by default 
-    $color-profile2:rgb(7, 72, 94);
+//thèmes
+$blueTheme:false;
+$orangeTheme:true;
+$greenTheme: false;
+// color by default 
+$color-profile2:rgb(7, 72, 94);
+$color-profile3: #02769B;
+$color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-profile3 50%);
+$animated-text-fill-img:"animated-text-fill-blue.webp";
+$box-shadow-navbar-mobile: 0 0 65px $color-profile2 inset,
+0 0 20px #a1b4c0 inset,
+0 0 5px #476281;
+$logoImg:url(../images/logoBlue.png);
+@if ($blueTheme) {
+    $color-profile2: rgb(7, 72, 94);
     $color-profile3: #02769B;
-    $color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-profile3 50%);
-    $animated-text-fill-img:"animated-text-fill-blue.webp";    
-    $logoImg:url(../images/logoBlue.png);
+    $color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 35%, $color-profile3 50%);
+    $animated-text-fill-img: "animated-text-fill-blue.webp";
+    $box-shadow-navbar-mobile: 0 0 65px $color-profile2 inset, 0 0 20px #a1b4c0 inset, 0 0 5px #476281;
+    $logoImg: url(../images/logoBlue.png);
+}
 
-    
-
-   @if ($blueTheme){
-    $color-profile2:rgb(7, 72, 94);
-    $color-profile3: #02769B;
-    $color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-profile3 50%);
-    $animated-text-fill-img:"animated-text-fill-blue.webp";    
-    $logoImg:url(../images/logoBlue.png);
-    } @else if ($orangeTheme){
-        $color-profile2:#b18502;
-        $color-profile3: rgb(216, 163, 6);
-        $color-bgNav: linear-gradient(90deg, rgb(39, 29, 1) 10%, $color-profile2 30%, $color-profile3 50%);
-        $animated-text-fill-img:"animated-text-fill-orange.webp";    
-        $logoImg:url(../images/logoOrange.png);
-    }
-    
+@else if ($orangeTheme) {
+    $color-profile2: rgb(177, 133, 2);
+    $color-profile3: rgb(216, 163, 6);
+    $color-bgNav: linear-gradient(90deg, rgb(109, 80, 2) 10%, $color-profile2 35%, $color-profile3 50%);
+    $animated-text-fill-img: "animated-text-fill-orange.webp";
+    $box-shadow-navbar-mobile: 0 0 65px $color-profile2 inset, 0 0 20px #c7b57a inset, 0 0 5px #5a562d;
+    $logoImg: url(../images/logoOrange.png);
+}
 
 
-    /*
+/*
     |-------------------------------|
     |------- Variables Colors-------|
     |-------------------------------|
     */
-    $color-titles:#302f2f;
-    $color-paragraph:#9c9696;
-    $color-profile1:white;
-   
-    
-    
-    /*
+
+$color-titles:#302f2f;
+$color-paragraph:#9c9696;
+$color-profile1:white;
+
+/*
     |-------------------------------|
     |----variables images sources---|
     |-------------------------------|
-    */    
-    $img-animated-text-fill:"../images/"+$animated-text-fill-img;
+    */
 
+$img-animated-text-fill:"../images/"+$animated-text-fill-img;
 
-   /*
+/*
     |-------------------------------|
     |-----variables font family-----|
     |-------------------------------|
     */
-   
-    @font-face {
-        font-family: "Ludicrous-Stencil";
-        font-weight: 400;
-        src: url("../fonts/Ludicrous-Stencil.ttf") ;
-        font-display: swap;
-        font-style: normal;
-    }
-    
-    /*
+
+@font-face {
+    font-family: "Ludicrous-Stencil";
+    font-weight: 400;
+    src: url("../fonts/Ludicrous-Stencil.ttf");
+    font-display: swap;
+    font-style: normal;
+}
+
+
+/*
     |-------------------------------|
     |-variable padding for section--|
     |-------------------------------|
     */
-   
-    $padding-left-right:100px;
-    $padding-top:70px;
-    $padding-bottom:0px;
-    
-   /*
+
+$padding-left-right:100px;
+$padding-top:70px;
+$padding-bottom:0px;
+
+/*
     |-------------------------------|
     |----ariables Break-points -----|
     |-------------------------------|
     */
-  
-    $large-phone:768px;
-    $tablet:992px;
-    $desktop:1200px;
-   
-    /*
+
+$large-phone:768px;
+$tablet:992px;
+$desktop:1200px;
+
+/*
     |-------------------------------|
     |-----variables Font size ------|
     |-------------------------------|
     */
-     
-    $extralarge: 45px;
-    $large: 26px;
-    $extramedium:22px;
-    $medium: 15px;
-    $lessmedium: 14px;
-    $extrasmall:13px;
-    $small:12px;
-   
-    /*
+
+$extralarge: 45px;
+$large: 26px;
+$extramedium:22px;
+$medium: 15px;
+$lessmedium: 14px;
+$extrasmall:13px;
+$small:12px;
+
+/*
     |-------------------------------|
     |-----variables Font weight-----|
     |-------------------------------|
     */
 
-    $bigweight: 700;
-    $mediumweight:500;
-    $smallweight:400;
+$bigweight: 700;
+$mediumweight:500;
+$smallweight:400;
 
-     /*
+/*
     |-------------------------------|
     |-----variables line height-----|
     |-------------------------------|
     */
-  
-    $height1:39px;
-    $height2:35px;
-    $height3:31px;
-    $height4:26px;
-    $height5:23px;
-    $height6:21px;
-    
 
-    //Variables of kills.scs
-    $percentHtml: 98%;
-    $percentCss: 95%;
-    $percentJavascript: 75%;
-    $percentBootstrap: 80%;
-    $percentPhotoshop: 65%;
-    $percentReact : 65%;
-    $percentPhp: 70%;
-    $percentWordpress: 70%;
-    $percentAsp : 55%;
-    $percentSql : 65%;
-
-    $li-padding: 5px;
-
-    $animation-delay: .7s;
-    $animation-duration : 2s;
+$height1:39px;
+$height2:35px;
+$height3:31px;
+$height4:26px;
+$height5:23px;
+$height6:21px;
+//Variables of kills.scs
+$percentHtml: 98%;
+$percentCss: 95%;
+$percentJavascript: 75%;
+$percentBootstrap: 80%;
+$percentPhotoshop: 65%;
+$percentReact: 65%;
+$percentPhp: 70%;
+$percentWordpress: 70%;
+$percentAsp: 55%;
+$percentSql: 65%;
+$li-padding: 5px;
+$animation-delay: .7s;
+$animation-duration: 2s;

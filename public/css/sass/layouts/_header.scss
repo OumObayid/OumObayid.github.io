@@ -87,7 +87,7 @@
 
 .navbar.styleNav {
     border-radius: 0 0 90% 0;
-    box-shadow: 0 0 65px $color-profile2 inset, 0 0 20px #a1b4c0 inset, 0 0 5px #476281;
+    box-shadow: $box-shadow-navbar-mobile;
     .navbar-collapse {
         margin-left: 10px;
     }
