@@ -308,9 +308,13 @@ h4, .logo {
   transition: all 0.3s linear;
 }
 
-.styleNav {
-  border-radius: 0 0 80% 0;
-  box-shadow: 0 0 65px #07485e inset, 0 0 20px #8caabe inset, 0 0 5px #476281;
+.navbar.styleNav {
+  border-radius: 0 0 90% 0;
+  box-shadow: 0 0 65px #07485e inset, 0 0 20px #a1b4c0 inset, 0 0 5px #476281;
+}
+
+.navbar.styleNav .navbar-collapse {
+  margin-left: 13px;
 }
 
 .styleNav:after,
