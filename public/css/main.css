@@ -1031,6 +1031,7 @@ footer {
   }
   .navbar.styleNav {
     border-radius: 0 0 80% / 100% 0;
+    opacity: .9;
     background: radial-gradient(ellipse 100% 200% at top left, transparent 49%, #07485e 50%);
   }
   .styleNav:after,
