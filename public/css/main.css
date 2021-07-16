@@ -647,13 +647,13 @@ h4, .logo {
 .skills-bar-container {
   font-size: 20px;
   list-style: none;
-  margin-top: 30px;
-  width: 100%;
+  margin-bottom: 0;
+  width: 80%;
 }
 
 .skills-bar-container li {
   position: relative;
-  width: 90%;
+  width: 80%;
   margin-right: auto;
   margin-left: auto;
   height: 50px;
@@ -910,6 +910,14 @@ h4, .logo {
 
 .filter .cap2 a p {
   color: white;
+}
+
+.topcap1 {
+  top: -100%;
+}
+
+.bottomcap2 {
+  bottom: -100%;
 }
 
 .filter:hover .cap1 {

@@ -10,21 +10,8 @@ $(function() {
         });
     } else {
         $(".portfolio-box").each(function() {
-            $(this).removeAttr("href");
+            $(this).removeAttr("href"); //desactiver les lien de cette section 
         });
-
-        // $('.cap1').on('click', function() {
-        //     $(this).css("top", "-100%");
-        //     // $(this).parent('each-item').find('.cap2').css("bottom", "-300%");
-        //     $('.cap2').css("bottom", "-100%");
-        // })
-
-
-
-
-
-
-
     }
 
 
