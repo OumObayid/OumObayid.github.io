@@ -127,24 +127,18 @@ Using jquery waypoints to change active on scroll
     }
     /*============Navbar on Mobile: ============Setting navbar ==================================*/
     if ($(window).width() < 992) {
-        //-----------add or remove background to navbar on clicking on button when scrollbar is on top
+        //----add or remove style spécifique to mobile to navbar on clicking on button when scrollbar is on top
         $('.navbar-toggler').on('click', function() {
             if ($('.navbar-toggler').hasClass("collapsed")) {
                 $('.navbar').fadeIn('slow', function() {
-                    // $('.navbar').addClass('bgcolorMobilToggle');
                     $('.navbar').addClass('styleNav');
                 });
-
-                //------------------------------------------------------- 
 
             } else {
                 $('.navbar').fadeOut('0', function() {
                     $(this).show();
-                    // $(this).removeClass('bgcolorMobilToggle');
                     $('.navbar').removeClass('styleNav');
                 });
-
-
             }
         });
         //-------------------------------------------------------close navbar on clicking on navbar link 
@@ -175,12 +169,12 @@ Using jquery waypoints to change active on scroll
     $(window).on(scroll(function() {
         var height = $(window).height();
         if ($(window).scrollTop() + height > offsetTop) {
-            jQuery('.bar-container span').each(function() {
-                jQuery(this).addClass('progressbar')
+            $('.bar-container span').each(function() {
+                $(this).addClass('progressbar')
             });
         } else {
-            jQuery('.bar-container span').each(function() {
-                jQuery(this).removeClass('progressbar')
+            $('.bar-container span').each(function() {
+                $(this).removeClass('progressbar')
             });
         }
     }));

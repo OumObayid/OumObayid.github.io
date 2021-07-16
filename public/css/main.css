@@ -684,19 +684,6 @@ h4, .logo {
   border-radius: 5px;
 }
 
-.skills-bar-container li .bar-container .progressbar {
-  background-color: #07485e;
-  position: absolute;
-  width: 0%;
-  height: 100%;
-  border-radius: 5px;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: both;
-  animation-name: progress;
-  animation-delay: 0.7s;
-}
-
 .skills-bar-container li .bar-container .progressbar#progress-html {
   animation-name: progress-html;
   animation-delay: 0.7s;
