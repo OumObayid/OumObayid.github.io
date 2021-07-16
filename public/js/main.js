@@ -131,17 +131,19 @@ Using jquery waypoints to change active on scroll
         $('.navbar-toggler').on('click', function() {
             if ($('.navbar-toggler').hasClass("collapsed")) {
                 $('.navbar').fadeIn('slow', function() {
-                    $('.navbar').addClass('bgcolorMobilToggle');
+                    // $('.navbar').addClass('bgcolorMobilToggle');
+                    $('.navbar').addClass('styleNav');
                 });
 
                 //------------------------------------------------------- 
-                $('.navbar').addClass('styleNav');
+
             } else {
                 $('.navbar').fadeOut('0', function() {
                     $(this).show();
-                    $(this).removeClass('bgcolorMobilToggle');
+                    // $(this).removeClass('bgcolorMobilToggle');
+                    $('.navbar').removeClass('styleNav');
                 });
-                $('.navbar').removeClass('styleNav');
+
 
             }
         });
