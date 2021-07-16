@@ -165,16 +165,16 @@ Using jquery waypoints to change active on scroll
     });
 
     /*==================Setting for section Skills: progress bar animated=====================*/
-    var offsetTop = $('#skills').offset().top;
+    var offsetTop = $('#skills').offsetTop();
     $(window).on(scroll(function() {
         var height = $(window).height();
         if ($(window).scrollTop() + height > offsetTop) {
-            $('.bar-container span').each(function() {
-                $(this).addClass('progressbar')
+            jQuery('.bar-container span').each(function() {
+                jQuery(this).addClass('progressbar')
             });
         } else {
-            $('.bar-container span').each(function() {
-                $(this).removeClass('progressbar')
+            jQuery('.bar-container span').each(function() {
+                jQuery(this).removeClass('progressbar')
             });
         }
     }));
