@@ -13,7 +13,21 @@ $(function() {
             $(this).removeAttr("href");
         });
 
+        // $('.cap1').on('click', function() {
+        //     $(this).css("top", "-100%");
+        //     // $(this).parent('each-item').find('.cap2').css("bottom", "-300%");
+        //     $('.cap2').css("bottom", "-100%");
+        // })
+
+
+
+
+
+
+
     }
+
+
 
     /*=======================================Initiation AOS======================================*/
     function aos_init() {
