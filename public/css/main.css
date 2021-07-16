@@ -1035,10 +1035,6 @@ footer {
   .navbar.styleNav .logo {
     margin-left: 25%;
   }
-  .styleNav:after,
-  .styleNav:before {
-    display: none;
-  }
   .navbar-collapse .navbar-nav {
     width: 100%;
   }

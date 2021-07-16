@@ -34,20 +34,12 @@
             border-radius: 0 0 80% / 100% 0;
             opacity: .9;
             background-image: $color-bgNav;
-            // transition: all 0.3s linear;
-            // box-shadow: $box-shadow-navbar-mobile;
-            // background: radial-gradient(circle at 0 0, transparent 30%, $color-profile2 50%) top left;
-            // background-size: 100% 100%;
-            // background-repeat: no-repeat;
             background: radial-gradient(ellipse 70% 100% at 0px 50%, transparent 49%, $color-profile2 50%);
             .logo {
                 margin-left: 25%;
             }
         }
-        .styleNav:after,
-        .styleNav:before {
-            display: none;
-        }
+        //position et spacing des textes links
         .navbar-collapse {
             .navbar-nav {
                 width: 100%;
@@ -73,9 +65,6 @@
             .nav-item7 .link7 {
                 margin-left: 22%;
             }
-            // .nav-item .link {
-            //     margin-left: 2%;
-            // }
             .nav-item {
                 letter-spacing: 1px;
             }
