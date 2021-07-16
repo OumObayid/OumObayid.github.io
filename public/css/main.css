@@ -866,7 +866,8 @@ h4, .logo {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-menu li:hover, .portfolio #portfolio-menu li.filter-active {
+.portfolio #portfolio-menu li:hover,
+.portfolio #portfolio-menu li.filter-active {
   color: #07485e;
 }
 

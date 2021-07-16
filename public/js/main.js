@@ -1,14 +1,19 @@
-// Activate SimpleLightbox plugin for portfolio items
-new SimpleLightbox({
-    elements: '#portfolio a.portfolio-box'
-});
-
-
-
 /*============================================================================================*/
 /*=======================================jquery code==========================================*/
 /*============================================================================================*/
 $(function() {
+
+    /*===================================Initiation Lightbox=====================================*/
+    if ($(window).width() > 992) {
+        new SimpleLightbox({
+            elements: '#portfolio a.portfolio-box'
+        });
+    } else {
+        $(".portfolio-box").each(function() {
+            $(this).removeAttr("href");
+        });
+
+    }
 
     /*=======================================Initiation AOS======================================*/
     function aos_init() {
