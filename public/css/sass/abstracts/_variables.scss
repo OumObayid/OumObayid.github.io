@@ -14,7 +14,7 @@ $logoImg:url(../images/logoBlue.png);
 @if ($blueTheme) {
     $color-profile2: rgb(7, 72, 94);
     $color-profile3: #02769B;
-    $color-bgNav: linear-gradient(90deg, rgb(1, 39, 56) 10%, rgb(3, 75, 109) 35%, $color-profile3 50%);
+    $color-bgNav: linear-gradient(90deg, rgb(1, 26, 39) 0%, rgb(1, 65, 95) 25%, $color-profile3 50%);
     $animated-text-fill-img: "animated-text-fill-blue.webp";
     $box-shadow-navbar-mobile: 0 0 65px $color-profile2 inset, 0 0 20px #a1b4c0 inset, 0 0 5px #476281;
     $logoImg: url(../images/logoBlue.png);
