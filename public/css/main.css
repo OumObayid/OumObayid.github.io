@@ -391,7 +391,7 @@ h4, .logo {
 }
 
 .twoButtons {
-  font-family: "Ludicrous-Stencil",sans-serif;
+  font-family: "Ludicrous-Stencil", sans-serif;
   position: relative;
   display: flex;
   justify-content: center;
@@ -416,10 +416,11 @@ h4, .logo {
 
 .twoButtons div:hover a {
   color: #07485e;
-  opacity: 1;
+  opacity: .6;
 }
 
-.twoButtons div a, .twoButtons div img {
+.twoButtons div a,
+.twoButtons div img {
   text-align: center;
   position: relative;
   width: 80px;
@@ -432,7 +433,7 @@ h4, .logo {
   justify-content: center;
   top: 80px;
   color: #07485e;
-  opacity: .6;
+  opacity: .8;
   font-weight: bold;
   line-height: 20px;
   z-index: 1;
@@ -453,11 +454,10 @@ h4, .logo {
   border-radius: 50%;
   position: absolute;
   background: #275b7a;
-  background: radial-gradient(circle, #275b7a 0%, white 83%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#275b7a",endColorstr="#ffffff",GradientType=1);
+  background: radial-gradient(circle, #143547 0%, #6aaacf 50%, white 100%);
   bottom: -10px;
   opacity: 0.3;
-  animation: bubble 15s ease-in-out infinite, sideWays 4s ease-in-out infinite alternate;
+  animation: bubble 15s ease-in-out infinite, sideWays 4s ease-in-out infinite alternate;
 }
 
 @keyframes bubble {

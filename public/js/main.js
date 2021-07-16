@@ -53,7 +53,7 @@ $(function() {
 
     /*============Navbar: ============Setting navbar ==================================*/
     //-------------------invisibility of and visibility with background of navbar on scrolling bar
-    $(document).on('scroll', function() {
+    $(document).on("scroll", function() {
         var $nav = $(".navbar");
         $nav.toggleClass('invisible', $(this).scrollTop() > 40 && $(this).scrollTop() < 499);
         $nav.toggleClass('scrolled', $(this).scrollTop() > 500);
@@ -149,7 +149,7 @@ Using jquery waypoints to change active on scroll
 
     /*=================================Setting back to top button=================================*/
     //--------------------------------------fadeIn  and fadout button back to top on scrolling bar
-    $(window).on("scroll", function() {
+    $(document).on("scroll", function() {
         if ($(this).scrollTop() > 100) {
             $('.back-to-top').fadeIn('slow');
         } else {
@@ -165,19 +165,24 @@ Using jquery waypoints to change active on scroll
     });
 
     /*==================Setting for section Skills: progress bar animated=====================*/
-    var offsetTop = $('#skills').offsetTop();
-    $(window).on(scroll(function() {
+    var offsetTop = $('#skills').offset().top;
+
+    $(document).on("scroll", function() {
+
         var height = $(window).height();
         if ($(window).scrollTop() + height > offsetTop) {
+
             jQuery('.bar-container span').each(function() {
                 jQuery(this).addClass('progressbar')
             });
         } else {
+
             jQuery('.bar-container span').each(function() {
                 jQuery(this).removeClass('progressbar')
             });
         }
-    }));
+    });
+
 
     /*==================Setting for section Portfolio: progress bar animated===================*/
     $(".filterbtn").on("click", function() {
