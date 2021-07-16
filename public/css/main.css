@@ -265,7 +265,7 @@ h4, .logo {
 }
 
 .scrolled {
-  background-image: linear-gradient(90deg, #00151f 10%, #002b3f 35%, #02769B 50%);
+  background-image: linear-gradient(90deg, #012738 10%, #034b6d 35%, #02769B 50%);
   box-shadow: 0px 7px 15px -7px #000000;
 }
 
@@ -1026,7 +1026,7 @@ footer {
 
 @media only screen and (max-width: 992px) {
   .bgcolorMobilToggle {
-    background-image: linear-gradient(90deg, #00151f 10%, #002b3f 35%, #02769B 50%);
+    background-image: linear-gradient(90deg, #012738 10%, #034b6d 35%, #02769B 50%);
     transition: all 0.3s linear;
   }
   .navbar.styleNav {
