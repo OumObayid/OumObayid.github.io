@@ -279,11 +279,22 @@ h4, .logo {
 }
 
 .parallax-wrapper {
+  overflow-y: hidden;
+}
+
+.parallax {
   background-image: url("../images/bgprofile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
+}
+
+.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .profile-img a {
