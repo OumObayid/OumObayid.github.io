@@ -1,3 +1,25 @@
+//parallax for image background profile
+// .parallax-wrapper {
+//     // overflow-y: hidden;
+//     background-image: url('../images/bgprofile.jpg');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     // background-color: ;
+//     height: 100vh;
+//     // width: 80%;
+// }
+.parallax-wrapper {
+    overflow-y: hidden;
+}
+
+.parallax {
+    background-image: url('../images/bgprofile.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
 //avatar
 .profile-img a {
     position: relative;
@@ -187,7 +209,7 @@
 }
 
 //bulles
-.welcom .bubble-ocean {
+.bubble-ocean {
     position: relative;
     width: 80vw;
     // height: 100vh;

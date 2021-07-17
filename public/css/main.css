@@ -285,16 +285,8 @@ h4, .logo {
 .parallax {
   background-image: url("../images/bgprofile.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-}
-
-.parallax {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 
 .profile-img a {
@@ -456,7 +448,7 @@ h4, .logo {
   z-index: -1;
 }
 
-.welcom .bubble-ocean {
+.bubble-ocean {
   position: relative;
   width: 80vw;
 }
