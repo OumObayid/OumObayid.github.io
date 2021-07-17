@@ -648,12 +648,12 @@ h4, .logo {
   font-size: 20px;
   list-style: none;
   margin-bottom: 0;
-  width: 80%;
+  width: 100%;
 }
 
 .skills-bar-container li {
   position: relative;
-  width: 80%;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
   height: 50px;
