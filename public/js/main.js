@@ -1,6 +1,10 @@
-// Parallax effect
-// Adapted from @ilonacodes article ->  https://link.medium.com/7fFiON6Q1X
+/*============================================================================================*/
+/*=======================================javascript code==========================================*/
+/*============================================================================================*/
 
+/*===================================Initiation parallax effect=====================================*/
+
+// Adapted from @ilonacodes article ->  https://link.medium.com/7fFiON6Q1X
 // Update : added throttle to increase performance
 window.addEventListener('scroll', throttle(parallax, 14));
 
@@ -18,19 +22,23 @@ function parallax() {
     var scrolled = window.pageYOffset;
     var parallax = document.querySelector(".parallax");
     // You can adjust the 0.4 to change the speed
-    var coords = (scrolled * 0.4) + 'px'
+    var coords = (scrolled * 0.7) + 'px'
     parallax.style.transform = 'translateY(' + coords + ')';
 };
+
+
 /*============================================================================================*/
 /*=======================================jquery code==========================================*/
 /*============================================================================================*/
+
 $(function() {
 
     /*===================================Initiation Lightbox=====================================*/
     if ($(window).width() > 992) {
-        new SimpleLightbox({
-            elements: '#portfolio a.portfolio-box'
-        });
+        // $('a.portfolio-box').SimpleLightbox();
+        $('a.portfolio-box').simpleLightbox();
+
+
     } else {
         $(".portfolio-box").each(function() {
             $(this).removeAttr("href"); //desactiver les lien de cette section 
@@ -89,8 +97,8 @@ $(function() {
     });
     //----------------------------------------------Navigation active state on scroll or on click 
     /*
-Using jquery waypoints to change active on scroll
-*/
+    Using jquery waypoints to change active on scroll
+    */
     //Default active on home
     if ($(window).width() > 992) {
         $('#header').addClass("active");
@@ -225,8 +233,13 @@ Using jquery waypoints to change active on scroll
             $('.filter').filter('.' + value).show('3000');
         }
     });
+    // $(window).on('load', function() {
+    //     // Initiate venobox (lightbox feature used in portofilo)
+    //     $(document).ready(function() {
+    //         $('.venobox').venobox();
+    //     });
 
-
+    // });
 
 
 

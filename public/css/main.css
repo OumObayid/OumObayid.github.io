@@ -889,46 +889,43 @@ h4, .logo {
   text-align: center;
 }
 
-.filter .cap1 {
-  position: absolute;
-  width: 100%;
-  height: 70%;
-  background: rgba(255, 255, 255, 0.8);
-  left: 0px;
-  top: -100%;
-  padding: 10px;
-  transition: all .5s;
-}
-
-.filter .cap2 {
+.filter .cap {
   position: absolute;
   width: 100%;
   height: 30%;
-  background: rgba(7, 72, 94, 0.7);
-  left: 0;
+  background: rgba(2, 118, 155, 0.7);
+  left: 15px;
   bottom: -100%;
   padding: 20px;
   transition: all .5s;
 }
 
-.filter .cap2 a p {
+.filter .cap a p {
   color: white;
 }
 
-.topcap1 {
-  top: -100%;
-}
-
-.bottomcap2 {
-  bottom: -100%;
-}
-
-.filter:hover .cap1 {
-  top: 0px;
-}
-
-.filter:hover .cap2 {
+.filter:hover .cap {
   bottom: 0px;
+}
+
+.filter:hover .cap a p {
+  transition: color .5s;
+}
+
+.filter:hover .cap a p:hover {
+  color: #07485e;
+}
+
+.portfolio-box {
+  overflow: hidden;
+}
+
+.imgzoom {
+  transition: all 0.8s ease-in-out;
+}
+
+.imgzoom:hover {
+  transform: scale(1.2);
 }
 
 .cardbg {

@@ -45,22 +45,12 @@
         color: $color-titles;
         text-align: center;
     }
-    .cap1 {
-        position: absolute;
-        width: 100%;
-        height: 70%;
-        background: rgba($color-profile1, 0.8);
-        left: 0px;
-        top: -100%;
-        padding: 10px;
-        transition: all .5s;
-    }
-    .cap2 {
+    .cap {
         position: absolute;
         width: 100%;
         height: 30%;
-        background: rgba($color-profile2, 0.7);
-        left: 0;
+        background: rgba($color-profile3, 0.7);
+        left: 15px;
         bottom: -100%;
         padding: 20px;
         transition: all .5s;
@@ -70,19 +60,25 @@
     }
 }
 
-.topcap1 {
-    top: -100%;
-}
-
-.bottomcap2 {
-    bottom: -100%;
-}
-
 .filter:hover {
-    .cap1 {
-        top: 0px;
-    }
-    .cap2 {
+    .cap {
         bottom: 0px;
+    }
+    .cap a p {
+        transition: color .5s;
+    }
+    .cap a p:hover {
+        color: $color-profile2;
+    }
+}
+
+.portfolio-box {
+    overflow: hidden;
+}
+
+.imgzoom {
+    transition: all 0.8s ease-in-out;
+    &:hover {
+        transform: scale(1.2);
     }
 }
