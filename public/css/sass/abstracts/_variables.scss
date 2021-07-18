@@ -13,7 +13,7 @@ $box-shadow-navbar-mobile: 0 0 65px $color-2 inset,
 $logoImg:url(../images/logoBlue.png);
 @if ($blueTheme) {
     $color-2: rgb(7, 72, 94);
-    $color-3: #02769B;
+    $color-3: #58a0b8;
     $color-bgNav: linear-gradient(90deg, rgb(1, 26, 39) 0%, rgb(1, 65, 95) 25%, $color-3 50%);
     $animated-text-fill-img: "animated-text-fill-blue.webp";
     $box-shadow-navbar-mobile: 0 0 65px $color-2 inset, 0 0 20px #a1b4c0 inset, 0 0 5px #476281;
@@ -36,8 +36,8 @@ $logoImg:url(../images/logoBlue.png);
     |-------------------------------|
     */
 
-$color-titles:#302f2f;
-$color-paragraph:#9c9696;
+$color-titles:#808080;
+$color-paragraph:#5c5c5c;
 $color-1:white;
 
 /*
