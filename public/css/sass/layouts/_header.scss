@@ -26,7 +26,7 @@
             position: relative;
             display: block;
             font-family: Lato, sans-serif;
-            color: $color-profile1;
+            color: $color-1;
             text-decoration: none;
             text-transform: uppercase;
             transition: 0.5s;
@@ -37,7 +37,7 @@
 
 // :not(.logo)
 .active {
-    color: $color-profile2 !important;
+    color: $color-2 !important;
 }
 
 .invisible {

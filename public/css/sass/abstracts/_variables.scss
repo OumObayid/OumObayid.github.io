@@ -1,31 +1,31 @@
 //thèmes
-$blueTheme: true;
+$blueTheme:true;
 $orangeTheme:false;
 $greenTheme: false;
 // color by default 
-$color-profile2:rgb(7, 72, 94);
-$color-profile3: #02769B;
-$color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-profile3 50%);
+$color-2:rgb(7, 72, 94);
+$color-3: #02769B;
+$color-bgNav: linear-gradient(90deg, rgb(0, 21, 31) 10%, rgb(0, 43, 63) 30%, $color-3 50%);
 $animated-text-fill-img:"animated-text-fill-blue.webp";
-$box-shadow-navbar-mobile: 0 0 65px $color-profile2 inset,
+$box-shadow-navbar-mobile: 0 0 65px $color-2 inset,
 0 0 20px #a1b4c0 inset,
 0 0 5px #476281;
 $logoImg:url(../images/logoBlue.png);
 @if ($blueTheme) {
-    $color-profile2: rgb(7, 72, 94);
-    $color-profile3: #02769B;
-    $color-bgNav: linear-gradient(90deg, rgb(1, 26, 39) 0%, rgb(1, 65, 95) 25%, $color-profile3 50%);
+    $color-2: rgb(7, 72, 94);
+    $color-3: #02769B;
+    $color-bgNav: linear-gradient(90deg, rgb(1, 26, 39) 0%, rgb(1, 65, 95) 25%, $color-3 50%);
     $animated-text-fill-img: "animated-text-fill-blue.webp";
-    $box-shadow-navbar-mobile: 0 0 65px $color-profile2 inset, 0 0 20px #a1b4c0 inset, 0 0 5px #476281;
+    $box-shadow-navbar-mobile: 0 0 65px $color-2 inset, 0 0 20px #a1b4c0 inset, 0 0 5px #476281;
     $logoImg: url(../images/logoBlue.png);
 }
 
 @else if ($orangeTheme) {
-    $color-profile2: rgb(177, 133, 2);
-    $color-profile3: rgb(216, 163, 6);
-    $color-bgNav: linear-gradient(90deg, rgb(109, 80, 2) 10%, $color-profile2 35%, $color-profile3 50%);
+    $color-2: rgb(177, 133, 2);
+    $color-3: rgb(216, 163, 6);
+    $color-bgNav: linear-gradient(90deg, rgb(109, 80, 2) 10%, $color-2 35%, $color-3 50%);
     $animated-text-fill-img: "animated-text-fill-orange.webp";
-    $box-shadow-navbar-mobile: 0 0 65px $color-profile2 inset, 0 0 20px #c7b57a inset, 0 0 5px #5a562d;
+    $box-shadow-navbar-mobile: 0 0 65px $color-2 inset, 0 0 20px #c7b57a inset, 0 0 5px #5a562d;
     $logoImg: url(../images/logoOrange.png);
 }
 
@@ -38,7 +38,7 @@ $logoImg:url(../images/logoBlue.png);
 
 $color-titles:#302f2f;
 $color-paragraph:#9c9696;
-$color-profile1:white;
+$color-1:white;
 
 /*
     |-------------------------------|

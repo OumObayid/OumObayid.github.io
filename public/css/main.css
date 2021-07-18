@@ -893,7 +893,8 @@ h4, .logo {
   position: absolute;
   width: 100%;
   height: 30%;
-  background: rgba(2, 118, 155, 0.7);
+  background-image: linear-gradient(90deg, #011a27 0%, #01415f 25%, #02769B 50%);
+  opacity: 0.8;
   left: 15px;
   bottom: -100%;
   padding: 20px;
@@ -960,7 +961,8 @@ h4, .logo {
   margin: 0;
 }
 
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: #d5e9f2;
   font-size: 26px;
 }
@@ -989,7 +991,8 @@ h4, .logo {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
-.testimonials .owl-nav, .testimonials .owl-dots {
+.testimonials .owl-nav,
+.testimonials .owl-dots {
   margin-top: 5px;
   text-align: center;
 }

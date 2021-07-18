@@ -4,11 +4,11 @@
 
 //for logo background if the text logo actived, if not uncomment this
 @mixin color-bgLogo {
-    background: -webkit-linear-gradient(0deg, $color-profile2 0%, $color-profile3 60%, $color-profile1 100%);
+    background: -webkit-linear-gradient(0deg, $color-2 0%, $color-3 60%, $color-1 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    background: -moz-linear-gradient(0deg, $color-profile2 0%, $color-profile3 600%, $color-profile1 100%);
+    background: -moz-linear-gradient(0deg, $color-2 0%, $color-3 600%, $color-1 100%);
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }

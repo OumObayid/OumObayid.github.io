@@ -84,7 +84,7 @@
         padding: .25em 0 .325em;
         display: block;
         margin: 0 auto;
-        color: $color-profile1;
+        color: $color-1;
         /* Clip Background Image */
         background: url($img-animated-text-fill) repeat-y;
         -webkit-background-clip: text;
@@ -178,7 +178,7 @@
         &:hover {
             transform: translateY(-100%);
             & a {
-                color: $color-profile2;
+                color: $color-2;
                 opacity: .6;
             }
         }
@@ -194,7 +194,7 @@
             display: flex;
             justify-content: center;
             top: 80px;
-            color: $color-profile2;
+            color: $color-2;
             opacity: .8;
             font-weight: bold;
             line-height: 20px;
