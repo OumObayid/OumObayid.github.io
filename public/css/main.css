@@ -916,7 +916,11 @@ input[placeholder] {
 }
 
 .cardbg {
-  background-color: #07485e !important;
+  background-image: linear-gradient(90deg, #011a27 0%, #01415f 25%, #58a0b8 50%) !important;
+}
+
+.exper {
+  border-radius: 50% 0 0 50%;
 }
 
 /*--------------------------------------------------------------
