@@ -1,9 +1,17 @@
 /*-------------fonts---------------*/
 
 //font family
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
-body {
-    font-family: Montserrat, 'Helvetica Neue', Arial, sans-serif;
+//font for all elements
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+// for two buttons in profile
+@font-face {
+    font-family: "cute-animal";
+    src: url("../fonts/cute-animal.ttf");
+}
+
+body,
+a {
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 //font color
@@ -34,8 +42,8 @@ p,
 .p,
 input[placeholder] {
     color: $color-paragraph;
-    font-size: $medium;
     font-weight: $smallweight;
     line-height: $height5;
+    font-size: $lessmedium;
     // font-family: ;
 }
