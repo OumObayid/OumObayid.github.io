@@ -9,9 +9,14 @@
     src: url("../fonts/cute-animal.ttf");
 }
 
+@font-face {
+    font-family: "Ludicrous-Stencil";
+    src: url("../fonts/Ludicrous-Stencil.ttf");
+}
+
 body,
-a {
-    font-family: 'Montserrat', sans-serif !important;
+a:not(.twoButtons a) {
+    font-family: 'Montserrat', sans-serif;
 }
 
 //font color
