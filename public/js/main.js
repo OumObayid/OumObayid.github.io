@@ -237,42 +237,55 @@ $(function() {
 
     //mail
     // Wait for the DOM to be ready
-    $(function() {
-        // Initialize form validation on the registration form.
-        // It has the name attribute "registration"
-        $("form[name='contact']").validate({
-            // Specify validation rules
-            rules: {
-                // The key name on the left side is the name attribute
-                // of an input field. Validation rules are defined
-                // on the right side
-                name: "required",
-                email: {
-                    required: true,
-                    // Specify that email should be validated
-                    // by the built-in "email" rule
-                    email: true
-                },
-                subject: "required",
-                message: "required"
+
+    // Initialize form validation on the registration form.
+    // It has the name attribute "registration"
+    $("form[name='contact']").validate({
+        // Specify validation rules
+        rules: {
+            // The key name on the left side is the name attribute
+            // of an input field. Validation rules are defined
+            // on the right side
+            name: "required",
+            email: {
+                required: true,
+                // Specify that email should be validated
+                // by the built-in "email" rule
+                email: true
             },
-            // Specify validation error messages
-            messages: {
-                name: "Please enter your name",
-                email: {
-                    required: "Please enter your email",
-                    email: "Please enter an email adress valid"
-                },
-                subject: "Please enter the subjet of message",
-                message: "Please enter your message"
+            subject: "required",
+            message: "required"
+        },
+        // Specify validation error messages
+        messages: {
+            name: "Please enter your name",
+            email: {
+                required: "Please enter your email",
+                email: "Please enter an email adress valid"
             },
-            // Make sure the form is submitted to the destination defined
-            // in the "action" attribute of the form when valid
-            submitHandler: function(form) {
-                form.submit();
-            }
-        });
+            subject: "Please enter the subjet of message",
+            message: "Please enter your message"
+        },
+        // Make sure the form is submitted to the destination defined
+        // in the "action" attribute of the form when valid
+        submitHandler: function(form) {
+            form.on("submit", function() {
+                // $.post("mail.php", {
+                //     name = $("form #name").val(),
+                //     email = $("form #email").val(),
+                //     subject = $("form #subject").val(),
+                //     message = $("form #message").val()
+                // });
+                $(".message-submit").html("your mail is sent");
+            });
+
+
+
+
+
+        }
     });
+
 
 
 

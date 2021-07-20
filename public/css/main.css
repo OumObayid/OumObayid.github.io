@@ -1001,13 +1001,35 @@ input[placeholder] {
   font-size: 14px;
 }
 
+#contact .fas {
+  color: #58a0b8;
+  font-size: 26px;
+}
+
 form {
   width: 100%;
   height: 100%;
 }
 
+form input.form-control {
+  padding-left: 40px;
+}
+
+form .input-icons i {
+  position: absolute;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-left: 8px;
+  opacity: .8;
+}
+
+form input .far {
+  padding: 10px;
+  min-width: 40px;
+}
+
 form .error {
-  color: #ff0000;
+  color: #ff5e00;
   font-size: 13px;
 }
 
@@ -1029,6 +1051,10 @@ form button {
 
 form button:hover {
   color: #07485e;
+}
+
+.footer-bottom p:nth-child(2) {
+  font-size: 14px;
 }
 
 .bubble-ocean {
