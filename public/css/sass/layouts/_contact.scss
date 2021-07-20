@@ -1,9 +1,17 @@
+#contact {
+    .infos p,
+    input[placeholder],
+    textarea[placeholder] {
+        font-size: $lessmedium;
+    }
+}
+
 form {
     width: 100%;
-    border: 2px solid green;
+    height: 100%;
     .error {
         color: #ff0000;
-        font-size: $small;
+        font-size: $extrasmall;
     }
     button {
         border: 0;
@@ -12,14 +20,15 @@ form {
         width: 100%;
         height: 30px;
         line-height: 30px;
-        background: $color-2;
-        color: #fff;
+        background-image: $color-bgGradient;
+        color: $color-1;
         text-transform: uppercase;
         font-weight: bold;
         margin-top: 1.5rem;
         cursor: pointer;
+        transition: all .7s;
         &:hover {
-            background: $color-3;
+            color: $color-2;
         }
     }
 }

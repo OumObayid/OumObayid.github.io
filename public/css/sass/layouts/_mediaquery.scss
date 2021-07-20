@@ -27,13 +27,13 @@
         //     margin-left: 40%;
         // }
         // .bgcolorMobilToggle {
-        //     background-image: $color-bgNav;
+        //     background-image: $color-bgGradient;
         //     transition: all 0.3s linear;
         // }
         .navbar.styleNav {
             border-radius: 0 0 80% / 100% 0;
             opacity: .9;
-            background-image: $color-bgNav;
+            background-image: $color-bgGradient;
             background: radial-gradient(ellipse 70% 100% at 0px 50%, transparent 49%, $color-2 50%);
             .logo {
                 margin-left: 25%;
