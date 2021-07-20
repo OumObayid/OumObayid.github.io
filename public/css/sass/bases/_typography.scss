@@ -43,7 +43,7 @@ a:not(.twoButtons a) {
     line-height: $height4;
 }
 
-p,
+p:not(.footer p),
 .p,
 input[placeholder] {
     color: $color-paragraph;
