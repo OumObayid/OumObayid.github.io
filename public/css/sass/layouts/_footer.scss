@@ -1,9 +1,15 @@
 .footer {
-    background-image: $color-bgGradient;
+    background-color: $color-2;
     padding: 15px 0;
     box-shadow: 5px 0 3px rgba(0, 0, 0, 0.26);
 }
 
-.footer-bottom p:nth-child(2) {
-    font-size: $lessmedium;
+.footer-bottom {
+    p {
+        font-size: $lessmedium;
+        color: $color-1 !important;
+    }
+    .credit {
+        color: $color-3;
+    }
 }
