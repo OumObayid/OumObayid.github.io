@@ -121,7 +121,7 @@ input[placeholder] {
   color: #5c5c5c;
   font-weight: 400;
   line-height: 23px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .wrapper {
@@ -658,7 +658,7 @@ input[placeholder] {
 
 .skills-bar-container li .progressbar-title {
   color: #808080;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .skills-bar-container li .progressbar-title h3 {
@@ -1004,6 +1004,30 @@ input[placeholder] {
   .testimonials {
     margin: 30px 10px;
   }
+}
+
+form .error {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+form button {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #07485e;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #58a0b8;
 }
 
 .bubble-ocean {

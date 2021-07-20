@@ -1,3 +1,22 @@
-// .input-group-addon {
-//     padding: 15px 0 15px 19px;
-// }
+form .error {
+    color: #ff0000;
+    font-size: $small;
+}
+
+form button {
+    border: 0;
+    margin-bottom: 3px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: $color-2;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    &:hover {
+        background: $color-3;
+    }
+}
