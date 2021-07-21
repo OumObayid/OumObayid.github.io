@@ -1280,7 +1280,7 @@ html::-webkit-scrollbar {
 #experiences .title,
 #testimonials .title,
 #contact .title {
-  background-image: url(../images/bg-title.svg);
+  background-image: url(../images/bg-title-blue.svg);
   background-size: 120px 60px;
   height: 60px;
   background-position: center;

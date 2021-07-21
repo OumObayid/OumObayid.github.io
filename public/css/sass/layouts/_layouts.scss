@@ -105,7 +105,15 @@ html::-webkit-scrollbar {
 #experiences .title,
 #testimonials .title,
 #contact .title {
-    background-image: url(../images/bg-title.svg);
+    @if($blueTheme) {
+        background-image: url(../images/bg-title-blue.svg);
+    }
+    @else if ($orangeTheme) {
+        background-image: url(../images/bg-title-orange.svg);
+    }
+    @else if ($greenTheme) {
+        background-image: url(../images/bg-title-green.svg);
+    }
     background-size: 120px 60px;
     height: 60px;
     background-position: center;
