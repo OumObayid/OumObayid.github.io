@@ -1272,6 +1272,18 @@ html::-webkit-scrollbar {
 }
 
 .title {
-  color: #07485e;
+  color: #58a0b8;
+}
+
+#skills .title,
+#portfolio .title,
+#experiences .title,
+#testimonials .title,
+#contact .title {
+  background-image: url(../images/bg-title.svg);
+  background-size: 120px 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=main.css.map */

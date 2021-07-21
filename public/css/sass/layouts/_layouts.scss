@@ -97,7 +97,19 @@ html::-webkit-scrollbar {
 }
 
 .title {
-    color: $color-2;
+    color: $color-3;
+}
+
+#skills .title,
+#portfolio .title,
+#experiences .title,
+#testimonials .title,
+#contact .title {
+    background-image: url(../images/bg-title.svg);
+    background-size: 120px 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 //generals parametres in section best-sales-container and ourplant-container

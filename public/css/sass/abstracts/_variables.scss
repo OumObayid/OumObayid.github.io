@@ -12,8 +12,9 @@ $box-shadow-navbar-mobile: 0 0 65px $color-2 inset,
 0 0 5px #476281;
 $logoImg:url(../images/logoBlue.png);
 @if ($blueTheme) {
-    $color-2: rgb(7, 72, 94);
+    $color-2: #07485e;
     $color-3: #58a0b8;
+    // $color-3: #09638134;
     $color-bgGradient: linear-gradient(90deg, rgb(1, 26, 39) 0%, rgb(1, 65, 95) 25%, $color-3 50%);
     $animated-text-fill-img: "animated-text-fill-blue.webp";
     $box-shadow-navbar-mobile: 0 0 65px $color-2 inset, 0 0 20px #a1b4c0 inset, 0 0 5px #476281;
