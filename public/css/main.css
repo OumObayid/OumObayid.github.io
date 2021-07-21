@@ -113,7 +113,7 @@ input[placeholder] {
   color: #5c5c5c;
   font-weight: 400;
   line-height: 23px;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .wrapper {
@@ -612,10 +612,6 @@ input[placeholder] {
   opacity: 0.3;
 }
 
-.basic_info {
-  line-height: 10px;
-}
-
 .container-skills {
   width: 100%;
   flex-wrap: wrap;
@@ -994,7 +990,7 @@ input[placeholder] {
 #contact .infos p,
 #contact input[placeholder],
 #contact textarea[placeholder] {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 #contact .fas {
@@ -1056,7 +1052,7 @@ form button:hover {
 }
 
 .footer-bottom p {
-  font-size: 14px;
+  font-size: 15px;
   color: white !important;
 }
 
