@@ -113,7 +113,7 @@ input[placeholder] {
   color: #5c5c5c;
   font-weight: 400;
   line-height: 23px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .wrapper {
@@ -612,12 +612,8 @@ input[placeholder] {
   opacity: 0.3;
 }
 
-#apropos img {
-  width: 100%;
-}
-
-#apropos p {
-  line-height: 24px !important;
+.basic_info {
+  line-height: 10px;
 }
 
 .container-skills {
