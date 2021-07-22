@@ -959,26 +959,12 @@ input[placeholder] {
   position: relative;
   margin-top: 35px;
   border-radius: 6px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 .testimonials .owl-nav,
 .testimonials .owl-dots {
   margin-top: 5px;
   text-align: center;
-}
-
-.testimonials .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-}
-
-.testimonials .owl-dot.active {
-  background-color: #67b0d1 !important;
 }
 
 @media (max-width: 767px) {
@@ -1277,5 +1263,14 @@ html::-webkit-scrollbar {
   height: 60px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.shadow-card {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: all 1s;
+}
+
+.shadow-card:hover {
+  box-shadow: #26394d 0px 20px 30px -10px !important;
 }
 /*# sourceMappingURL=main.css.map */

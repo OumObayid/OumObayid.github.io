@@ -120,6 +120,16 @@ html::-webkit-scrollbar {
     background-repeat: no-repeat;
 }
 
+// shadow card
+.shadow-card {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition: all 1s;
+}
+
+.shadow-card:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px !important;
+}
+
 //generals parametres in section best-sales-container and ourplant-container
 // -------------- media query  -------------------
 @include for-phone {
