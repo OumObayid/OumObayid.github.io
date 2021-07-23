@@ -569,7 +569,7 @@
                 </div>
                 <div class=" row" data-aos="fade-up" data-aos-delay="200">
                     <div class="col-lg-6">
-                        <form class="shadow-card col-12 pt-4 pt-4 mb-3" name="contact" action="public/php/mail.php" method="post">
+                        <form id="myForm" class="shadow-card col-12 pt-4 pt-4 mb-3" name="contact" method="post" action="php/mail.php">
                             <div class="form-row">
                                 <div class="input-icons col-md-6 form-group">
                                     <i class="far fa-user"></i>
@@ -587,8 +587,10 @@
                             <div class="form-group">
                                 <textarea class="form-control message" name="message" id="message" rows="7" placeholder="Your Message"></textarea>
                             </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
-                            <div class="message-submit"></div>
+                            <div class="result"></div>
+                            <div id="message-submit" class="text-center text-danger"></div>
+                            <div class="text-center"><button id="submit" type="submit">Send Message</button></div>
+
                         </form>
                     </div>
                     <div class=" col-lg-6 ">
