@@ -9,7 +9,9 @@
     height: 100vh;
 }
 
-//avatar
+
+/*avatar*/
+
 .profile-img a {
     position: relative;
 }
@@ -72,7 +74,7 @@
         background: url($img-animated-text-fill) repeat-y;
         -webkit-background-clip: text;
         background-clip: text;
-        //   /* Animate Background Image */
+        /* Animate Background Image */
         -webkit-text-fill-color: transparent;
         -webkit-animation: animTitle 80s linear infinite;
         animation: animTitle 80s linear infinite;
@@ -82,7 +84,6 @@
         backface-visibility: hidden;
     }
     h3 {
-        // color: #eeb404;
         font-weight: bold;
     }
     position: absolute;
@@ -139,7 +140,9 @@
     animation: none;
 }
 
-//buttons
+
+/*buttons*/
+
 .twoButtons {
     font-family: "Ludicrous-Stencil", sans-serif !important;
     position: relative;
@@ -189,11 +192,12 @@
     }
 }
 
-//bulles
+
+/*bulles*/
+
 .profile>.bubble-ocean {
     position: relative;
     width: 80vw;
-    // height: 100vh;
 }
 
 .bubble {
