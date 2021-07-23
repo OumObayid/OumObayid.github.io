@@ -179,9 +179,12 @@ $(function() {
             }
         });
         //-------------------------------------------------------close navbar on clicking on navbar link 
-        $('.nav-link').on('click', function() {
-            $('.navbar-toggler').click();
+        $('.nav-link,.logo').on('click', function() {
+            if (!$('.navbar-toggler').hasClass("collapsed")) {
+                $('.navbar-toggler').click();
+            }
         });
+
     }
 
     /*=================================Setting back to top button=================================*/

@@ -13,7 +13,7 @@
         "sass/bases/_typography.scss",
         "sass/components/_social.scss",
         "sass/layouts/_layouts.scss",
-        "sass/layouts/_header.scss",
+        "sass/layouts/_navbar.scss",
         "sass/layouts/_profile.scss",
         "sass/layouts/_about.scss",
         "sass/layouts/_skills.scss",
