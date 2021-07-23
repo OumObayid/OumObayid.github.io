@@ -268,30 +268,41 @@ $(function() {
             },
             subject: "Please enter the subjet of message",
             message: "Please enter your message"
-        },
-        // Make sure the form is submitted to the destination defined
-        // in the "action" attribute of the form when valid
-        submitHandler: function(form) {
-            form.on("submit", function() {
-                // $.post("mail.php", {
-                //     name = $("form #name").val(),
-                //     email = $("form #email").val(),
-                //     subject = $("form #subject").val(),
-                //     message = $("form #message").val()
-                // });
-
-            });
-
-
-
-
-
         }
     });
 
 
+    // $(document).ready(function() {
+    //     $("input#submit").click(function(e) {
+    //         e.preventDefault();
+    //         $.post('mail.php', {
+    //             //JS Var   //These are is going to be pushed into $_POST
+    //             "name": $("#name").val(),
+    //             "email": $("#email").val(),
+    //             "subject": $("#subject").val(),
+    //             "message": $("#message").val()
+    //         }, function(data) {
+    //             $("#message-submit").html(data);
+    //         }, 'text');
+    //     });
+    // });
 
+    $("#myForm").submit(function(e) {
+        $("#message-submit").html("Please wait");
+        e.preventDefault(); //empêcher une action par défaut
+        var form_url = $(this).attr("action"); //récupérer l'URL du formulaire
+        var form_method = $(this).attr("method"); //récupérer la méthode GET/POST du formulaire
+        var form_data = $(this).serialize(); //Encoder les éléments du formulaire pour la soumission
 
+        $.ajax({
+            url: form_url,
+            type: form_method,
+            data: form_data
+        }).done(function(response) {
+            $("#message-submit").html(response);
+            $("#myForm").trigger("reset");
+        });
+    });
 
 
     //Jquery fin

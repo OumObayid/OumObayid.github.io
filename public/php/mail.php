@@ -1,29 +1,19 @@
 <?php
-
-
-$emailexped = $_POST['email'];
-
-if (isset($emailexped) && $emailexped !=""){
 $name = $_POST['name'];
-$to = "support@oumcreation";
+$email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
-$headers = "Content-Type: text/html;\n";
-$headers .= "From: ".$emailexped;
 
-$message = utf8_decode( $message )."\r\n";
-$message = "De : ".$emailexped .",<br /><br /><strong>Sujet :".$subject."</strong><br/><br />".$message."\r\n";
-$message ="<html><body>".$message."</body></html>";
 
-$reussi=mail($to,$subject,$message,$headers);
+$from = "From: Mail Contact Form <" . $email . ">";
+$to = "support@oumcreation.ml";
 
-if($reussi) {
-    echo "Le message à bien été envoyé";
-   
-  } else {
-    echo "Mailer Error: " . $mail->ErrorInfo;
-  } 
+$body = $message;
+
+if(mail($to,$subject,$body,$from)){
+    echo 'E-mail message sent!';
+} else {
+    echo 'E-mail delivery failure!';
 }
 
-
-?>  
+?>

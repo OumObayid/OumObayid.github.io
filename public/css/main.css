@@ -534,6 +534,7 @@ input[placeholder] {
   opacity: 0.3;
 }
 
+/* ===================social section ==================*/
 .wrapper {
   display: flex;
   justify-content: center;
@@ -920,9 +921,7 @@ input[placeholder] {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
+/* ===================Testimonials section ==================*/
 .testimonials .testimonial-item {
   box-sizing: content-box;
   text-align: center;
