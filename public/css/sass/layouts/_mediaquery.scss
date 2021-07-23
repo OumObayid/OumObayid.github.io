@@ -25,6 +25,7 @@ main {
 }
 
 @include for-phone-tablet {
+    /* navbar style */
     .navbar.styleNav {
         border-radius: 0 0 80% / 100% 0;
         opacity: .9;
@@ -34,7 +35,7 @@ main {
             margin-left: 25%;
         }
     }
-    /*position et spacing des textes links*/
+    /*position and spacing of links texts*/
     .navbar-collapse {
         .navbar-nav {
             width: 100%;
@@ -67,11 +68,6 @@ main {
 }
 
 @include for-phone {
-    /* header -----------------*/
-    /*margin */
-    main {
-        margin: 0px;
-    }
     /*portfolio*/
     .portfolio #portfolio-menu {
         li {
@@ -82,12 +78,7 @@ main {
 }
 
 @include for-tablet {
-    /*margin */
-    main {
-        margin: 0px;
-    }
-    /* 2. 1header */
-    /*bubble in header*/
+    /* bubble in header */
     .bubble-ocean {
         display: block;
     }
@@ -101,10 +92,6 @@ main {
 }
 
 @include for-desktop {
-    /*margin */
-    main {
-        margin: 0px;
-    }
     /*navbar*/
     .navbar {
         li {
@@ -138,8 +125,7 @@ main {
             }
         }
     }
-    /* header*/
-    /*profile*/
+    /* profile */
     .bubble-ocean {
         display: block;
     }

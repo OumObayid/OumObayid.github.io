@@ -1,46 +1,16 @@
 @charset "UTF-8";
+/*Global stylesheet where we will import all other stylesheets*/
 /* thèmes */
-/* color by default */
-/*
-    |-------------------------------|
-    |------- Variables Colors-------|
-    |-------------------------------|
-    */
-/*
-    |-------------------------------|
-    |----variables images sources---|
-    |-------------------------------|
-    */
-/*
-    |-------------------------------|
-    |-variable padding for section--|
-    |-------------------------------|
-    */
-/*
-    |-------------------------------|
-    |----ariables Break-points -----|
-    |-------------------------------|
-    */
-/*
-    |-------------------------------|
-    |-----variables Font size ------|
-    |-------------------------------|
-    */
-/*
-    |-------------------------------|
-    |-----variables Font weight-----|
-    |-------------------------------|
-    */
-/*
-    |-------------------------------|
-    |-----variables line height-----|
-    |-------------------------------|
-    */
-/*Variables of kills.scs */
+/* colors according to the chosen theme */
+/*other colors*/
+/* source of the animated image of the profile title*/
+/* variable padding for section */
+/*variables Break-points */
+/*variables Font size*/
+/*variables Font weight*/
+/*variables line height*/
+/*Variables of kills percents*/
 /*for logo background if the text logo actived, if not uncomment this  */
-/*mixin for display flex */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -119,32 +89,29 @@ html::-webkit-scrollbar {
   background: #58a0b8;
 }
 
-/*-------------fonts---------------*/
-/*font family */
-/*font for all elements */
-/* for two buttons in profile */
+/* ===================font family source ==================*/
+/* for all elements */
 @font-face {
   font-family: "cute-animal";
-  src: url("../fonts/cute-animal.ttf");
+  src: url("../fonts/Montserrat-Regular");
 }
 
+/* for name title  */
 @font-face {
   font-family: "Ludicrous-Stencil";
   src: url("../fonts/Ludicrous-Stencil.ttf");
 }
 
+/*  two buttons in profile */
+@font-face {
+  font-family: "cute-animal";
+  src: url("../fonts/cute-animal.ttf");
+}
+
+/* ===================general parametrage ==================*/
 body,
 a:not(.twoButtons a) {
   font-family: 'Montserrat', sans-serif;
-}
-
-.navbar a {
-  font-size: 13px;
-}
-
-.nav-link {
-  font-weight: 400;
-  line-height: 26px;
 }
 
 p,
@@ -156,104 +123,7 @@ input[placeholder] {
   font-size: 15px;
 }
 
-.wrapper {
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  justify-content: center;
-}
-
-.wrapper .icon {
-  position: relative;
-  background-color: white;
-  border-radius: 50%;
-  padding: 15px;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  font-size: 18px;
-  color: #5c5c5c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .tooltip {
-  position: absolute;
-  top: 0;
-  font-size: 14px;
-  background-color: white;
-  color: white;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .tooltip::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background-color: white;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .icon:hover .tooltip {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-}
-
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-  background-color: #3b5999;
-  color: white;
-}
-
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-  background-color: #46c1f6;
-  color: white;
-}
-
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-  background-color: #e1306c;
-  color: white;
-}
-
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-  background-color: #333333;
-  color: white;
-}
-
-.wrapper .youtube:hover,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip::before {
-  background-color: #de463b;
-  color: white;
-}
-
+/* ===================navbar ==================*/
 .navbar {
   width: 100%;
   position: fixed;
@@ -277,7 +147,9 @@ input[placeholder] {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
-  font-weight: 800;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .active {
@@ -293,7 +165,7 @@ input[placeholder] {
   box-shadow: 0px 7px 15px -7px #000000;
 }
 
-/*custom icon navbar to white with svg*/
+/* custom icon navbar to white with svg */
 .custom-toggler.navbar-toggler {
   border-color: rgba(255, 102, 204, 0);
 }
@@ -302,10 +174,12 @@ input[placeholder] {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+/* ===================profile ==================*/
 .parallax-wrapper {
   overflow-y: hidden;
 }
 
+/* background for header */
 .parallax {
   background-image: url("../images/bgprofile.jpg");
   background-size: cover;
@@ -313,7 +187,19 @@ input[placeholder] {
   height: 100vh;
 }
 
-/*avatar*/
+/* avatar */
+.profile-img img {
+  position: relative;
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  padding: 0;
+  margin: 0;
+  border: 15px solid transparent;
+  z-index: 9999;
+  transition: all .3s ease-out;
+}
+
 .profile-img a {
   position: relative;
 }
@@ -333,6 +219,16 @@ input[placeholder] {
   z-index: 30;
 }
 
+.profile-img a:hover img {
+  transform: scale(1.06, 1.06);
+}
+
+.profile-img a:hover:before {
+  animation: none;
+}
+
+/* animation of avatar */
+
 @keyframes pulse {
   0% {
     transform: scale(0.6, 0.6);
@@ -347,6 +243,7 @@ input[placeholder] {
   }
 }
 
+/* title for name */
 .content-profile-center {
   position: absolute;
   top: 50%;
@@ -383,7 +280,7 @@ input[placeholder] {
   font-weight: bold;
 }
 
-/* Animate Background avatar */
+/* animation of title name */
 
 @keyframes animTitle {
   100% {
@@ -394,27 +291,7 @@ input[placeholder] {
   }
 }
 
-.profile-img img {
-  position: relative;
-  border-radius: 50%;
-  height: 180px;
-  width: 180px;
-  padding: 0;
-  margin: 0;
-  border: 15px solid transparent;
-  z-index: 9999;
-  transition: all .3s ease-out;
-}
-
-.profile-img a:hover img {
-  transform: scale(1.06, 1.06);
-}
-
-.profile-img a:hover:before {
-  animation: none;
-}
-
-/*buttons*/
+/* two buttons */
 .twoButtons {
   font-family: "Ludicrous-Stencil", sans-serif !important;
   position: relative;
@@ -470,7 +347,7 @@ input[placeholder] {
   z-index: -1;
 }
 
-/*bulles*/
+/* bulles */
 .profile > .bubble-ocean {
   position: relative;
   width: 80vw;
@@ -657,6 +534,104 @@ input[placeholder] {
   opacity: 0.3;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background-color: white;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  color: #5c5c5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: white;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: white;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background-color: #3b5999;
+  color: white;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background-color: #46c1f6;
+  color: white;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: white;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: white;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: white;
+}
+
+/* ===================skills section ==================*/
 .container-skills {
   width: 100%;
   flex-wrap: wrap;
@@ -700,7 +675,6 @@ input[placeholder] {
   margin-top: 5px;
   display: block;
   border-radius: 5px;
-  /*ommage des animations et delai des animations*/
 }
 
 .skills-bar-container li .bar-container .progressbar {
@@ -765,6 +739,8 @@ input[placeholder] {
   animation-name: progress-sql;
   animation-delay: 7s;
 }
+
+/* bars animation */
 
 @keyframes progress-html {
   0% {
@@ -856,18 +832,10 @@ input[placeholder] {
   }
 }
 
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
-
+/* ===================Portfolio section ==================*/
+/* menu */
 .portfolio #portfolio-menu {
-  padding: 0;
-  margin: 0 auto 35px auto;
   list-style: none;
-  text-align: center;
   background: white;
   border-radius: 50px;
   box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.5);
@@ -930,6 +898,7 @@ input[placeholder] {
   color: #07485e;
 }
 
+/* box */
 .portfolio-box {
   overflow: hidden;
 }
@@ -942,6 +911,7 @@ input[placeholder] {
   transform: scale(1.2);
 }
 
+/* ===================experiences section ==================*/
 .cardbg {
   background-color: #58a0b8 !important;
 }
@@ -1019,6 +989,7 @@ input[placeholder] {
   }
 }
 
+/* ===================contact section ==================*/
 #contact .infos p,
 #contact input[placeholder],
 #contact textarea[placeholder] {
@@ -1077,6 +1048,7 @@ form button:hover {
   color: #07485e;
 }
 
+/* ===================footer section ==================*/
 .footer {
   background-color: #07485e;
   padding: 15px 0;
@@ -1092,19 +1064,15 @@ form button:hover {
   color: #58a0b8;
 }
 
-/* -------------- media query for layouts -------------------*/
+/* ===================media query for layouts ==================*/
 /*header*/
 .bubble-ocean {
   display: none;
 }
 
+/* main */
 main {
   margin: 10px;
-}
-
-header,
-footer {
-  margin: 0;
 }
 
 /*portfolio*/
@@ -1117,6 +1085,7 @@ footer {
 }
 
 @media only screen and (max-width: 992px) {
+  /* navbar style */
   .navbar.styleNav {
     border-radius: 0 0 80% / 100% 0;
     opacity: .9;
@@ -1126,7 +1095,7 @@ footer {
   .navbar.styleNav .logo {
     margin-left: 25%;
   }
-  /*osition et spacing des textes links*/
+  /*position and spacing of links texts*/
   .navbar-collapse .navbar-nav {
     width: 100%;
   }
@@ -1157,11 +1126,6 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  /* header -----------------*/
-  /*margin */
-  main {
-    margin: 0px;
-  }
   /*portfolio*/
   .portfolio #portfolio-menu {
     padding: 2px 5px;
@@ -1172,12 +1136,7 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
-  /*margin */
-  main {
-    margin: 0px;
-  }
-  /* 2. 1header */
-  /*bubble in header*/
+  /* bubble in header */
   .bubble-ocean {
     display: block;
   }
@@ -1191,10 +1150,6 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
-  /*margin */
-  main {
-    margin: 0px;
-  }
   /*navbar*/
   .navbar li a {
     position: relative;
@@ -1224,8 +1179,7 @@ footer {
     transform: scaleX(1);
     transform-origin: left;
   }
-  /* header*/
-  /*profile*/
+  /* profile */
   .bubble-ocean {
     display: block;
   }
@@ -1238,9 +1192,7 @@ footer {
   }
 }
 
-/*--------------------------------------------------------------
-# scrolbar
---------------------------------------------------------------*/
+/* ===================scrolbar ==================*/
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
@@ -1269,9 +1221,7 @@ html::-webkit-scrollbar {
   background: #58a0b8;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+/* ===================button Back to top button ==================*/
 .back-to-top {
   position: fixed;
   display: none;
@@ -1297,37 +1247,26 @@ html::-webkit-scrollbar {
   background: #58a0b8;
 }
 
-.flexrow {
-  display: flex;
-  flex-direction: row;
-}
-
-.flexcolumn {
-  display: flex;
-  flex-direction: column;
-}
-
-.displaygrid {
-  display: grid;
-}
-
+/* ===================other general parameters ==================*/
+/* titles color*/
 .title {
   color: #58a0b8;
 }
 
+/* icon background for titles */
 #skills .title,
 #portfolio .title,
 #experiences .title,
 #testimonials .title,
 #contact .title {
   background-image: url(../images/bg-title-blue.svg);
-  background-size: 120px 60px;
-  height: 60px;
+  background-size: 100px 50px;
   background-position: center;
   background-repeat: no-repeat;
+  height: 60px;
 }
 
-/*shadow card*/
+/* shadow card */
 .shadow-card {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   transition: all 1s;

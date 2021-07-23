@@ -1,5 +1,6 @@
 @import "./navbar",
 "./profile",
+"./social",
 "./skills",
 "./portfolio",
 "./experience",
@@ -8,9 +9,7 @@
 "./footer",
 "./mediaquery";
 
-/*--------------------------------------------------------------
-# scrolbar
---------------------------------------------------------------*/
+/* ===================scrolbar ==================*/
 
 
 /* width */
@@ -50,9 +49,7 @@ html::-webkit-scrollbar {
 }
 
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
+/* ===================button Back to top button ==================*/
 
 .back-to-top {
     position: fixed;
@@ -79,48 +76,33 @@ html::-webkit-scrollbar {
     background: $color-3;
 }
 
-// ------------general parameters in common layouts----------------
-//layout flexbox and grid
-.flexrow {
-    display: flex;
-    flex-direction: row;
-}
 
-.flexcolumn {
-    display: flex;
-    flex-direction: column;
-}
+/* ===================other general parameters ==================*/
 
-.displaygrid {
-    display: grid;
-}
+
+/* titles color*/
 
 .title {
     color: $color-3;
 }
+
+
+/* icon background for titles */
 
 #skills .title,
 #portfolio .title,
 #experiences .title,
 #testimonials .title,
 #contact .title {
-    @if($blueTheme) {
-        background-image: url(../images/bg-title-blue.svg);
-    }
-    @else if ($orangeTheme) {
-        background-image: url(../images/bg-title-orange.svg);
-    }
-    @else if ($greenTheme) {
-        background-image: url(../images/bg-title-green.svg);
-    }
-    background-size: 120px 60px;
-    height: 60px;
+    background-image: $bgtitle;
+    background-size: 100px 50px;
     background-position: center;
     background-repeat: no-repeat;
+    height: 60px;
 }
 
 
-/*shadow card*/
+/* shadow card */
 
 .shadow-card {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;

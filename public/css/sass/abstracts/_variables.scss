@@ -2,9 +2,8 @@
 
 $blueTheme:true;
 $orangeTheme: false;
-$greenTheme: false;
 
-/* color by default */
+/* colors according to the chosen theme */
 
 $color-2:rgb(7, 72, 94);
 $color-3: #02769B;
@@ -14,6 +13,7 @@ $box-shadow-navbar-mobile: 0 0 65px $color-2 inset,
 0 0 20px #a1b4c0 inset,
 0 0 5px #476281;
 $logoImg:url(../images/logoBlue.png);
+$bgtitle: url(../images/bg-title-blue.svg);
 @if ($blueTheme) {
     $color-2: #07485e;
     $color-3: #58a0b8;
@@ -21,6 +21,7 @@ $logoImg:url(../images/logoBlue.png);
     $animated-text-fill-img: "animated-text-fill-blue.webp";
     $box-shadow-navbar-mobile: 0 0 65px $color-2 inset, 0 0 20px #a1b4c0 inset, 0 0 5px #476281;
     $logoImg: url(../images/logoBlue.png);
+    $bgtitle: url(../images/bg-title-blue.svg);
 }
 
 @else if ($orangeTheme) {
@@ -30,52 +31,33 @@ $logoImg:url(../images/logoBlue.png);
     $animated-text-fill-img: "animated-text-fill-orange.webp";
     $box-shadow-navbar-mobile: 0 0 65px $color-2 inset, 0 0 20px #c7b57a inset, 0 0 5px #5a562d;
     $logoImg: url(../images/logoOrange.png);
+    $bgtitle: url(../images/bg-title-orange.svg);
 }
 
 
-/*
-    |-------------------------------|
-    |------- Variables Colors-------|
-    |-------------------------------|
-    */
+/*other colors*/
 
 $color-titles:#808080;
 $color-paragraph:#5c5c5c;
 $color-1:white;
 
-/*
-    |-------------------------------|
-    |----variables images sources---|
-    |-------------------------------|
-    */
+/* source of the animated image of the profile title*/
 
 $img-animated-text-fill:"../images/"+$animated-text-fill-img;
 
-/*
-    |-------------------------------|
-    |-variable padding for section--|
-    |-------------------------------|
-    */
+/* variable padding for section */
 
 $padding-left-right:100px;
 $padding-top:70px;
 $padding-bottom:0px;
 
-/*
-    |-------------------------------|
-    |----ariables Break-points -----|
-    |-------------------------------|
-    */
+/*variables Break-points */
 
 $large-phone:768px;
 $tablet:992px;
 $desktop:1200px;
 
-/*
-    |-------------------------------|
-    |-----variables Font size ------|
-    |-------------------------------|
-    */
+/*variables Font size*/
 
 $extralarge: 45px;
 $large: 26px;
@@ -85,21 +67,13 @@ $lessmedium: 15px;
 $extrasmall:13px;
 $small:12px;
 
-/*
-    |-------------------------------|
-    |-----variables Font weight-----|
-    |-------------------------------|
-    */
+/*variables Font weight*/
 
 $bigweight: 700;
 $mediumweight:500;
 $smallweight:400;
 
-/*
-    |-------------------------------|
-    |-----variables line height-----|
-    |-------------------------------|
-    */
+/*variables line height*/
 
 $height1:39px;
 $height2:35px;
@@ -108,7 +82,7 @@ $height4:26px;
 $height5:23px;
 $height6:21px;
 
-/*Variables of kills.scs */
+/*Variables of kills percents*/
 
 $percentHtml: 98%;
 $percentCss: 95%;

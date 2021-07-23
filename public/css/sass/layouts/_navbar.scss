@@ -1,3 +1,5 @@
+/* ===================navbar ==================*/
+
 .navbar {
     width: 100%;
     position: fixed;
@@ -19,7 +21,9 @@
             text-decoration: none;
             text-transform: uppercase;
             transition: 0.5s;
-            font-weight: 800;
+            font-size: $extrasmall;
+            font-weight: $smallweight;
+            line-height: $height4;
         }
     }
 }
@@ -38,7 +42,7 @@
 }
 
 
-/*custom icon navbar to white with svg*/
+/* custom icon navbar to white with svg */
 
 .custom-toggler.navbar-toggler {
     border-color: rgba(255, 102, 204, 0);

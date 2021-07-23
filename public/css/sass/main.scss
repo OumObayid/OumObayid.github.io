@@ -1,17 +1,7 @@
-// Global stylesheet where we will import all other stylesheets
-//abstracts
-@import "abstracts/abstract";
-/////////////////////////
-//Bases
-@import "bases/reset",
+/*Global stylesheet where we will import all other stylesheets*/
+
+@import "abstracts/abstract",
+"bases/reset",
 "bases/bases",
-"bases/typography";
-/////////////////////////
-//Components
-@import "components/social";
-/////////////////////////
-//Layouts
-@import "layouts/layouts";
-/////////////////////////
-
-
+"bases/typography",
+"layouts/layouts";

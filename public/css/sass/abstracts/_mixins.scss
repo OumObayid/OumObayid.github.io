@@ -38,12 +38,3 @@
         @content;
     }
 }
-
-
-/*mixin for display flex */
-
-@mixin displayflexrow {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}

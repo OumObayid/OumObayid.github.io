@@ -1,37 +1,35 @@
-/*-------------fonts---------------*/
+/* ===================font family source ==================*/
 
 
-/*font family */
-
-
-/*font for all elements */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
-
-/* for two buttons in profile */
+/* for all elements */
 
 @font-face {
     font-family: "cute-animal";
-    src: url("../fonts/cute-animal.ttf");
+    src: url("../fonts/Montserrat-Regular");
 }
+
+
+/* for name title  */
 
 @font-face {
     font-family: "Ludicrous-Stencil";
     src: url("../fonts/Ludicrous-Stencil.ttf");
 }
 
+
+/*  two buttons in profile */
+
+@font-face {
+    font-family: "cute-animal";
+    src: url("../fonts/cute-animal.ttf");
+}
+
+
+/* ===================general parametrage ==================*/
+
 body,
 a:not(.twoButtons a) {
     font-family: 'Montserrat', sans-serif;
-}
-
-.navbar a {
-    font-size: $extrasmall;
-}
-
-.nav-link {
-    font-weight: $smallweight;
-    line-height: $height4;
 }
 
 p,

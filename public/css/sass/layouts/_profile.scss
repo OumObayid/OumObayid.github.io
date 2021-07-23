@@ -1,6 +1,11 @@
+/* ===================profile ==================*/
+
 .parallax-wrapper {
     overflow-y: hidden;
 }
+
+
+/* background for header */
 
 .parallax {
     background-image: url('../images/bgprofile.jpg');
@@ -10,28 +15,50 @@
 }
 
 
-/*avatar*/
+/* avatar */
 
-.profile-img a {
-    position: relative;
+.profile-img {
+    img {
+        position: relative;
+        @include border-radius(50%);
+        height: 180px;
+        width: 180px;
+        padding: 0;
+        margin: 0;
+        border: 15px solid transparent;
+        z-index: 9999;
+        transition: all .3s ease-out;
+    }
+    a {
+        position: relative;
+    }
+    a:before {
+        content: "";
+        border: 40px solid rgba(78, 130, 151, 0.3);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+        @include border-radius(50%);
+        height: 180px;
+        width: 180px;
+        position: absolute;
+        left: 0;
+        -webkit-animation: pulse 2s ease-out;
+        animation: pulse 2s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        opacity: 0.0;
+        z-index: 30;
+    }
+    a:hover img {
+        transform: scale(1.06, 1.06);
+    }
+    a:hover:before {
+        -webkit-animation: none;
+        animation: none;
+    }
 }
 
-.profile-img a:before {
-    content: "";
-    border: 40px solid rgba(78, 130, 151, 0.3);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-    @include border-radius(50%);
-    height: 180px;
-    width: 180px;
-    position: absolute;
-    left: 0;
-    -webkit-animation: pulse 2s ease-out;
-    animation: pulse 2s ease-out;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    opacity: 0.0;
-    z-index: 30;
-}
+
+/* animation of avatar */
 
 @-webkit-keyframes pulse {
     0% {
@@ -60,6 +87,9 @@
         opacity: 0.0;
     }
 }
+
+
+/* title for name */
 
 .content-profile-center {
     span.name {
@@ -99,7 +129,7 @@
 }
 
 
-/* Animate Background avatar */
+/* animation of title name */
 
 @-webkit-keyframes animTitle {
     100% {
@@ -119,29 +149,8 @@
     }
 }
 
-.profile-img img {
-    position: relative;
-    @include border-radius(50%);
-    height: 180px;
-    width: 180px;
-    padding: 0;
-    margin: 0;
-    border: 15px solid transparent;
-    z-index: 9999;
-    transition: all .3s ease-out;
-}
 
-.profile-img a:hover img {
-    transform: scale(1.06, 1.06);
-}
-
-.profile-img a:hover:before {
-    -webkit-animation: none;
-    animation: none;
-}
-
-
-/*buttons*/
+/* two buttons */
 
 .twoButtons {
     font-family: "Ludicrous-Stencil", sans-serif !important;
@@ -193,7 +202,7 @@
 }
 
 
-/*bulles*/
+/* bulles */
 
 .profile>.bubble-ocean {
     position: relative;
