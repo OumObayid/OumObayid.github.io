@@ -340,7 +340,7 @@ input[placeholder] {
   font-weight: bold;
 }
 
-/* Animate Background Image */
+/* Animate Background avatar */
 
 @keyframes animTitle {
   100% {
@@ -426,7 +426,7 @@ input[placeholder] {
   z-index: -1;
 }
 
-.bubble-ocean {
+.profile > .bubble-ocean {
   position: relative;
   width: 80vw;
 }

@@ -276,7 +276,7 @@ $(function() {
                 //     subject = $("form #subject").val(),
                 //     message = $("form #message").val()
                 // });
-                $(".message-submit").html("your mail is sent");
+
             });
 
 
