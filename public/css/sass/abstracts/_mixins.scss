@@ -2,7 +2,9 @@
     border-radius: $radius;
 }
 
-//for logo background if the text logo actived, if not uncomment this
+
+/*for logo background if the text logo actived, if not uncomment this  */
+
 @mixin color-bgLogo {
     background: -webkit-linear-gradient(0deg, $color-2 0%, $color-3 60%, $color-1 100%);
     -webkit-background-clip: text;
@@ -37,7 +39,9 @@
     }
 }
 
-//mixin for display flex
+
+/*mixin for display flex */
+
 @mixin displayflexrow {
     display: flex;
     flex-direction: row;

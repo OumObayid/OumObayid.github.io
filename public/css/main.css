@@ -1,3 +1,6 @@
+@charset "UTF-8";
+/* thèmes */
+/* color by default */
 /*
     |-------------------------------|
     |------- Variables Colors-------|
@@ -33,6 +36,9 @@
     |-----variables line height-----|
     |-------------------------------|
     */
+/*Variables of kills.scs */
+/*for logo background if the text logo actived, if not uncomment this  */
+/*mixin for display flex */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
@@ -82,7 +88,41 @@ body a:hover {
   text-decoration: none;
 }
 
+/*--------------------------------------------------------------
+# scrolbar
+--------------------------------------------------------------*/
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  transition: all 0.3s ease-in;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #07485e;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #07485e;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #58a0b8;
+}
+
 /*-------------fonts---------------*/
+/*font family */
+/*font for all elements */
+/* for two buttons in profile */
 @font-face {
   font-family: "cute-animal";
   src: url("../fonts/cute-animal.ttf");
@@ -253,6 +293,7 @@ input[placeholder] {
   box-shadow: 0px 7px 15px -7px #000000;
 }
 
+/*custom icon navbar to white with svg*/
 .custom-toggler.navbar-toggler {
   border-color: rgba(255, 102, 204, 0);
 }
@@ -272,6 +313,7 @@ input[placeholder] {
   height: 100vh;
 }
 
+/*avatar*/
 .profile-img a {
   position: relative;
 }
@@ -329,6 +371,7 @@ input[placeholder] {
   background: url("../images/animated-text-fill-blue.webp") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
+  /* Animate Background Image */
   -webkit-text-fill-color: transparent;
   animation: animTitle 80s linear infinite;
   /* Activate hardware acceleration for smoother animations */
@@ -371,6 +414,7 @@ input[placeholder] {
   animation: none;
 }
 
+/*buttons*/
 .twoButtons {
   font-family: "Ludicrous-Stencil", sans-serif !important;
   position: relative;
@@ -426,6 +470,7 @@ input[placeholder] {
   z-index: -1;
 }
 
+/*bulles*/
 .profile > .bubble-ocean {
   position: relative;
   width: 80vw;
@@ -655,6 +700,7 @@ input[placeholder] {
   margin-top: 5px;
   display: block;
   border-radius: 5px;
+  /*ommage des animations et delai des animations*/
 }
 
 .skills-bar-container li .bar-container .progressbar {
@@ -1046,6 +1092,8 @@ form button:hover {
   color: #58a0b8;
 }
 
+/* -------------- media query for layouts -------------------*/
+/*header*/
 .bubble-ocean {
   display: none;
 }
@@ -1059,6 +1107,7 @@ footer {
   margin: 0;
 }
 
+/*portfolio*/
 .portfolio #portfolio-menu {
   padding: 2px 5px;
 }
@@ -1077,6 +1126,7 @@ footer {
   .navbar.styleNav .logo {
     margin-left: 25%;
   }
+  /*osition et spacing des textes links*/
   .navbar-collapse .navbar-nav {
     width: 100%;
   }
@@ -1107,9 +1157,12 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  /* header -----------------*/
+  /*margin */
   main {
     margin: 0px;
   }
+  /*portfolio*/
   .portfolio #portfolio-menu {
     padding: 2px 5px;
   }
@@ -1119,12 +1172,16 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+  /*margin */
   main {
     margin: 0px;
   }
+  /* 2. 1header */
+  /*bubble in header*/
   .bubble-ocean {
     display: block;
   }
+  /*portfolio*/
   .portfolio #portfolio-menu {
     padding: 2px 15px;
   }
@@ -1134,9 +1191,11 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
+  /*margin */
   main {
     margin: 0px;
   }
+  /*navbar*/
   .navbar li a {
     position: relative;
     display: block;
@@ -1165,9 +1224,12 @@ footer {
     transform: scaleX(1);
     transform-origin: left;
   }
+  /* header*/
+  /*profile*/
   .bubble-ocean {
     display: block;
   }
+  /*portfolio*/
   .portfolio #portfolio-menu {
     padding: 2px 15px;
   }
@@ -1265,6 +1327,7 @@ html::-webkit-scrollbar {
   background-repeat: no-repeat;
 }
 
+/*shadow card*/
 .shadow-card {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   transition: all 1s;
