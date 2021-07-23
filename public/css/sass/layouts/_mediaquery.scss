@@ -4,15 +4,10 @@
     .bubble-ocean {
         display: none;
     }
+    /* main */
     
-    //margin 
     main {
         margin: 10px;
-    }
-    
-    header,
-    footer {
-        margin: 0;
     }
     /*portfolio*/
     
@@ -33,7 +28,7 @@
                 margin-left: 25%;
             }
         }
-        /*osition et spacing des textes links*/
+        /*position et spacing des textes links*/
         .navbar-collapse {
             .navbar-nav {
                 width: 100%;
