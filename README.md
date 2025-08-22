@@ -24,6 +24,7 @@ Il offre :
 👉  [Lien vers le site](https://oumobayid.github.io/)
 
 ---
+
 # 🚀 Instalation et Démarrage
 
 ### 1. Clonez le dépôt :
@@ -33,3 +34,11 @@ git clone https://github.com/OumObayid/OumObayid.github.io
 ```
 
 ### 2. Ouvrez le fichier index.html directement dans votre navigateur
+
+---
+
+## 👨‍💻 Auteur :
+    - **Oumaima El Obayid** 
+    - Email : elobayidoumaima@gmail.com --- 
+
+---
