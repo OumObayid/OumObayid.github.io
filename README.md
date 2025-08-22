@@ -26,10 +26,10 @@ Il offre :
 ---
 # 🚀 Instalation et Démarrage
 
-## 1. Clonez le dépôt :
+### 1. Clonez le dépôt :
    
 ```
 [git clone https://github.com/votre-utilisateur/portfolio-personnel](https://github.com/OumObayid/OumObayid.github.io)
 ```
 
-## 2. Ouvrez le fichier index.html directement dans votre navigateur :
+### 2. Ouvrez le fichier index.html directement dans votre navigateur
